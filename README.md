@@ -152,6 +152,15 @@ svg-illustration-skill/
 | 横版 Banner | 1200×675 | 16:9 |
 | 竖版海报 | 900×1600 | 9:16 |
 
+## 字体版权
+
+本仓库**只写字体名、不打包任何字体文件**；渲染在你本机用已安装的字体完成，输出是 PNG 位图，因此不涉及字体再分发或嵌入问题。
+
+- **推荐使用 OFL 开源字体**（免费可商用、可嵌入、可再分发）：霞鹜文楷（LXGW WenKai）、思源黑体（Source Han Sans / Noto Sans CJK）、思源宋体（Source Han Serif / Noto Serif SC）
+- **系统专有字体**（PingFang SC、Hiragino、微软雅黑）本机渲染没问题，但**不要提交其 .ttf/.ttc 文件到仓库再分发**
+
+本项目 README 中的演示图均使用霞鹜文楷（OFL 1.1）渲染。
+
 ## License
 
 [MIT](./LICENSE)

@@ -62,6 +62,7 @@ fc-match "PingFang SC"    # 验证某个字体是否真的可用（返回的必�
 1. **先 `fc-match` 验证字体，再写 SVG**。不要凭印象写字体名——同一字体名在不同系统可能不存在。SVG 里写"验证过存在的字体"，并留备选：`font-family="LXGW WenKai, Hiragino Sans GB, PingFang SC, sans-serif"`
 2. **SVG 里绝对不要放 emoji（🚗🛸🧱📊🏆 等）**。rsvg 没有 emoji 字形，会渲染成实心方块（看起来像元素重叠/错乱）。**用矢量图形代替**（画个车形、圆点、图标），或干脆纯文字。
 3. fontconfig 缓存报 `No writable cache directories` 是噪音，可忽略——只要 `fc-match` 返回正确字体即可。
+4. **字体版权**：优先用 **OFL 开源字体**（霞鹜文楷 LXGW WenKai / 思源黑体 Source Han Sans / 思源宋体 Source Han Serif / Noto CJK）——免费可商用、可嵌入、可再分发。系统专有字体（PingFang SC、Hiragino、微软雅黑）**本机渲染没问题，但别把 .ttf/.ttc 字体文件提交进仓库再分发**。本 skill 只写字体名、不打包字体文件，PNG 输出是位图，均无版权风险。
 
 ---
 
