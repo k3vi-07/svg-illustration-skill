@@ -1,1 +1,243 @@
-IyEvdXNyL2Jpbi9lbnYgcHl0aG9uMwoiIiLlg4/ntKDnuqfpqozor4HohJrmnKzvvJrlrprkvY3lhYPntKDkvY3nva7jgIHmo4DmtYvph43lj6Av5rqi5Ye644CB5o+Q5Y+W5YaF5a655YyF5Zu055uS44CCCgrkuInnp43mqKHlvI/vvIjkuInpgInkuIDvvInvvJoKICAxLiDljZXooYzmiavmj4/vvIgtLXkgWe+8iSAgICAgICAgICAg77ya5omr5o+P5oyH5a6a6KGM77yM5oql5ZGK55uu5qCH5YOP57Sg55qEIHgg5YiG5q61CiAgMi4g5aSa6KGM5omr5o+P77yILS15LXJhbmdlIEEsQu+8iSAgIO+8muaJq+aPj+e6teWQkeWMuumXtO+8jOaKpeWRiuebruagh+WDj+e0oOeahOiBlOWQiCB4IOiMg+WbtAogIDMuIOWMheWbtOebku+8iC0tYm94ZXPvvIkgICAgICAgICAgIO+8muWFqOWbvuaPkOWPluebruagh+WDj+e0oOeahOi/numAmuWMheWbtOebku+8iC0tbWVyZ2Ug5ZCI5bm25oiQ5Yy65Z+f77yJCgrnm67moIflrprkuYnvvIjkuInpgInkuIDvvInvvJoKICAtLW1vZGUgYnJpZ2h0ICAg5Lqu5YOP57Sg77yI5rex6Imy6IOM5pmv5LiK55qE5paH5a2XL+WbvuW9ou+8ie+8jOmYiOWAvO+8muWDj+e0oOWAvCA+IC0tdGhyZXNoCiAgLS1tb2RlIGRhcmsgICAgIOaal+WDj+e0oO+8iOa1heiJsuiDjOaZr+S4iueahOWGheWuue+8ie+8jOmYiOWAvO+8muWDj+e0oOWAvCA8IC0tdGhyZXNoCiAgLS1jb2xvciAjUlJHR0JCIOaOpei/keafkOminOiJsueahOWDj+e0oO+8iOeyvuehruaJvuafkOS4quWFg+e0oO+8ie+8jOmFjeWQiCAtLXRvbAoK55So5rOV77yaCiAgICBweXRob24zIHZlcmlmeS5weSBhc3NldHMvY292ZXIucG5nIC0teSAyNDMgLS1tb2RlIGJyaWdodCAtLXN2Zy13aWR0aCA5MDAKICAgIHB5dGhvbjMgdmVyaWZ5LnB5IGFzc2V0cy9jYXJkLnBuZyAtLWJveGVzIC0tbW9kZSBkYXJrIC0tc3ZnLXdpZHRoIDkwMCAtLXN2Zy1oZWlnaHQgNTIwCiAgICBweXRob24zIHZlcmlmeS5weSBhc3NldHMvY292ZXIucG5nIC0tY29sb3IgIiNGNUE2MjMiIC0tYm94ZXMgLS1zdmctd2lkdGggOTAwCgrlj4LmlbDvvJoKICAgIC0teSBZICAgICAgICAgICDljZXooYzmiavmj4/vvIhQTkcg5Z2Q5qCH77yM5LuOIDAg5byA5aeL77yJCiAgICAtLXktcmFuZ2UgQSxCICAg5aSa6KGM5omr5o+P5Yy66Ze077yI5ZCr56uv54K577yJCiAgICAtLWJveGVzICAgICAgICAg5YWo5Zu+5YyF5Zu055uSCiAgICAtLW1lcmdlIE4gICAgICAg5ZCI5bm255u46LedIDxOIHB4IOeahOWMheWbtOebku+8iOm7mOiupCAxMu+8jDAg6KGo56S65LiN5ZCI5bm277yb5paH5a2X6YCQ5a2X5ouG5byA5pe25b6I5pyJ55So77yJCiAgICAtLW1vZGUgICAgICAgICAgYnJpZ2h0IC8gZGFya++8iOS4jiAtLWNvbG9yIOS6kuaWpe+8iQogICAgLS1jb2xvciBIRVggICAgIOebruagh+minOiJsu+8iCNSR0Ig5oiWICNSUkdHQkLvvIkKICAgIC0tdG9sIE4gICAgICAgICDpopzoibLlrrnlt67vvIhSR0Ig5qyn5rCP6Led56a777yJ77yM6buY6K6kIDQwCiAgICAtLXRocmVzaCBUICAgICAg5Lqu5bqm6ZiI5YC877yM6buY6K6kIDE0MAogICAgLS1zdmctd2lkdGggVyAgIFNWRyB2aWV3Qm94IOWuveW6pu+8iOi+k+WHuiBTVkcgeCDlnZDmoIfvvIkKICAgIC0tc3ZnLWhlaWdodCBIICBTVkcgdmlld0JveCDpq5jluqbvvIjovpPlh7ogU1ZHIHkg5Z2Q5qCH77yJCiAgICAtLW1pbi1hcmVhIEEgICAg5YyF5Zu055uS5pyA5bCP6Z2i56ev77yIcHjCsu+8ie+8jOm7mOiupCA0MO+8jOi/h+a7pOWZqueCuQoiIiIKaW1wb3J0IGFyZ3BhcnNlCmltcG9ydCBzeXMKCnRyeToKICAgIGZyb20gUElMIGltcG9ydCBJbWFnZQpleGNlcHQgSW1wb3J0RXJyb3I6CiAgICBzeXMuZXhpdCgi6ZyA6KaBIFBpbGxvd++8mnBpcCBpbnN0YWxsIFBpbGxvdyIpCgoKZGVmIHBhcnNlX2hleChjb2xvcik6CiAgICBjb2xvciA9IGNvbG9yLnN0cmlwKCkubHN0cmlwKCIjIikKICAgIGlmIGxlbihjb2xvcikgPT0gMzoKICAgICAgICBjb2xvciA9ICIiLmpvaW4oYyAqIDIgZm9yIGMgaW4gY29sb3IpCiAgICBpZiBsZW4oY29sb3IpICE9IDY6CiAgICAgICAgc3lzLmV4aXQoZiLml6Dms5Xop6PmnpDpopzoibI6IHtjb2xvciFyfe+8iOmcgOimgSAjUkdCIOaIliAjUlJHR0JC77yJIikKICAgIHJldHVybiB0dXBsZShpbnQoY29sb3JbaTppICsgMl0sIDE2KSBmb3IgaSBpbiAoMCwgMiwgNCkpCgoKZGVmIGJ1aWxkX21hc2soaW1fcmdiLCBpbV9sLCB3LCBoLCBtb2RlLCB0aHJlc2gsIGNvbG9yLCB0b2wpOgogICAgbWFzayA9IGJ5dGVhcnJheSh3ICogaCkKICAgIGZvciB5IGluIHJhbmdlKGgpOgogICAgICAgIGZvciB4IGluIHJhbmdlKHcpOgogICAgICAgICAgICBpZiBjb2xvciBpcyBub3QgTm9uZToKICAgICAgICAgICAgICAgIHIsIGcsIGIgPSBpbV9yZ2IuZ2V0cGl4ZWwoKHgsIHkpKQogICAgICAgICAgICAgICAgdHIsIHRnLCB0YiA9IGNvbG9yCiAgICAgICAgICAgICAgICBoaXQgPSAoKHIgLSB0cikgKiogMiArIChnIC0gdGcpICoqIDIgKyAoYiAtIHRiKSAqKiAyKSAqKiAwLjUgPD0gdG9sCiAgICAgICAgICAgIGVsaWYgbW9kZSA9PSAiYnJpZ2h0IjoKICAgICAgICAgICAgICAgIGhpdCA9IGltX2wuZ2V0cGl4ZWwoKHgsIHkpKSA+IHRocmVzaAogICAgICAgICAgICBlbHNlOiAgIyBkYXJrCiAgICAgICAgICAgICAgICBoaXQgPSBpbV9sLmdldHBpeGVsKCh4LCB5KSkgPCB0aHJlc2gKICAgICAgICAgICAgaWYgaGl0OgogICAgICAgICAgICAgICAgbWFza1t5ICogdyArIHhdID0gMQogICAgcmV0dXJuIG1hc2sKCgpkZWYgcm93X3NlZ21lbnRzKG1hc2ssIHcsIHksIGdhcD0xMCk6CiAgICBoaXRzID0gW3ggZm9yIHggaW4gcmFuZ2UodykgaWYgbWFza1t5ICogdyArIHhdXQogICAgaWYgbm90IGhpdHM6CiAgICAgICAgcmV0dXJuIFtdCiAgICBzZWdzID0gW10KICAgIHN0YXJ0ID0gcHJldiA9IGhpdHNbMF0KICAgIGZvciB4IGluIGhpdHNbMTpdOgogICAgICAgIGlmIHggLSBwcmV2ID4gZ2FwOgogICAgICAgICAgICBzZWdzLmFwcGVuZCgoc3RhcnQsIHByZXYpKQogICAgICAgICAgICBzdGFydCA9IHgKICAgICAgICBwcmV2ID0geAogICAgc2Vncy5hcHBlbmQoKHN0YXJ0LCBwcmV2KSkKICAgIHJldHVybiBzZWdzCgoKZGVmIGNvbm5lY3RlZF9ib3hlcyhtYXNrLCB3LCBoLCBtaW5fYXJlYSk6CiAgICB2aXNpdGVkID0gYnl0ZWFycmF5KHcgKiBoKQogICAgYm94ZXMgPSBbXQogICAgZm9yIGkgaW4gcmFuZ2UodyAqIGgpOgogICAgICAgIGlmIG1hc2tbaV0gYW5kIG5vdCB2aXNpdGVkW2ldOgogICAgICAgICAgICBzdGFjayA9IFtpXQogICAgICAgICAgICB2aXNpdGVkW2ldID0gMQogICAgICAgICAgICB4cyA9IFtdCiAgICAgICAgICAgIHlzID0gW10KICAgICAgICAgICAgd2hpbGUgc3RhY2s6CiAgICAgICAgICAgICAgICBwID0gc3RhY2sucG9wKCkKICAgICAgICAgICAgICAgIHB4ID0gcCAlIHcKICAgICAgICAgICAgICAgIHB5ID0gcCAvLyB3CiAgICAgICAgICAgICAgICB4cy5hcHBlbmQocHgpCiAgICAgICAgICAgICAgICB5cy5hcHBlbmQocHkpCiAgICAgICAgICAgICAgICBmb3IgZHkgaW4gKC0xLCAwLCAxKToKICAgICAgICAgICAgICAgICAgICBmb3IgZHggaW4gKC0xLCAwLCAxKToKICAgICAgICAgICAgICAgICAgICAgICAgaWYgZHggPT0gMCBhbmQgZHkgPT0gMDoKICAgICAgICAgICAgICAgICAgICAgICAgICAgIGNvbnRpbnVlCiAgICAgICAgICAgICAgICAgICAgICAgIG54LCBueSA9IHB4ICsgZHgsIHB5ICsgZHkKICAgICAgICAgICAgICAgICAgICAgICAgaWYgMCA8PSBueCA8IHcgYW5kIDAgPD0gbnkgPCBoOgogICAgICAgICAgICAgICAgICAgICAgICAgICAgbmkgPSBueSAqIHcgKyBueAogICAgICAgICAgICAgICAgICAgICAgICAgICAgaWYgbWFza1tuaV0gYW5kIG5vdCB2aXNpdGVkW25pXToKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICB2aXNpdGVkW25pXSA9IDEKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBzdGFjay5hcHBlbmQobmkpCiAgICAgICAgICAgIGFyZWEgPSBsZW4oeHMpCiAgICAgICAgICAgIGlmIGFyZWEgPj0gbWluX2FyZWE6CiAgICAgICAgICAgICAgICBib3hlcy5hcHBlbmQoW21pbih4cyksIG1pbih5cyksIG1heCh4cyksIG1heCh5cyksIGFyZWFdKQogICAgcmV0dXJuIGJveGVzCgoKZGVmIG1lcmdlX2JveGVzKGJveGVzLCBnYXApOgogICAgIiIi5ZCI5bm255u46LedIDxnYXAgcHgg55qE5YyF5Zu055uS77yI5oyJ5ZCE5ZCR5omp5bGVIGdhcC8yIOWQjuWIpOaWremHjeWPoO+8ieOAgiIiIgogICAgaWYgZ2FwIDw9IDAgb3IgbGVuKGJveGVzKSA8IDI6CiAgICAgICAgcmV0dXJuIFt0dXBsZShiKSBmb3IgYiBpbiBib3hlc10KICAgIGl0ZW1zID0gW2xpc3QoYikgZm9yIGIgaW4gYm94ZXNdICAjIFt4MCwgeTAsIHgxLCB5MSwgYXJlYV0KICAgIHBhZCA9IGdhcCAvIDIuMAogICAgbWVyZ2VkID0gVHJ1ZQogICAgd2hpbGUgbWVyZ2VkOgogICAgICAgIG1lcmdlZCA9IEZhbHNlCiAgICAgICAgaSA9IDAKICAgICAgICB3aGlsZSBpIDwgbGVuKGl0ZW1zKToKICAgICAgICAgICAgaiA9IGkgKyAxCiAgICAgICAgICAgIHdoaWxlIGogPCBsZW4oaXRlbXMpOgogICAgICAgICAgICAgICAgYSwgYiA9IGl0ZW1zW2ldLCBpdGVtc1tqXQogICAgICAgICAgICAgICAgaWYgbm90IChhWzJdICsgcGFkIDwgYlswXSBvciBiWzJdICsgcGFkIDwgYVswXSBvcgogICAgICAgICAgICAgICAgICAgICAgICBhWzNdICsgcGFkIDwgYlsxXSBvciBiWzNdICsgcGFkIDwgYVsxXSk6CiAgICAgICAgICAgICAgICAgICAgaXRlbXNbaV0gPSBbbWluKGFbMF0sIGJbMF0pLCBtaW4oYVsxXSwgYlsxXSksCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgbWF4KGFbMl0sIGJbMl0pLCBtYXgoYVszXSwgYlszXSksIGFbNF0gKyBiWzRdXQogICAgICAgICAgICAgICAgICAgIGRlbCBpdGVtc1tqXQogICAgICAgICAgICAgICAgICAgIG1lcmdlZCA9IFRydWUKICAgICAgICAgICAgICAgIGVsc2U6CiAgICAgICAgICAgICAgICAgICAgaiArPSAxCiAgICAgICAgICAgIGkgKz0gMQogICAgaXRlbXMuc29ydChrZXk9bGFtYmRhIHI6IChyWzFdLCByWzBdKSkKICAgIHJldHVybiBbdHVwbGUocikgZm9yIHIgaW4gaXRlbXNdCgoKZGVmIG1haW4oKToKICAgIGFwID0gYXJncGFyc2UuQXJndW1lbnRQYXJzZXIoZGVzY3JpcHRpb249IuWDj+e0oOe6p+iMg+WbtOajgOa1iyAvIOWMheWbtOebkuaPkOWPliIpCiAgICBhcC5hZGRfYXJndW1lbnQoInBhdGgiLCBoZWxwPSJQTkcg5paH5Lu26Lev5b6EIikKICAgIGFwLmFkZF9hcmd1bWVudCgiLS15IiwgdHlwZT1pbnQsIGRlZmF1bHQ9Tm9uZSwgaGVscD0i5Y2V6KGM5omr5o+P77yIUE5HIOWdkOagh++8iSIpCiAgICBhcC5hZGRfYXJndW1lbnQoIi0teS1yYW5nZSIsIGRlZmF1bHQ9Tm9uZSwgbWV0YXZhcj0iQSxCIiwKICAgICAgICAgICAgICAgICAgICBoZWxwPSLlpJrooYzmiavmj4/ljLrpl7TvvIzlpoIgMTAwLDIwMCIpCiAgICBhcC5hZGRfYXJndW1lbnQoIi0tYm94ZXMiLCBhY3Rpb249InN0b3JlX3RydWUiLCBoZWxwPSLlhajlm77ljIXlm7Tnm5IiKQogICAgYXAuYWRkX2FyZ3VtZW50KCItLW1lcmdlIiwgdHlwZT1pbnQsIGRlZmF1bHQ9MTIsCiAgICAgICAgICAgICAgICAgICAgaGVscD0i5ZCI5bm255u46LedIDxOIHB4IOeahOWMheWbtOebku+8jOm7mOiupCAxMu+8jDAg6KGo56S65LiN5ZCI5bm2IikKICAgIGFwLmFkZF9hcmd1bWVudCgiLS1tb2RlIiwgY2hvaWNlcz1bImJyaWdodCIsICJkYXJrIl0sIGRlZmF1bHQ9ImJyaWdodCIsCiAgICAgICAgICAgICAgICAgICAgaGVscD0iYnJpZ2h0PeaJvuS6ruWDj+e0oO+8iOa3seW6le+8iS8gZGFyaz3mib7mmpflg4/ntKDvvIjmtYXlupXvvIkiKQogICAgYXAuYWRkX2FyZ3VtZW50KCItLWNvbG9yIiwgZGVmYXVsdD1Ob25lLCBoZWxwPSLnm67moIfpopzoibIgI1JSR0dCQu+8iOS8mOWFiOS6jiAtLW1vZGXvvIkiKQogICAgYXAuYWRkX2FyZ3VtZW50KCItLXRvbCIsIHR5cGU9aW50LCBkZWZhdWx0PTQwLCBoZWxwPSLpopzoibLlrrnlt67vvIzpu5jorqQgNDAiKQogICAgYXAuYWRkX2FyZ3VtZW50KCItLXRocmVzaCIsIHR5cGU9aW50LCBkZWZhdWx0PTE0MCwKICAgICAgICAgICAgICAgICAgICBoZWxwPSLkuq7luqbpmIjlgLzvvJpicmlnaHQg5YOP57Sg5YC8PnRocmVzaO+8m2Rhcmsg5YOP57Sg5YC8PHRocmVzaCIpCiAgICBhcC5hZGRfYXJndW1lbnQoIi0tc3ZnLXdpZHRoIiwgdHlwZT1mbG9hdCwgZGVmYXVsdD0wLCBoZWxwPSJTVkcgdmlld0JveCDlrr3luqYiKQogICAgYXAuYWRkX2FyZ3VtZW50KCItLXN2Zy1oZWlnaHQiLCB0eXBlPWZsb2F0LCBkZWZhdWx0PTAsIGhlbHA9IlNWRyB2aWV3Qm94IOmrmOW6piIpCiAgICBhcC5hZGRfYXJndW1lbnQoIi0tbWluLWFyZWEiLCB0eXBlPWludCwgZGVmYXVsdD00MCwgaGVscD0i5YyF5Zu055uS5pyA5bCP6Z2i56evIHB4wrIiKQogICAgYXJncyA9IGFwLnBhcnNlX2FyZ3MoKQoKICAgIG1vZGVzID0gW2FyZ3MueSBpcyBub3QgTm9uZSwgYXJncy55X3JhbmdlIGlzIG5vdCBOb25lLCBhcmdzLmJveGVzXQogICAgaWYgc3VtKG1vZGVzKSAhPSAxOgogICAgICAgIGFwLmVycm9yKCLor7fkuJTku4Xor7fmjIflrprkuIDnp43mqKHlvI/vvJotLXkgLyAtLXktcmFuZ2UgLyAtLWJveGVzIikKCiAgICBpbSA9IEltYWdlLm9wZW4oYXJncy5wYXRoKQogICAgaW1fcmdiID0gaW0uY29udmVydCgiUkdCIikKICAgIGltX2wgPSBpbS5jb252ZXJ0KCJMIikKICAgIHcsIGggPSBpbS5zaXplCgogICAgY29sb3IgPSBwYXJzZV9oZXgoYXJncy5jb2xvcikgaWYgYXJncy5jb2xvciBlbHNlIE5vbmUKICAgIHN4ID0gdyAvIGFyZ3Muc3ZnX3dpZHRoIGlmIGFyZ3Muc3ZnX3dpZHRoIGVsc2UgMS4wCiAgICBzeSA9IGggLyBhcmdzLnN2Z19oZWlnaHQgaWYgYXJncy5zdmdfaGVpZ2h0IGVsc2UgMS4wCgogICAgZGVmIHN2Z19tYXAoeCwgeSk6CiAgICAgICAgcyA9IGYi4oaSIFNWRyB4PXt4IC8gc3g6LjBmfSIKICAgICAgICBpZiBhcmdzLnN2Z19oZWlnaHQ6CiAgICAgICAgICAgIHMgKz0gZiIgeT17eSAvIHN5Oi4wZn0iCiAgICAgICAgcmV0dXJuIHMKCiAgICB0YXJnZXQgPSAoImNvbG9yICIgKyAoYXJncy5jb2xvciBvciAiIikpIGlmIGNvbG9yIGVsc2UgYXJncy5tb2RlCiAgICBwcmludChmIiMge2FyZ3MucGF0aH0gICh7d314e2h9KSAgdGFyZ2V0PXt0YXJnZXR9IikKCiAgICBpZiBhcmdzLnkgaXMgbm90IE5vbmU6CiAgICAgICAgaWYgbm90ICgwIDw9IGFyZ3MueSA8IGgpOgogICAgICAgICAgICBzeXMuZXhpdChmIumUmeivr++8mnk9e2FyZ3MueX0g6LaF5Ye65Zu+54mH6auY5bqmIHtofSIpCiAgICAgICAgbWFzayA9IGJ1aWxkX21hc2soaW1fcmdiLCBpbV9sLCB3LCBoLCBhcmdzLm1vZGUsIGFyZ3MudGhyZXNoLCBjb2xvciwgYXJncy50b2wpCiAgICAgICAgc2VncyA9IHJvd19zZWdtZW50cyhtYXNrLCB3LCBhcmdzLnkpCiAgICAgICAgaWYgbm90IHNlZ3M6CiAgICAgICAgICAgIHByaW50KGYieT17YXJncy55fTog5peg55uu5qCH5YOP57SgIikKICAgICAgICAgICAgcmV0dXJuCiAgICAgICAgdG90YWwgPSBzdW0oYiAtIGEgKyAxIGZvciBhLCBiIGluIHNlZ3MpCiAgICAgICAgcHJpbnQoZiJ5PXthcmdzLnl9OiDlhbEge3RvdGFsfSDkuKrnm67moIflg4/ntKAsIHtsZW4oc2Vncyl9IOautSIpCiAgICAgICAgZm9yIGksIChhLCBiKSBpbiBlbnVtZXJhdGUoc2Vncyk6CiAgICAgICAgICAgIGxpbmUgPSBmIiAg5q61e2l9OiBQTkcgeD17YX0te2J9ICjlrr0ge2IgLSBhfXB4KSIKICAgICAgICAgICAgaWYgYXJncy5zdmdfd2lkdGg6CiAgICAgICAgICAgICAgICBsaW5lICs9IGYiICDihpIgU1ZHIHg9e2EgLyBzeDouMGZ9LXtiIC8gc3g6LjBmfSIKICAgICAgICAgICAgcHJpbnQobGluZSkKICAgICAgICByZXR1cm4KCiAgICBpZiBhcmdzLnlfcmFuZ2UgaXMgbm90IE5vbmU6CiAgICAgICAgdHJ5OgogICAgICAgICAgICB5MCwgeTEgPSAoaW50KHYpIGZvciB2IGluIGFyZ3MueV9yYW5nZS5zcGxpdCgiLCIpKQogICAgICAgIGV4Y2VwdCBWYWx1ZUVycm9yOgogICAgICAgICAgICBzeXMuZXhpdCgi6ZSZ6K+v77yaLS15LXJhbmdlIOagvOW8j+W6lOS4uiBBLEIiKQogICAgICAgIGlmIHkwID4geTE6CiAgICAgICAgICAgIHkwLCB5MSA9IHkxLCB5MAogICAgICAgIGlmIHkwIDwgMCBvciB5MSA+PSBoOgogICAgICAgICAgICBzeXMuZXhpdChmIumUmeivr++8mnktcmFuZ2Uge3kwfS17eTF9IOi2heWHuuWbvueJh+mrmOW6piB7aH0iKQogICAgICAgIG1hc2sgPSBidWlsZF9tYXNrKGltX3JnYiwgaW1fbCwgdywgaCwgYXJncy5tb2RlLCBhcmdzLnRocmVzaCwgY29sb3IsIGFyZ3MudG9sKQogICAgICAgIGFsbF9oaXRzID0gc2V0KCkKICAgICAgICBoaXRfcm93cyA9IDAKICAgICAgICBmb3IgeSBpbiByYW5nZSh5MCwgeTEgKyAxKToKICAgICAgICAgICAgc2VncyA9IHJvd19zZWdtZW50cyhtYXNrLCB3LCB5KQogICAgICAgICAgICBpZiBzZWdzOgogICAgICAgICAgICAgICAgaGl0X3Jvd3MgKz0gMQogICAgICAgICAgICAgICAgZm9yIGEsIGIgaW4gc2VnczoKICAgICAgICAgICAgICAgICAgICBhbGxfaGl0cy51cGRhdGUocmFuZ2UoYSwgYiArIDEpKQogICAgICAgIGlmIG5vdCBhbGxfaGl0czoKICAgICAgICAgICAgcHJpbnQoZiJ5LXJhbmdlIHt5MH0te3kxfTog5peg55uu5qCH5YOP57SgIikKICAgICAgICAgICAgcmV0dXJuCiAgICAgICAgeG1pbiwgeG1heCA9IG1pbihhbGxfaGl0cyksIG1heChhbGxfaGl0cykKICAgICAgICBwcmludChmInktcmFuZ2Uge3kwfS17eTF9OiB7aGl0X3Jvd3N9IOihjOWQq+ebruagh+WDj+e0oCwg6IGU5ZCIIHgg6IyD5Zu0IHt4bWlufS17eG1heH0iKQogICAgICAgIGlmIGFyZ3Muc3ZnX3dpZHRoOgogICAgICAgICAgICBwcmludChmIiAg4oaSIFNWRyB4PXt4bWluIC8gc3g6LjBmfS17eG1heCAvIHN4Oi4wZn0iKQogICAgICAgIHJldHVybgoKICAgICMgLS1ib3hlcwogICAgbWFzayA9IGJ1aWxkX21hc2soaW1fcmdiLCBpbV9sLCB3LCBoLCBhcmdzLm1vZGUsIGFyZ3MudGhyZXNoLCBjb2xvciwgYXJncy50b2wpCiAgICBib3hlcyA9IGNvbm5lY3RlZF9ib3hlcyhtYXNrLCB3LCBoLCBhcmdzLm1pbl9hcmVhKQogICAgYm94ZXMgPSBtZXJnZV9ib3hlcyhib3hlcywgYXJncy5tZXJnZSkKICAgIGlmIG5vdCBib3hlczoKICAgICAgICBwcmludCgi5peg56ym5ZCI5pyA5bCP6Z2i56ev55qE5YyF5Zu055uSIikKICAgICAgICByZXR1cm4KICAgIHByaW50KGYi5YWxIHtsZW4oYm94ZXMpfSDkuKrljIXlm7Tnm5LvvIjmnIDlsI/pnaLnp68ge2FyZ3MubWluX2FyZWF9cHjCsu+8jOWQiOW5tumYiOWAvCB7YXJncy5tZXJnZX1weO+8iSIpCiAgICBmb3IgaSwgKHgwLCB5MCwgeDEsIHkxLCBhcmVhKSBpbiBlbnVtZXJhdGUoYm94ZXMpOgogICAgICAgIGJ3LCBiaCA9IHgxIC0geDAgKyAxLCB5MSAtIHkwICsgMQogICAgICAgIGxpbmUgPSBmIiAg5qGGe2l9OiBQTkcgeD17eDB9LXt4MX0geT17eTB9LXt5MX0gKHtid314e2JofSwg6Z2i56evIHthcmVhfSkiCiAgICAgICAgaWYgYXJncy5zdmdfd2lkdGg6CiAgICAgICAgICAgIGxpbmUgKz0gZiIgIHtzdmdfbWFwKHgwLCB5MCl9IgogICAgICAgIHByaW50KGxpbmUpCgoKaWYgX19uYW1lX18gPT0gIl9fbWFpbl9fIjoKICAgIG1haW4oKQo=
+#!/usr/bin/env python3
+"""像素级验证脚本：定位元素位置、检测重叠/溢出、提取内容包围盒。
+
+三种模式（三选一）：
+  1. 单行扫描（--y Y）           ：扫描指定行，报告目标像素的 x 分段
+  2. 多行扫描（--y-range A,B）   ：扫描纵向区间，报告目标像素的联合 x 范围
+  3. 包围盒（--boxes）           ：全图提取目标像素的连通包围盒（--merge 合并成区域）
+
+目标定义（三选一）：
+  --mode bright   亮像素（深色背景上的文字/图形），阈值：像素值 > --thresh
+  --mode dark     暗像素（浅色背景上的内容），阈值：像素值 < --thresh
+  --color #RRGGBB 接近某颜色的像素（精确找某个元素），配合 --tol
+
+用法：
+    python3 verify.py assets/cover.png --y 243 --mode bright --svg-width 900
+    python3 verify.py assets/card.png --boxes --mode dark --svg-width 900 --svg-height 520
+    python3 verify.py assets/cover.png --color "#F5A623" --boxes --svg-width 900
+
+参数：
+    --y Y           单行扫描（PNG 坐标，从 0 开始）
+    --y-range A,B   多行扫描区间（含端点）
+    --boxes         全图包围盒
+    --merge N       合并相距 <N px 的包围盒（默认 12，0 表示不合并；文字逐字拆开时很有用）
+    --mode          bright / dark（与 --color 互斥）
+    --color HEX     目标颜色（#RGB 或 #RRGGBB）
+    --tol N         颜色容差（RGB 欧氏距离），默认 40
+    --thresh T      亮度阈值，默认 140
+    --svg-width W   SVG viewBox 宽度（输出 SVG x 坐标）
+    --svg-height H  SVG viewBox 高度（输出 SVG y 坐标）
+    --min-area A    包围盒最小面积（px²），默认 40，过滤噪点
+"""
+import argparse
+import sys
+
+try:
+    from PIL import Image
+except ImportError:
+    sys.exit("需要 Pillow：pip install Pillow")
+
+
+def parse_hex(color):
+    color = color.strip().lstrip("#")
+    if len(color) == 3:
+        color = "".join(c * 2 for c in color)
+    if len(color) != 6:
+        sys.exit(f"无法解析颜色: {color!r}（需要 #RGB 或 #RRGGBB）")
+    return tuple(int(color[i:i + 2], 16) for i in (0, 2, 4))
+
+
+def build_mask(im_rgb, im_l, w, h, mode, thresh, color, tol):
+    mask = bytearray(w * h)
+    for y in range(h):
+        for x in range(w):
+            if color is not None:
+                r, g, b = im_rgb.getpixel((x, y))
+                tr, tg, tb = color
+                hit = ((r - tr) ** 2 + (g - tg) ** 2 + (b - tb) ** 2) ** 0.5 <= tol
+            elif mode == "bright":
+                hit = im_l.getpixel((x, y)) > thresh
+            else:  # dark
+                hit = im_l.getpixel((x, y)) < thresh
+            if hit:
+                mask[y * w + x] = 1
+    return mask
+
+
+def row_segments(mask, w, y, gap=10):
+    hits = [x for x in range(w) if mask[y * w + x]]
+    if not hits:
+        return []
+    segs = []
+    start = prev = hits[0]
+    for x in hits[1:]:
+        if x - prev > gap:
+            segs.append((start, prev))
+            start = x
+        prev = x
+    segs.append((start, prev))
+    return segs
+
+
+def connected_boxes(mask, w, h, min_area):
+    visited = bytearray(w * h)
+    boxes = []
+    for i in range(w * h):
+        if mask[i] and not visited[i]:
+            stack = [i]
+            visited[i] = 1
+            xs = []
+            ys = []
+            while stack:
+                p = stack.pop()
+                px = p % w
+                py = p // w
+                xs.append(px)
+                ys.append(py)
+                for dy in (-1, 0, 1):
+                    for dx in (-1, 0, 1):
+                        if dx == 0 and dy == 0:
+                            continue
+                        nx, ny = px + dx, py + dy
+                        if 0 <= nx < w and 0 <= ny < h:
+                            ni = ny * w + nx
+                            if mask[ni] and not visited[ni]:
+                                visited[ni] = 1
+                                stack.append(ni)
+            area = len(xs)
+            if area >= min_area:
+                boxes.append([min(xs), min(ys), max(xs), max(ys), area])
+    return boxes
+
+
+def merge_boxes(boxes, gap):
+    """合并相距 <gap px 的包围盒（按各向扩展 gap/2 后判断重叠）。"""
+    if gap <= 0 or len(boxes) < 2:
+        return [tuple(b) for b in boxes]
+    items = [list(b) for b in boxes]  # [x0, y0, x1, y1, area]
+    pad = gap / 2.0
+    merged = True
+    while merged:
+        merged = False
+        i = 0
+        while i < len(items):
+            j = i + 1
+            while j < len(items):
+                a, b = items[i], items[j]
+                if not (a[2] + pad < b[0] or b[2] + pad < a[0] or
+                        a[3] + pad < b[1] or b[3] + pad < a[1]):
+                    items[i] = [min(a[0], b[0]), min(a[1], b[1]),
+                                max(a[2], b[2]), max(a[3], b[3]), a[4] + b[4]]
+                    del items[j]
+                    merged = True
+                else:
+                    j += 1
+            i += 1
+    items.sort(key=lambda r: (r[1], r[0]))
+    return [tuple(r) for r in items]
+
+
+def main():
+    ap = argparse.ArgumentParser(description="像素级范围检测 / 包围盒提取")
+    ap.add_argument("path", help="PNG 文件路径")
+    ap.add_argument("--y", type=int, default=None, help="单行扫描（PNG 坐标）")
+    ap.add_argument("--y-range", default=None, metavar="A,B",
+                    help="多行扫描区间，如 100,200")
+    ap.add_argument("--boxes", action="store_true", help="全图包围盒")
+    ap.add_argument("--merge", type=int, default=12,
+                    help="合并相距 <N px 的包围盒，默认 12，0 表示不合并")
+    ap.add_argument("--mode", choices=["bright", "dark"], default="bright",
+                    help="bright=找亮像素（深底）/ dark=找暗像素（浅底）")
+    ap.add_argument("--color", default=None, help="目标颜色 #RRGGBB（优先于 --mode）")
+    ap.add_argument("--tol", type=int, default=40, help="颜色容差，默认 40")
+    ap.add_argument("--thresh", type=int, default=140,
+                    help="亮度阈值：bright 像素值>thresh；dark 像素值<thresh")
+    ap.add_argument("--svg-width", type=float, default=0, help="SVG viewBox 宽度")
+    ap.add_argument("--svg-height", type=float, default=0, help="SVG viewBox 高度")
+    ap.add_argument("--min-area", type=int, default=40, help="包围盒最小面积 px²")
+    args = ap.parse_args()
+
+    modes = [args.y is not None, args.y_range is not None, args.boxes]
+    if sum(modes) != 1:
+        ap.error("请且仅请指定一种模式：--y / --y-range / --boxes")
+
+    im = Image.open(args.path)
+    im_rgb = im.convert("RGB")
+    im_l = im.convert("L")
+    w, h = im.size
+
+    color = parse_hex(args.color) if args.color else None
+    sx = w / args.svg_width if args.svg_width else 1.0
+    sy = h / args.svg_height if args.svg_height else 1.0
+
+    def svg_map(x, y):
+        s = f"→ SVG x={x / sx:.0f}"
+        if args.svg_height:
+            s += f" y={y / sy:.0f}"
+        return s
+
+    target = ("color " + (args.color or "")) if color else args.mode
+    print(f"# {args.path}  ({w}x{h})  target={target}")
+
+    if args.y is not None:
+        if not (0 <= args.y < h):
+            sys.exit(f"错误：y={args.y} 超出图片高度 {h}")
+        mask = build_mask(im_rgb, im_l, w, h, args.mode, args.thresh, color, args.tol)
+        segs = row_segments(mask, w, args.y)
+        if not segs:
+            print(f"y={args.y}: 无目标像素")
+            return
+        total = sum(b - a + 1 for a, b in segs)
+        print(f"y={args.y}: 共 {total} 个目标像素, {len(segs)} 段")
+        for i, (a, b) in enumerate(segs):
+            line = f"  段{i}: PNG x={a}-{b} (宽 {b - a}px)"
+            if args.svg_width:
+                line += f"  → SVG x={a / sx:.0f}-{b / sx:.0f}"
+            print(line)
+        return
+
+    if args.y_range is not None:
+        try:
+            y0, y1 = (int(v) for v in args.y_range.split(","))
+        except ValueError:
+            sys.exit("错误：--y-range 格式应为 A,B")
+        if y0 > y1:
+            y0, y1 = y1, y0
+        if y0 < 0 or y1 >= h:
+            sys.exit(f"错误：y-range {y0}-{y1} 超出图片高度 {h}")
+        mask = build_mask(im_rgb, im_l, w, h, args.mode, args.thresh, color, args.tol)
+        all_hits = set()
+        hit_rows = 0
+        for y in range(y0, y1 + 1):
+            segs = row_segments(mask, w, y)
+            if segs:
+                hit_rows += 1
+                for a, b in segs:
+                    all_hits.update(range(a, b + 1))
+        if not all_hits:
+            print(f"y-range {y0}-{y1}: 无目标像素")
+            return
+        xmin, xmax = min(all_hits), max(all_hits)
+        print(f"y-range {y0}-{y1}: {hit_rows} 行含目标像素, 联合 x 范围 {xmin}-{xmax}")
+        if args.svg_width:
+            print(f"  → SVG x={xmin / sx:.0f}-{xmax / sx:.0f}")
+        return
+
+    # --boxes
+    mask = build_mask(im_rgb, im_l, w, h, args.mode, args.thresh, color, args.tol)
+    boxes = connected_boxes(mask, w, h, args.min_area)
+    boxes = merge_boxes(boxes, args.merge)
+    if not boxes:
+        print("无符合最小面积的包围盒")
+        return
+    print(f"共 {len(boxes)} 个包围盒（最小面积 {args.min_area}px²，合并阈值 {args.merge}px）")
+    for i, (x0, y0, x1, y1, area) in enumerate(boxes):
+        bw, bh = x1 - x0 + 1, y1 - y0 + 1
+        line = f"  框{i}: PNG x={x0}-{x1} y={y0}-{y1} ({bw}x{bh}, 面积 {area})"
+        if args.svg_width:
+            line += f"  {svg_map(x0, y0)}"
+        print(line)
+
+
+if __name__ == "__main__":
+    main()

@@ -1,1 +1,36 @@
-PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI5MDAiIGhlaWdodD0iMzgzIiB2aWV3Qm94PSIwIDAgOTAwIDM4MyI+CiAgPCEtLQogICAg5YWs5LyX5Y+35bCB6Z2i5qih5p2/77yIMi4zNTox77yJCiAgICDkvb/nlKjliY3lv4XlgZrvvJoKICAgICAgMS4gZmMtbWF0Y2gg6aqM6K+B5a2X5L2T77yM5oqK5LiL6Z2iIGZvbnQtZmFtaWx5IOaNouaIkOmqjOivgei/h+eahOS4reaWh+Wtl+S9k++8iOWLv+WGmeS4jeWtmOWcqOeahOWtl+S9k+WQje+8iQogICAgICAyLiBweXRob24zIHNjcmlwdHMvY2hlY2sucHkg5pys5paH5Lu277yI55WZ55m96ZiI5YC8IDQwcHjvvInpqoznrpfmloflrZflrr3luqYv5rqi5Ye6L2Vtb2ppCiAgICDorr7orqHop4TliJnvvIjop4EgU0tJTEwubWTvvInvvJoKICAgICAgLSDlm5vlkajnlZnnmb0g4omlNDBweO+8m+agh+mimOWMuiAvIOW+veeroOWMuiAvIOW6lemDqOe7k+iuuuadoeWIhuWMuueLrOeri++8jOS4jeWFseeUqOmrmOW6puW4pgogICAgICAtIOaWh+Wtl+aUvue6r+iJsuiDjOaZr++8m+iDtuWbiuahhuWuvSA9IOaWh+Wtl+S8sOWuvSArIOW3puWPs+WQhCDiiaUxNXB4CiAgICAgIC0g5pegIGVtb2pp77yIcnN2ZyDkvJrmuLLmn5PmiJDmlrnlnZfvvIkKICAgICAgLSDliIbkuqvml7bmjIkgMToxIOWxheS4reijgeWJqu+8iOW3puWPs+WQhOijgee6piAyNThweO+8ie+8jOaguOW/g+S/oeaBr+aUvuS4remXtCAxOjEg5Yy677yIeOKJiDI1OH42NDLvvIkKICAtLT4KICA8ZGVmcz4KICAgIDxzdHlsZT4KICAgICAgdGV4dCB7IGZvbnQtZmFtaWx5OiAiUGluZ0ZhbmcgU0MiLCAiSGlyYWdpbm8gU2FucyBHQiIsICJOb3RvIFNhbnMgQ0pLIFNDIiwgIlNvdXJjZSBIYW4gU2FucyBDTiIsICJNaWNyb3NvZnQgWWFIZWkiLCBzYW5zLXNlcmlmOyB9CiAgICA8L3N0eWxlPgogIDwvZGVmcz4KCiAgPCEtLSDmt7HoibLkuLvog4zmma8gLS0+CiAgPHJlY3Qgd2lkdGg9IjkwMCIgaGVpZ2h0PSIzODMiIGZpbGw9IiMxNjIyM2EiLz4KCiAgPCEtLSDlupXpg6jnu5PorrrmnaHvvIjni6znq4vpq5jluqbluKbvvIkgLS0+CiAgPHJlY3QgeD0iMCIgeT0iMzAzIiB3aWR0aD0iOTAwIiBoZWlnaHQ9IjgwIiBmaWxsPSIjMTQxZjM2Ii8+CiAgPHJlY3QgeD0iMCIgeT0iMzAzIiB3aWR0aD0iMTUwIiBoZWlnaHQ9IjgwIiBmaWxsPSIjMUE2RkM0Ii8+CgogIDwhLS0g5qCH6aKY5Yy6IC0tPgogIDx0ZXh0IHg9IjQwIiB5PSIxMTgiIGZvbnQtc2l6ZT0iNDYiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjZmZmZmZmIj7ov5nph4zmmK/kuLvmoIfpopjvvIzkuIDlj6Xor53orrLmuIU8L3RleHQ+CiAgPHRleHQgeD0iNDAiIHk9IjE2OCIgZm9udC1zaXplPSIyNiIgZmlsbD0iIzRFQThFOCI+5Ymv5qCH6aKYIC8g5pGY6KaB77ya6KGl5LiA5Y+l5YWz6ZSu5L+h5oGvPC90ZXh0PgoKICA8IS0tIOW+veeroO+8iOiDtuWbiu+8ie+8muahhuWuvSA9IOS8sOWuvSArIOS4pOS+p+S9memHjyAtLT4KICA8cmVjdCB4PSI0MCIgeT0iMjA1IiByeD0iMjMiIHdpZHRoPSIyMzAiIGhlaWdodD0iNDYiIGZpbGw9IiNGNUE2MjMiLz4KICA8dGV4dCB4PSIxNTUiIHk9IjIzNiIgZm9udC1zaXplPSIyNCIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiMxNjIyM2EiIHRleHQtYW5jaG9yPSJtaWRkbGUiPua3seW6puWIhuaekDwvdGV4dD4KCiAgPCEtLSDlupXpg6jnu5PorrrmloflrZfvvIjmlL7lnKjlupXpg6jnuq/oibLmnaHkuIrvvIkgLS0+CiAgPHRleHQgeD0iMTgwIiB5PSIzNTIiIGZvbnQtc2l6ZT0iMjYiIGZpbGw9IiNmZmZmZmYiPuS4gOWPpee7k+iuuiAvIOihjOWKqOWPt+WPrDwvdGV4dD4KPC9zdmc+Cg==
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="383" viewBox="0 0 900 383">
+  <!--
+    公众号封面模板（2.35:1）
+    使用前必做：
+      1. fc-match 验证字体，把下面 font-family 换成验证过的中文字体（勿写不存在的字体名）
+      2. python3 scripts/check.py 本文件（留白阈值 40px）验算文字宽度/溢出/emoji
+    设计规则（见 SKILL.md）：
+      - 四周留白 ≥40px；标题区 / 徽章区 / 底部结论条分区独立，不共用高度带
+      - 文字放纯色背景；胶囊框宽 = 文字估宽 + 左右各 ≥15px
+      - 无 emoji（rsvg 会渲染成方块）
+      - 分享时按 1:1 居中裁剪（左右各裁约 258px），核心信息放中间 1:1 区（x≈258~642）
+  -->
+  <defs>
+    <style>
+      text { font-family: "PingFang SC", "Hiragino Sans GB", "Noto Sans CJK SC", "Source Han Sans CN", "Microsoft YaHei", sans-serif; }
+    </style>
+  </defs>
+
+  <!-- 深色主背景 -->
+  <rect width="900" height="383" fill="#16223a"/>
+
+  <!-- 底部结论条（独立高度带） -->
+  <rect x="0" y="303" width="900" height="80" fill="#141f36"/>
+  <rect x="0" y="303" width="150" height="80" fill="#1A6FC4"/>
+
+  <!-- 标题区 -->
+  <text x="40" y="118" font-size="46" font-weight="bold" fill="#ffffff">这里是主标题，一句话讲清</text>
+  <text x="40" y="168" font-size="26" fill="#4EA8E8">副标题 / 摘要：补一句关键信息</text>
+
+  <!-- 徽章（胶囊）：框宽 = 估宽 + 两侧余量 -->
+  <rect x="40" y="205" rx="23" width="230" height="46" fill="#F5A623"/>
+  <text x="155" y="236" font-size="24" font-weight="bold" fill="#16223a" text-anchor="middle">深度分析</text>
+
+  <!-- 底部结论文字（放在底部纯色条上） -->
+  <text x="180" y="352" font-size="26" fill="#ffffff">一句结论 / 行动号召</text>
+</svg>

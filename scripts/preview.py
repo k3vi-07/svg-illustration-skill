@@ -1,1 +1,117 @@
-IyEvdXNyL2Jpbi9lbnYgcHl0aG9uMwoiIiJQTkcg4oaSIEFTQ0lJIOWPr+inhuWMlumihOiniOiEmuacrO+8iEFJIOaXoOazleebtOaOpeeci+WbvuaXtueahCLnnLznnZsi77yJ44CCCgrnlKjpgJTvvJrmioogUE5HIOmZjemHh+agt+aIkCBBU0NJSSDlrZfnrKbnlLvvvIzku47mlofmnKzovpPlh7rkuK0i55yL5YiwIuaVtOS9k+W4g+WxgO+8jArlj5HnjrDlhYPntKDph43lj6DjgIHplJnkvY3jgIHliIbljLrmt7fkubHnrYnpl67popjjgIIKCueUqOazle+8mgogICAgcHl0aG9uMyBwcmV2aWV3LnB5IGFzc2V0cy9jb3Zlci5wbmcKICAgIHB5dGhvbjMgcHJldmlldy5weSBhc3NldHMvY2FyZC5wbmcgLS13aWR0aCAxMjAgLS1hdXRvLWNvbnRyYXN0CiAgICBweXRob24zIHByZXZpZXcucHkgYXNzZXRzL2NvdmVyLnBuZyAtLWNvbG9yICIjRjVBNjIzIiAgICMg6auY5Lqu5p+Q5Liq6aKc6Imy5omA5Zyo5L2N572uCgrlj4LmlbDvvJoKICAgIC0td2lkdGggVyAgICAgICAg6L6T5Ye65a695bqm77yI5a2X56ym5pWw77yJ77yM6buY6K6kIDE1MAogICAgLS1hc3BlY3QgUiAgICAgICDnu4jnq6/lrZfnrKbpq5jlrr3mr5TmoKHmraPvvIjlrZfnrKbpq5gv5a6977yJ77yM6buY6K6kIDAuNQogICAgLS1pbnZlcnQgICAgICAgICDlj43ovazmmI7mmpcKICAgIC0tYXV0by1jb250cmFzdCAg5oyJ5pW05Zu+5Lqu5bqm6IyD5Zu05ouJ5Ly477yI5L2O5a+55q+U5Zu+5pu05riF5pmw77yJCiAgICAtLWNvbG9yIEhFWCAgICAgIOmrmOS6ruebruagh+minOiJsu+8iCNSR0IgLyAjUlJHR0JC77yJ77yM5YW25L2Z5Y+Y5pqXCiAgICAtLXRvbCBOICAgICAgICAgIOminOiJsuWuueW3ru+8iFJHQiDmrKfmsI/ot53nprvvvInvvIzpu5jorqQgNDAKIiIiCmltcG9ydCBhcmdwYXJzZQppbXBvcnQgc3lzCgp0cnk6CiAgICBmcm9tIFBJTCBpbXBvcnQgSW1hZ2UKZXhjZXB0IEltcG9ydEVycm9yOgogICAgc3lzLmV4aXQoIumcgOimgSBQaWxsb3fvvJpwaXAgaW5zdGFsbCBQaWxsb3ciKQoKQ0hBUlMgPSAiIC46LT0rKiMlQCIKCgpkZWYgcGFyc2VfaGV4KGNvbG9yKToKICAgIGNvbG9yID0gY29sb3Iuc3RyaXAoKS5sc3RyaXAoIiMiKQogICAgaWYgbGVuKGNvbG9yKSA9PSAzOgogICAgICAgIGNvbG9yID0gIiIuam9pbihjICogMiBmb3IgYyBpbiBjb2xvcikKICAgIGlmIGxlbihjb2xvcikgIT0gNjoKICAgICAgICBzeXMuZXhpdChmIuaXoOazleino+aekOminOiJsjoge2NvbG9yIXJ977yI6ZyA6KaBICNSR0Ig5oiWICNSUkdHQkLvvIkiKQogICAgcmV0dXJuIHR1cGxlKGludChjb2xvcltpOmkgKyAyXSwgMTYpIGZvciBpIGluICgwLCAyLCA0KSkKCgpkZWYgbWFpbigpOgogICAgYXAgPSBhcmdwYXJzZS5Bcmd1bWVudFBhcnNlcihkZXNjcmlwdGlvbj0iUE5HIOKGkiBBU0NJSSDpooTop4giKQogICAgYXAuYWRkX2FyZ3VtZW50KCJwYXRoIiwgaGVscD0iUE5HIOaWh+S7tui3r+W+hCIpCiAgICBhcC5hZGRfYXJndW1lbnQoIi0td2lkdGgiLCB0eXBlPWludCwgZGVmYXVsdD0xNTAsIGhlbHA9Iui+k+WHuuWuveW6pu+8iOWtl+espuaVsO+8iSIpCiAgICBhcC5hZGRfYXJndW1lbnQoIi0tYXNwZWN0IiwgdHlwZT1mbG9hdCwgZGVmYXVsdD0wLjUsCiAgICAgICAgICAgICAgICAgICAgaGVscD0i57uI56uv5a2X56ym6auY5a695q+U5qCh5q2j77yM6buY6K6kIDAuNSIpCiAgICBhcC5hZGRfYXJndW1lbnQoIi0taW52ZXJ0IiwgYWN0aW9uPSJzdG9yZV90cnVlIiwgaGVscD0i5Y+N6L2s5piO5pqXIikKICAgIGFwLmFkZF9hcmd1bWVudCgiLS1hdXRvLWNvbnRyYXN0IiwgYWN0aW9uPSJzdG9yZV90cnVlIiwgaGVscD0i5oyJ5pW05Zu+5Lqu5bqm6IyD5Zu05ouJ5Ly4IikKICAgIGFwLmFkZF9hcmd1bWVudCgiLS1jb2xvciIsIGRlZmF1bHQ9Tm9uZSwgaGVscD0i6auY5Lqu55uu5qCH6aKc6ImyICNSUkdHQkIiKQogICAgYXAuYWRkX2FyZ3VtZW50KCItLXRvbCIsIHR5cGU9aW50LCBkZWZhdWx0PTQwLCBoZWxwPSLpopzoibLlrrnlt67vvIzpu5jorqQgNDAiKQogICAgYXJncyA9IGFwLnBhcnNlX2FyZ3MoKQoKICAgIGltID0gSW1hZ2Uub3BlbihhcmdzLnBhdGgpCiAgICByZ2IgPSBpbS5jb252ZXJ0KCJSR0IiKQogICAgZ3JheSA9IGltLmNvbnZlcnQoIkwiKQogICAgdywgaCA9IGdyYXkuc2l6ZQogICAgb3V0X2ggPSBtYXgoMSwgaW50KGFyZ3Mud2lkdGggKiBoIC8gdyAqIGFyZ3MuYXNwZWN0KSkKCiAgICAjIOWdl+WwuuWvuO+8muavj+S4qui+k+WHuuWtl+espuWvueW6lOa6kOWbvumHjOeahOS4gOS4quefqeW9ouWdlwogICAgYncgPSB3IC8gYXJncy53aWR0aAogICAgYmggPSBoIC8gb3V0X2gKCiAgICAjIOS6ruW6puaLieS8uO+8iC0tYXV0by1jb250cmFzdO+8iQogICAgbG8sIGhpID0gMCwgMjU1CiAgICBpZiBhcmdzLmF1dG9fY29udHJhc3Q6CiAgICAgICAgcHggPSBsaXN0KGdyYXkuZ2V0ZGF0YSgpKQogICAgICAgIGxvLCBoaSA9IG1pbihweCksIG1heChweCkKICAgICAgICBpZiBoaSA8PSBsbzoKICAgICAgICAgICAgaGkgPSBsbyArIDEKCiAgICB0YXJnZXQgPSBwYXJzZV9oZXgoYXJncy5jb2xvcikgaWYgYXJncy5jb2xvciBlbHNlIE5vbmUKCiAgICBwcmludChmIiMge2FyZ3MucGF0aH0gICh7d314e2h9KSDihpIge2FyZ3Mud2lkdGh9eHtvdXRfaH0g5a2X56ymIikKICAgIGlmIHRhcmdldDoKICAgICAgICBwcmludChmIiMg6auY5Lqu6aKc6ImyIHthcmdzLmNvbG9yfe+8iOWuueW3riB7YXJncy50b2x977yJ77yMJyMnPeebruagh+iJsu+8jCcuJz3lsJHph4/vvIznqbrnmb095pegIikKICAgIGVsc2U6CiAgICAgICAgcHJpbnQoZiIjIOaYjuaal+mYtuair++8iOaal+KGkuS6ru+8ie+8mntDSEFSU30iICsgKCIgW+WPjei9rF0iIGlmIGFyZ3MuaW52ZXJ0IGVsc2UgIiIpKQoKICAgIGZvciBveSBpbiByYW5nZShvdXRfaCk6CiAgICAgICAgcm93ID0gW10KICAgICAgICBmb3Igb3ggaW4gcmFuZ2UoYXJncy53aWR0aCk6CiAgICAgICAgICAgICMg6YeH5qC35Z2XCiAgICAgICAgICAgIHgwID0gaW50KG94ICogYncpCiAgICAgICAgICAgIHgxID0gbWF4KHgwICsgMSwgaW50KChveCArIDEpICogYncpKQogICAgICAgICAgICB5MCA9IGludChveSAqIGJoKQogICAgICAgICAgICB5MSA9IG1heCh5MCArIDEsIGludCgob3kgKyAxKSAqIGJoKSkKICAgICAgICAgICAgaWYgdGFyZ2V0IGlzIG5vdCBOb25lOgogICAgICAgICAgICAgICAgbWF0Y2ggPSAwCiAgICAgICAgICAgICAgICB0b3RhbCA9IDAKICAgICAgICAgICAgICAgIGZvciB5IGluIHJhbmdlKHkwLCBtaW4oeTEsIGgpKToKICAgICAgICAgICAgICAgICAgICBmb3IgeCBpbiByYW5nZSh4MCwgbWluKHgxLCB3KSk6CiAgICAgICAgICAgICAgICAgICAgICAgIHIsIGcsIGIgPSByZ2IuZ2V0cGl4ZWwoKHgsIHkpKQogICAgICAgICAgICAgICAgICAgICAgICB0ciwgdGcsIHRiID0gdGFyZ2V0CiAgICAgICAgICAgICAgICAgICAgICAgIGQgPSAoKHIgLSB0cikgKiogMiArIChnIC0gdGcpICoqIDIgKyAoYiAtIHRiKSAqKiAyKSAqKiAwLjUKICAgICAgICAgICAgICAgICAgICAgICAgdG90YWwgKz0gMQogICAgICAgICAgICAgICAgICAgICAgICBpZiBkIDw9IGFyZ3MudG9sOgogICAgICAgICAgICAgICAgICAgICAgICAgICAgbWF0Y2ggKz0gMQogICAgICAgICAgICAgICAgZnJhYyA9IG1hdGNoIC8gdG90YWwgaWYgdG90YWwgZWxzZSAwCiAgICAgICAgICAgICAgICByb3cuYXBwZW5kKCIjIiBpZiBmcmFjID49IDAuMTUgZWxzZSAoIisiIGlmIGZyYWMgPj0gMC4wNCBlbHNlICgiLiIgaWYgZnJhYyA+PSAwLjAxIGVsc2UgIiAiKSkpCiAgICAgICAgICAgIGVsc2U6CiAgICAgICAgICAgICAgICBhY2MgPSAwCiAgICAgICAgICAgICAgICBjbnQgPSAwCiAgICAgICAgICAgICAgICBmb3IgeSBpbiByYW5nZSh5MCwgbWluKHkxLCBoKSk6CiAgICAgICAgICAgICAgICAgICAgZm9yIHggaW4gcmFuZ2UoeDAsIG1pbih4MSwgdykpOgogICAgICAgICAgICAgICAgICAgICAgICBhY2MgKz0gZ3JheS5nZXRwaXhlbCgoeCwgeSkpCiAgICAgICAgICAgICAgICAgICAgICAgIGNudCArPSAxCiAgICAgICAgICAgICAgICB2ID0gYWNjIC8gY250IGlmIGNudCBlbHNlIDAKICAgICAgICAgICAgICAgIGlmIGFyZ3MuaW52ZXJ0OgogICAgICAgICAgICAgICAgICAgIHYgPSAyNTUgLSB2CiAgICAgICAgICAgICAgICB2ID0gKHYgLSBsbykgKiAyNTUgLyAoaGkgLSBsbykKICAgICAgICAgICAgICAgIHYgPSBtYXgoMCwgbWluKDI1NSwgdikpCiAgICAgICAgICAgICAgICBpZHggPSBtaW4oOSwgaW50KHYgKiAxMCAvLyAyNTYpKQogICAgICAgICAgICAgICAgcm93LmFwcGVuZChDSEFSU1tpZHhdKQogICAgICAgIHByaW50KCIiLmpvaW4ocm93KSkKCgppZiBfX25hbWVfXyA9PSAiX19tYWluX18iOgogICAgbWFpbigpCg==
+#!/usr/bin/env python3
+"""PNG → ASCII 可视化预览脚本（AI 无法直接看图时的"眼睛"）。
+
+用途：把 PNG 降采样成 ASCII 字符画，从文本输出中"看到"整体布局，
+发现元素重叠、错位、分区混乱等问题。
+
+用法：
+    python3 preview.py assets/cover.png
+    python3 preview.py assets/card.png --width 120 --auto-contrast
+    python3 preview.py assets/cover.png --color "#F5A623"   # 高亮某个颜色所在位置
+
+参数：
+    --width W        输出宽度（字符数），默认 150
+    --aspect R       终端字符高宽比校正（字符高/宽），默认 0.5
+    --invert         反转明暗
+    --auto-contrast  按整图亮度范围拉伸（低对比图更清晰）
+    --color HEX      高亮目标颜色（#RGB / #RRGGBB），其余变暗
+    --tol N          颜色容差（RGB 欧氏距离），默认 40
+"""
+import argparse
+import sys
+
+try:
+    from PIL import Image
+except ImportError:
+    sys.exit("需要 Pillow：pip install Pillow")
+
+CHARS = " .:-=+*#%@"
+
+
+def parse_hex(color):
+    color = color.strip().lstrip("#")
+    if len(color) == 3:
+        color = "".join(c * 2 for c in color)
+    if len(color) != 6:
+        sys.exit(f"无法解析颜色: {color!r}（需要 #RGB 或 #RRGGBB）")
+    return tuple(int(color[i:i + 2], 16) for i in (0, 2, 4))
+
+
+def main():
+    ap = argparse.ArgumentParser(description="PNG → ASCII 预览")
+    ap.add_argument("path", help="PNG 文件路径")
+    ap.add_argument("--width", type=int, default=150, help="输出宽度（字符数）")
+    ap.add_argument("--aspect", type=float, default=0.5,
+                    help="终端字符高宽比校正，默认 0.5")
+    ap.add_argument("--invert", action="store_true", help="反转明暗")
+    ap.add_argument("--auto-contrast", action="store_true", help="按整图亮度范围拉伸")
+    ap.add_argument("--color", default=None, help="高亮目标颜色 #RRGGBB")
+    ap.add_argument("--tol", type=int, default=40, help="颜色容差，默认 40")
+    args = ap.parse_args()
+
+    im = Image.open(args.path)
+    rgb = im.convert("RGB")
+    gray = im.convert("L")
+    w, h = gray.size
+    out_h = max(1, int(args.width * h / w * args.aspect))
+
+    # 块尺寸：每个输出字符对应源图里的一个矩形块
+    bw = w / args.width
+    bh = h / out_h
+
+    # 亮度拉伸（--auto-contrast）
+    lo, hi = 0, 255
+    if args.auto_contrast:
+        px = list(gray.getdata())
+        lo, hi = min(px), max(px)
+        if hi <= lo:
+            hi = lo + 1
+
+    target = parse_hex(args.color) if args.color else None
+
+    print(f"# {args.path}  ({w}x{h}) → {args.width}x{out_h} 字符")
+    if target:
+        print(f"# 高亮颜色 {args.color}（容差 {args.tol}），'#'=目标色，'.'=少量，空白=无")
+    else:
+        print(f"# 明暗阶梯（暗→亮）：{CHARS}" + (" [反转]" if args.invert else ""))
+
+    for oy in range(out_h):
+        row = []
+        for ox in range(args.width):
+            # 采样块
+            x0 = int(ox * bw)
+            x1 = max(x0 + 1, int((ox + 1) * bw))
+            y0 = int(oy * bh)
+            y1 = max(y0 + 1, int((oy + 1) * bh))
+            if target is not None:
+                match = 0
+                total = 0
+                for y in range(y0, min(y1, h)):
+                    for x in range(x0, min(x1, w)):
+                        r, g, b = rgb.getpixel((x, y))
+                        tr, tg, tb = target
+                        d = ((r - tr) ** 2 + (g - tg) ** 2 + (b - tb) ** 2) ** 0.5
+                        total += 1
+                        if d <= args.tol:
+                            match += 1
+                frac = match / total if total else 0
+                row.append("#" if frac >= 0.15 else ("+" if frac >= 0.04 else ("." if frac >= 0.01 else " ")))
+            else:
+                acc = 0
+                cnt = 0
+                for y in range(y0, min(y1, h)):
+                    for x in range(x0, min(x1, w)):
+                        acc += gray.getpixel((x, y))
+                        cnt += 1
+                v = acc / cnt if cnt else 0
+                if args.invert:
+                    v = 255 - v
+                v = (v - lo) * 255 / (hi - lo)
+                v = max(0, min(255, v))
+                idx = min(9, int(v * 10 // 256))
+                row.append(CHARS[idx])
+        print("".join(row))
+
+
+if __name__ == "__main__":
+    main()

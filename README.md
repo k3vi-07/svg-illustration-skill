@@ -1,1 +1,157 @@
-IyBzdmctaWxsdXN0cmF0aW9uLXNraWxsCgrnlKggU1ZHIOiuvuiuoSoq5L+h5oGv5Zu+IC8g6YWN5Zu+IC8g5bCB6Z2iIC8g6YeR5Y+l5Y2hKirlubblr7zlh7ogUE5HIOeahCBBZ2VudCDmioDog73ljIUg4oCU4oCUIOmdouWQkSBBSSDnmoTkuIDmlbTlpZfjgIwqKuS4gOasoeeUu+Wvue+8jOS4jei/lOW3pSoq44CN5bel5YW36ZO+44CCCgojIyDov5nmmK/ku4DkuYgKCuS4gOS4quWPr+WkjeeUqOeahCBBZ2VudCBTa2lsbO+8iOaKgOiDve+8ie+8jOaMh+WvvOW5tui+heWKqSBBSSDlrozmiJAgU1ZHIOmdmeaAgemFjeWbvueahOWujOaVtOa1geeoi++8mgoKYGBgCumAiemFjeiJsuWNoSDihpIg5aGr5paH5qGIIOKGkiDmjpLniYgg4oaSIOmdmeaAgeagoemqjCDihpIg5riy5p+TIOKGkiDnqIvluo/ljJbpqozor4Eg4oaSIOW1jOWFpQpgYGAKCuaJgOacieinhOWImemDveadpeiHqioq5a6e5rWLKirvvIhyc3ZnLWNvbnZlcnQg5riy5p+TICsg5YOP57Sg57qn6aqM6K+B77yJ77yM5LiT6Zeo6Kej5YazIEFJIOeUuyBTVkcg5pe25pyA6auY6aKR55qE5Z2R77yaCgp8IOWdkSB8IOeXh+eKtiB8IOacrOmhueebrueahOino+azlSB8CnwtLS18LS0tfC0tLXwKfCDkuK3mloflrZfkvZPnvLrlpLEgfCDkuK3mloflhajlj5josYbohZDlnZcg4pah4pah4pahIHwgYGZjLW1hdGNoYCDpqozlrZfkvZMgKyDlrZfkvZPlm57pgIDpk74gfAp8IFNWRyDph4zmlL4gZW1vamkgfCDmuLLmn5PmiJDlrp7lv4PmlrnlnZcgfCBlbW9qaSDpnZnmgIHmo4DmtYsgKyDnn6Lph4/mm7/ku6MgfAp8IOaWh+Wtl+S4jeaNouihjC/kuI3mtYvph48gfCDmuqLlh7rjgIHljovliLDliKvnmoTlhYPntKAgfCBDSksg5oSf55+l5a695bqm5Lyw566XICsg6Ieq5Yqo5o2i6KGMIHwKfCDog4zmma/moYbmoYbkuI3kvY/mloflrZcgfCDog7blm4ov5Y2h54mH5rqi5Ye6IHwg6Z2Z5oCB5qCh6aqMICsg5qGG5a695YWs5byPIHwKfCDlr7nmr5TluqbkuI3otrMgfCDlsI/lrZfnnIvkuI3muIUgfCBXQ0FHIOWvueavlOW6puagoemqjCB8Cnwg5bCB6Z2i6KKr6KOB5YmqIHwg5YiG5Lqr5ZCO5YWz6ZSu5YaF5a656KKr5YiHIHwg5YWs5LyX5Y+35bCB6Z2i5a6J5YWo5Yy66KeE5YiZIHwKCiMjIOeJueaApwoKLSAqKuS4reaWh+aOkueJiCoq77yaYGVhc3RfYXNpYW5fd2lkdGhgIOmpseWKqOeahOWuveW6puS8sOeul++8jOS4reaWh+aMieWtl+aWreihjOOAgeiLseaWh+aMieivjeaWreihjO+8jOS/neeVmeS4reiLseepuuagvAotICoq5YaZ5YmN6aqM566XKirvvJpTVkcg6Z2Z5oCB5qOA5p+l77yI5rqi5Ye6IC8g6YeN5Y+gIC8gZW1vamkgLyDlrZfkvZMgLyDlr7nmr5TluqbvvInvvIzlhYjnrpflkI7nlLvvvIzmnZznu53ov5Tlt6UKLSAqKueoi+W6j+WMlumqjOivgSoq77yaQVNDSUkg6aKE6KeIICsg5YOP57Sg57qn5YyF5Zu055uSIC8g6aKc6Imy5a6a5L2NIOKAlOKAlCBBSSDml6Dms5Xnm7TmjqXnnIvlm77ml7bnmoTjgIznnLznnZvjgI0KLSAqKuS4k+S4mumFjeiJsuWNoSoq77yaOCDlpZflr7nmr5TluqbmoKHpqozov4fnmoTphY3oibLljaEgKyDns7vliJfphY3oibIgKyDphY3oibLljaHlm77nlJ/miJAKLSAqKuS4gOmUrueUn+aIkCoq77ya5aWX6YWN6Imy5Y2hICsg6Ieq5Yqo5o6S54mIICsg5oyH5a6a5bC65a+4L+avlOS+iyArIOagoemqjCArIOa4suafk++8jOS4gOadoeWRveS7pAotICoq5YaF572u5qih5p2/KirvvJrlhazkvJflj7flsIHpnaIgLyDmraPmlofkv6Hmga/lm77vvIzlkKvlronlhajljLrmj5DnpLoKCiMjIOaViOaenOa8lOekugoK5Lul5LiL5LiJ5byg5Zu+5Z2H55SxIGBzY3JpcHRzL2dlbi5weWAg5LiA6ZSu55Sf5oiQ77yI5paH5qGIIOKGkiDlpZfphY3oibLljaEg4oaSIOiHquWKqOaOkueJiCDihpIg5qCh6aqMIOKGkiDmuLLmn5PvvInvvJoKCjxwIGFsaWduPSJjZW50ZXIiPgogIDxpbWcgc3JjPSJleGFtcGxlcy9jb3Zlci5wbmciIHdpZHRoPSI1NjAiIGFsdD0i5YWs5LyX5Y+35bCB6Z2iIMK3IOa3sea1t+iTnemFjeiJsiI+PGJyPgogIDxlbT7lhazkvJflj7flsIHpnaIgwrcg5rex5rW36JOd6YWN6Imy77yIOTAww5czODPvvIwyLjM1OjHvvIk8L2VtPgo8L3A+Cgo8cCBhbGlnbj0iY2VudGVyIj4KICA8aW1nIHNyYz0iZXhhbXBsZXMvaW5mb2dyYXBoaWMucG5nIiB3aWR0aD0iNTYwIiBhbHQ9Iuato+aWh+S/oeaBr+WbviDCtyDloqjnjonpnZLphY3oibIiPjxicj4KICA8ZW0+5q2j5paH5L+h5oGv5Zu+IMK3IOWiqOeOiemdkumFjeiJsu+8iDkwMMOXNTIw77yJPC9lbT4KPC9wPgoKPHAgYWxpZ249ImNlbnRlciI+CiAgPGltZyBzcmM9ImV4YW1wbGVzL3F1b3RlLnBuZyIgd2lkdGg9IjQyMCIgYWx0PSLph5Hlj6XljaEgwrcg57ub57Sr6Zye6YWN6ImyIj48YnI+CiAgPGVtPumHkeWPpeWNoSDCtyDnu5vntKvpnJ7phY3oibLvvIg5MDDDlzkwMO+8iTwvZW0+CjwvcD4KCiMjIOW/q+mAn+W8gOWniwoKIyMjIOS+nei1lgoKLSBQeXRob24gMy44KwotIFtQaWxsb3ddKGh0dHBzOi8vcHl0aG9uLXBpbGxvdy5vcmcvKe+8iGBwaXAgaW5zdGFsbCBQaWxsb3dg77yJCi0gW3JzdmctY29udmVydF0oaHR0cHM6Ly9naXRsYWIuZ25vbWUub3JnL0dOT01FL2xpYnJzdmcp77yIbGlicnN2Z++8jFNWR+KGklBOR++8iQotIOS4gOasvuS4reaWh+Wtl+S9k++8iOeUqCBgZmMtbWF0Y2hgIOmqjOivgeecn+WunuWtmOWcqO+8iQoKIyMjIOS4gOmUrueUn+aIkOS4gOW8oOWbvgoKYGBgYmFzaAojIOeOr+Wig+ajgOafpe+8iOWtl+S9k+W/hemhu+mqjOivgeecn+WunuWtmOWcqO+8jOWQpuWImeS4reaWh+WPmOixhuiFkOWdl++8iQp3aGljaCByc3ZnLWNvbnZlcnQgJiYgZmMtbWF0Y2ggIkxYR1cgV2VuS2FpIgoKIyDnlJ/miJDlhazkvJflj7flsIHpnaLvvIjpu5jorqQgOTAww5czODPvvIwyLjM1OjHvvIkKcHl0aG9uMyBzY3JpcHRzL2dlbi5weSBjb3ZlciBcCiAgLS1wYWxldHRlIOa3sea1t+iTnSBcCiAgLS10aXRsZSAiQUkg57yW56iL5bel5YW35qiq6K+E77ya6LCB5pu05by6IiBcCiAgLS1zdWJ0aXRsZSAiQ2xhdWRlIENvZGUgLyBDb2RleCAvIEN1cnNvciDlrp7mtYsiIFwKICAtLWJhZGdlICLmt7HluqbliIbmnpAiIFwKICAtLWNvbmNsdXNpb24gIuiwgeabtOWAvOW+l+eUqO+8n+S4gOWbvueci+aHgiIgXAogIC0tZm9udCAiTFhHVyBXZW5LYWkiIC0tY2hlY2sgLS1yZW5kZXIKCiMg5oyH5a6a5q+U5L6LIC8g5bC65a+4CnB5dGhvbjMgc2NyaXB0cy9nZW4ucHkgY292ZXIgLS1wYWxldHRlIOaZqOmbvuiTneeBsCAtLXRpdGxlICLmtLvliqjpooTlkYoiIC0tYXNwZWN0IDE2OjkgLS13aWR0aCAxMjAwCnB5dGhvbjMgc2NyaXB0cy9nZW4ucHkgcXVvdGUgLS1wYWxldHRlIOabnOefs+m7kemHkSAtLXRleHQgIuaKiuWkjeadgueahOS6i+iusueugOWNlSIgLS1hc3BlY3QgMzo0IC0td2lkdGggOTAwCmBgYAoKIyMjIOaJi+WKqOa1geeoi++8iOWujOWFqOWPr+aOp++8iQoKYGBgYmFzaApweXRob24zIHNjcmlwdHMvcGFsZXR0ZS5weSBsaXN0ICAgICAgICAgICAgICAgICAgICAjIDEuIOmAiemFjeiJsuWNoQpweXRob24zIHNjcmlwdHMvdGV4dHdpZHRoLnB5ICLmoIfpopgiIC0tc2l6ZSA0MCAgICAgICMgMi4g5Lyw566X5paH5a2X5a695bqmCiMgICAgIOWGmSBkZXNpZ24uc3Zn77yI5Y+v5Z+65LqOIHRlbXBsYXRlcy8g5pS577yJCnB5dGhvbjMgc2NyaXB0cy9jaGVjay5weSBkZXNpZ24uc3ZnIC0tbWFyZ2luIDQwICAgICMgMy4g6Z2Z5oCB5qCh6aqM77yIZXhpdCAwIOWGjee7p+e7re+8iQpyc3ZnLWNvbnZlcnQgLXcgMTIwMCBkZXNpZ24uc3ZnIC1vIGRlc2lnbi5wbmcgICAgICAjIDQuIOa4suafk++8iDJ4IOmrmOa4he+8iQpweXRob24zIHNjcmlwdHMvcHJldmlldy5weSBkZXNpZ24ucG5nICAgICAgICAgICAgICAjIDUuIEFTQ0lJIOebruajgOW4g+WxgApweXRob24zIHNjcmlwdHMvdmVyaWZ5LnB5IGRlc2lnbi5wbmcgLS1ib3hlcyAtLW1vZGUgYnJpZ2h0IC0tc3ZnLXdpZHRoIDkwMApgYGAKCiMjIOebruW9lee7k+aehAoKYGBgCnN2Zy1pbGx1c3RyYXRpb24tc2tpbGwvCuKUnOKUgOKUgCBTS0lMTC5tZCAgICAgICAgICAgICAgICAgICAgICAgICMg5oqA6IO95oyH5Luk77yI5a6M5pW05bel5L2c5rWBICsg5a6e5rWL5Z2R6YCf5p+l77yJCuKUnOKUgOKUgCBzY3JpcHRzLwrilIIgICDilJzilIDilIAgc3ZndGV4dC5weSAgICAgICAgICAgICAgICAgICMg5YWx5Lqr77yaQ0pLIOWuveW6puS8sOeulyArIGVtb2ppIOajgOa1iwrilIIgICDilJzilIDilIAgdGV4dHdpZHRoLnB5ICAgICAgICAgICAgICAgICMg5paH5a2X5a695bqm5Lyw566X77yIQ0xJ77yJCuKUgiAgIOKUnOKUgOKUgCBsYXlvdXQucHkgICAgICAgICAgICAgICAgICAgIyDmjaLooYwgLyDlsYXkuK0gLyDnvZHmoLzlrprkvY3vvIh3cmFwL2NlbnRlci9ncmlk77yJCuKUgiAgIOKUnOKUgOKUgCBjaGVjay5weSAgICAgICAgICAgICAgICAgICAgIyBTVkcg6Z2Z5oCB5qOA5p+l77yI5rqi5Ye6L+mHjeWPoC9lbW9qaS/lrZfkvZMv5a+55q+U5bqm77yJCuKUgiAgIOKUnOKUgOKUgCBwYWxldHRlLnB5ICAgICAgICAgICAgICAgICAgIyDkuJPkuJrphY3oibLljaHlupMgKyDns7vliJfphY3oibLvvIhsaXN0L3Nob3cvY2hlY2svY2FyZO+8iQrilIIgICDilJzilIDilIAgZ2VuLnB5ICAgICAgICAgICAgICAgICAgICAgICMg5LiA6ZSu55Sf5oiQ77yIY292ZXIvaW5mb2dyYXBoaWMvcXVvdGXvvIzmlK/mjIHku7vmhI/mr5TkvovvvIkK4pSCICAg4pSc4pSA4pSAIGNvbnRyYXN0LnB5ICAgICAgICAgICAgICAgICAjIFdDQUcg5a+55q+U5bqm6K6h566XCuKUgiAgIOKUnOKUgOKUgCBwcmV2aWV3LnB5ICAgICAgICAgICAgICAgICAgIyBQTkcg4oaSIEFTQ0lJIOWPr+inhuWMlgrilIIgICDilJTilIDilIAgdmVyaWZ5LnB5ICAgICAgICAgICAgICAgICAgICMg5YOP57Sg57qn6IyD5Zu0L+WMheWbtOebki/popzoibLlrprkvY0K4pSU4pSA4pSAIHRlbXBsYXRlcy8KICAgIOKUnOKUgOKUgCBjb3Zlci10ZW1wbGF0ZS5zdmcgICAgICAgICAgIyDlhazkvJflj7flsIHpnaLmqKHmnb/vvIjlkKvlronlhajljLrmj5DnpLrvvIkKICAgIOKUlOKUgOKUgCBpbmZvZ3JhcGhpYy10ZW1wbGF0ZS5zdmcgICAgIyDmraPmlofkv6Hmga/lm77mqKHmnb8KYGBgCgojIyDohJrmnKzmuIXljZUKCnwg6ISa5pysIHwg5L2c55SoIHwg6Zi25q61IHwKfC0tLXwtLS18LS0tfAp8IGB0ZXh0d2lkdGgucHlgIHwg5Lyw566X5paH5a2X5riy5p+T5a695bqm77yIQ0pLIOaEn+efpe+8iSB8IOWGmeS5i+WJjSB8CnwgYGxheW91dC5weWAgfCDmjaLooYwgLyDlsYXkuK0gLyDnvZHmoLzlrprkvY0gfCDlhpnkuYvliY0gfAp8IGBjaGVjay5weWAgfCBTVkcg6Z2Z5oCB5qOA5p+lIHwg5YaZ5LmL5YmNIHwKfCBgcGFsZXR0ZS5weWAgfCDphY3oibLljaHlupMgKyDns7vliJfphY3oibIgfCDpgInoibIgfAp8IGBjb250cmFzdC5weWAgfCBXQ0FHIOWvueavlOW6piB8IOmAieiJsiB8CnwgYGdlbi5weWAgfCDkuIDplK7nlJ/miJAgfCDlhpnkuYvliY0gfAp8IGBwcmV2aWV3LnB5YCB8IEFTQ0lJIOmihOiniCB8IOa4suafk+WQjiB8CnwgYHZlcmlmeS5weWAgfCDlg4/ntKDnuqfmo4DmtYsgfCDmuLLmn5PlkI4gfAoKIyMg5YaF572u6YWN6Imy5Y2hCgo4IOWll+e7j+i/h+WvueavlOW6puagoemqjOeahOS4k+S4mumFjeiJsuWNoe+8iGBweXRob24zIHNjcmlwdHMvcGFsZXR0ZS5weSBsaXN0YO+8ie+8mgoKfCDphY3oibLljaEgfCDlrprkvY0gfCDmt7HlupUgLyDkuLvlvLrosIMgLyDngrnnvIAgfAp8LS0tfC0tLXwtLS18Cnwg5rex5rW36JOdIHwg56eR5oqAIC8gQUkgLyDkuJPkuJogfCBgIzE2MjIzYWAgLyBgIzFBNkZDNGAgLyBgIzdDNkZFOGAgfAp8IOWiqOeOiemdkiB8IOWbvemjjiAvIOaWh+WMliAvIOS4reW8jyB8IGAjMTQzNTJGYCAvIGAjMkE5RDhGYCAvIGAjRTlDNDZBYCB8Cnwg57ub57Sr6ZyeIHwg5paH6Im6IC8g5aWz5oCnIC8g5oOF5oSfIHwgYCMyQTFCM0RgIC8gYCM3QzNBRURgIC8gYCNGNDcyQjZgIHwKfCDmmajpm77ok53ngbAgfCDllYbliqEgLyDkvIHkuJogLyDmlbDmja4gfCBgIzFFMjkzQmAgLyBgIzNCODJGNmAgLyBgIzM4QkRGOGAgfAp8IOaalumYs+apmSB8IOeUn+a0uyAvIOe+jumjnyAvIOa0u+WKmyB8IGAjMkIxRjE2YCAvIGAjRjU5RTBCYCAvIGAjRkI3MTg1YCB8Cnwg5p2+55+z6JOd57u/IHwg5riF5pawIC8g5pWZ6IKyIC8g5Yy755aXIHwgYCMxMjMzM0JgIC8gYCMwRUE1RTlgIC8gYCMyREQ0QkZgIHwKfCDpnZnosKfnu78gfCDnjq/kv50gLyDlgaXlurcgLyDoh6rnhLYgfCBgIzE0MjcxRWAgLyBgIzIyQzU1RWAgLyBgI0EzRTYzNWAgfAp8IOabnOefs+m7kemHkSB8IOmrmOerryAvIOWPkeW4g+S8miAvIOWlouWNjiB8IGAjMTYxNjE2YCAvIGAjRDRBRjM3YCAvIGAjOUNBM0FGYCB8CgojIyDluLjnlKjnlLvluIPlsLrlr7gKCmBweXRob24zIHNjcmlwdHMvZ2VuLnB5IHNpemVzYO+8mgoKfCDnlKjpgJQgfCDlsLrlr7ggfCDmr5TkvosgfAp8LS0tfC0tLXwtLS18Cnwg5YWs5LyX5Y+35bCB6Z2iIHwgOTAww5czODMgfCAyLjM1OjEgfAp8IOato+aWh+S/oeaBr+WbviB8IDkwMMOXNTQwIHwgNTozIHwKfCDmraPmlrnlvaLph5Hlj6XljaEgfCA5MDDDlzkwMCB8IDE6MSB8Cnwg5bCP57qi5Lmm6YWN5Zu+IHwgOTAww5cxMjAwIHwgMzo0IHwKfCDnpL7kuqTliIbkuqsgLyBPRyDlm74gfCAxMjAww5c2MzAgfCAxLjkxOjEgfAp8IOaoqueJiCBCYW5uZXIgfCAxMjAww5c2NzUgfCAxNjo5IHwKfCDnq5bniYjmtbfmiqUgfCA5MDDDlzE2MDAgfCA5OjE2IHwKCiMjIExpY2Vuc2UKCltNSVRdKC4vTElDRU5TRSkK
+# svg-illustration-skill
+
+用 SVG 设计**信息图 / 配图 / 封面 / 金句卡**并导出 PNG 的 Agent 技能包 —— 面向 AI 的一整套「**一次画对，不返工**」工具链。
+
+## 这是什么
+
+一个可复用的 Agent Skill（技能），指导并辅助 AI 完成 SVG 静态配图的完整流程：
+
+```
+选配色卡 → 填文案 → 排版 → 静态校验 → 渲染 → 程序化验证 → 嵌入
+```
+
+所有规则都来自**实测**（rsvg-convert 渲染 + 像素级验证），专门解决 AI 画 SVG 时最高频的坑：
+
+| 坑 | 症状 | 本项目的解法 |
+|---|---|---|
+| 中文字体缺失 | 中文全变豆腐块 □□□ | `fc-match` 验字体 + 字体回退链 |
+| SVG 里放 emoji | 渲染成实心方块 | emoji 静态检测 + 矢量替代 |
+| 文字不换行/不测量 | 溢出、压到别的元素 | CJK 感知宽度估算 + 自动换行 |
+| 背景框框不住文字 | 胶囊/卡片溢出 | 静态校验 + 框宽公式 |
+| 对比度不足 | 小字看不清 | WCAG 对比度校验 |
+| 封面被裁剪 | 分享后关键内容被切 | 公众号封面安全区规则 |
+
+## 特性
+
+- **中文排版**：`east_asian_width` 驱动的宽度估算，中文按字断行、英文按词断行，保留中英空格
+- **写前验算**：SVG 静态检查（溢出 / 重叠 / emoji / 字体 / 对比度），先算后画，杜绝返工
+- **程序化验证**：ASCII 预览 + 像素级包围盒 / 颜色定位 —— AI 无法直接看图时的「眼睛」
+- **专业配色卡**：8 套对比度校验过的配色卡 + 系列配色 + 配色卡图生成
+- **一键生成**：套配色卡 + 自动排版 + 指定尺寸/比例 + 校验 + 渲染，一条命令
+- **内置模板**：公众号封面 / 正文信息图，含安全区提示
+
+## 效果演示
+
+以下三张图均由 `scripts/gen.py` 一键生成（文案 → 套配色卡 → 自动排版 → 校验 → 渲染）：
+
+<p align="center">
+  <img src="examples/cover.png" width="560" alt="公众号封面 · 深海蓝配色"><br>
+  <em>公众号封面 · 深海蓝配色（900×383，2.35:1）</em>
+</p>
+
+<p align="center">
+  <img src="examples/infographic.png" width="560" alt="正文信息图 · 墨玉青配色"><br>
+  <em>正文信息图 · 墨玉青配色（900×520）</em>
+</p>
+
+<p align="center">
+  <img src="examples/quote.png" width="420" alt="金句卡 · 绛紫霞配色"><br>
+  <em>金句卡 · 绛紫霞配色（900×900）</em>
+</p>
+
+## 快速开始
+
+### 依赖
+
+- Python 3.8+
+- [Pillow](https://python-pillow.org/)（`pip install Pillow`）
+- [rsvg-convert](https://gitlab.gnome.org/GNOME/librsvg)（librsvg，SVG→PNG）
+- 一款中文字体（用 `fc-match` 验证真实存在）
+
+### 一键生成一张图
+
+```bash
+# 环境检查（字体必须验证真实存在，否则中文变豆腐块）
+which rsvg-convert && fc-match "LXGW WenKai"
+
+# 生成公众号封面（默认 900×383，2.35:1）
+python3 scripts/gen.py cover \
+  --palette 深海蓝 \
+  --title "AI 编程工具横评：谁更强" \
+  --subtitle "Claude Code / Codex / Cursor 实测" \
+  --badge "深度分析" \
+  --conclusion "谁更值得用？一图看懂" \
+  --font "LXGW WenKai" --check --render
+
+# 指定比例 / 尺寸
+python3 scripts/gen.py cover --palette 晨雾蓝灰 --title "活动预告" --aspect 16:9 --width 1200
+python3 scripts/gen.py quote --palette 曜石黑金 --text "把复杂的事讲简单" --aspect 3:4 --width 900
+```
+
+### 手动流程（完全可控）
+
+```bash
+python3 scripts/palette.py list                    # 1. 选配色卡
+python3 scripts/textwidth.py "标题" --size 40      # 2. 估算文字宽度
+#     写 design.svg（可基于 templates/ 改）
+python3 scripts/check.py design.svg --margin 40    # 3. 静态校验（exit 0 再继续）
+rsvg-convert -w 1200 design.svg -o design.png      # 4. 渲染（2x 高清）
+python3 scripts/preview.py design.png              # 5. ASCII 目检布局
+python3 scripts/verify.py design.png --boxes --mode bright --svg-width 900
+```
+
+## 目录结构
+
+```
+svg-illustration-skill/
+├── SKILL.md                        # 技能指令（完整工作流 + 实测坑速查）
+├── scripts/
+│   ├── svgtext.py                  # 共享：CJK 宽度估算 + emoji 检测
+│   ├── textwidth.py                # 文字宽度估算（CLI）
+│   ├── layout.py                   # 换行 / 居中 / 网格定位（wrap/center/grid）
+│   ├── check.py                    # SVG 静态检查（溢出/重叠/emoji/字体/对比度）
+│   ├── palette.py                  # 专业配色卡库 + 系列配色（list/show/check/card）
+│   ├── gen.py                      # 一键生成（cover/infographic/quote，支持任意比例）
+│   ├── contrast.py                 # WCAG 对比度计算
+│   ├── preview.py                  # PNG → ASCII 可视化
+│   └── verify.py                   # 像素级范围/包围盒/颜色定位
+└── templates/
+    ├── cover-template.svg          # 公众号封面模板（含安全区提示）
+    └── infographic-template.svg    # 正文信息图模板
+```
+
+## 脚本清单
+
+| 脚本 | 作用 | 阶段 |
+|---|---|---|
+| `textwidth.py` | 估算文字渲染宽度（CJK 感知） | 写之前 |
+| `layout.py` | 换行 / 居中 / 网格定位 | 写之前 |
+| `check.py` | SVG 静态检查 | 写之前 |
+| `palette.py` | 配色卡库 + 系列配色 | 选色 |
+| `contrast.py` | WCAG 对比度 | 选色 |
+| `gen.py` | 一键生成 | 写之前 |
+| `preview.py` | ASCII 预览 | 渲染后 |
+| `verify.py` | 像素级检测 | 渲染后 |
+
+## 内置配色卡
+
+8 套经过对比度校验的专业配色卡（`python3 scripts/palette.py list`）：
+
+| 配色卡 | 定位 | 深底 / 主强调 / 点缀 |
+|---|---|---|
+| 深海蓝 | 科技 / AI / 专业 | `#16223a` / `#1A6FC4` / `#7C6FE8` |
+| 墨玉青 | 国风 / 文化 / 中式 | `#14352F` / `#2A9D8F` / `#E9C46A` |
+| 绛紫霞 | 文艺 / 女性 / 情感 | `#2A1B3D` / `#7C3AED` / `#F472B6` |
+| 晨雾蓝灰 | 商务 / 企业 / 数据 | `#1E293B` / `#3B82F6` / `#38BDF8` |
+| 暖阳橙 | 生活 / 美食 / 活力 | `#2B1F16` / `#F59E0B` / `#FB7185` |
+| 松石蓝绿 | 清新 / 教育 / 医疗 | `#12333B` / `#0EA5E9` / `#2DD4BF` |
+| 静谧绿 | 环保 / 健康 / 自然 | `#14271E` / `#22C55E` / `#A3E635` |
+| 曜石黑金 | 高端 / 发布会 / 奢华 | `#161616` / `#D4AF37` / `#9CA3AF` |
+
+## 常用画布尺寸
+
+`python3 scripts/gen.py sizes`：
+
+| 用途 | 尺寸 | 比例 |
+|---|---|---|
+| 公众号封面 | 900×383 | 2.35:1 |
+| 正文信息图 | 900×540 | 5:3 |
+| 正方形金句卡 | 900×900 | 1:1 |
+| 小红书配图 | 900×1200 | 3:4 |
+| 社交分享 / OG 图 | 1200×630 | 1.91:1 |
+| 横版 Banner | 1200×675 | 16:9 |
+| 竖版海报 | 900×1600 | 9:16 |
+
+## License
+
+[MIT](./LICENSE)

@@ -1,1 +1,47 @@
-IyEvdXNyL2Jpbi9lbnYgcHl0aG9uMwoiIiJDSksg5oSf55+l55qE5paH5a2X5a695bqm5Lyw566X77yI5YaZIFNWRyDliY3lhYjnrpfvvIzpgb/lhY3muqLlh7ov6YeN5Y+g77yJ44CCCgrnlKjms5XvvJoKICAgIHB5dGhvbjMgdGV4dHdpZHRoLnB5ICLlh63ku4DkuYjmlaLlkowgQ2xhdWRlIENvZGXjgIFDb2RleCDlj6vmnb/vvJ8iIC0tc2l6ZSAzNwogICAgcHl0aG9uMyB0ZXh0d2lkdGgucHkgIua3seW6puWIhuaekCDCtyBBSSDnvJbnqIvlt6XlhbciIC0tc2l6ZSAxNQogICAgcHJpbnRmICclc1xuJyAi56ys5LiA6KGM5qCH6aKYIiAi56ys5LqM6KGM5paH5a2XIiB8IHB5dGhvbjMgdGV4dHdpZHRoLnB5IC0tYmF0Y2ggLS1zaXplIDI0Cgrlj4LmlbDvvJoKICAgIC0tc2l6ZSBOICAgICAg5a2X5Y+377yIcHjvvInvvIzpu5jorqQgMTYKICAgIC0tYW1iaWd1b3VzIEYg5q2n5LmJ5a2X56ym77yIwrfjgIHigJQg562J77yJ5oyJ5aSa5bCR5YCN5a2X5Y+36K6h77yM6buY6K6kIDAuNQogICAgLS1iYXRjaCAgICAgICDku44gc3RkaW4g6YCQ6KGM6K+75Y+W5bm25Lyw566X77yI5q+P6KGM5LiA5p2h77yJCgrkvp3otZblkIznm67lvZUgc3ZndGV4dC5wee+8iOe6ryBzdGRsaWLvvInjgIIKIiIiCmltcG9ydCBhcmdwYXJzZQppbXBvcnQgc3lzCgpmcm9tIHN2Z3RleHQgaW1wb3J0IHRleHRfd2lkdGgKCgpkZWYgbWFpbigpOgogICAgYXAgPSBhcmdwYXJzZS5Bcmd1bWVudFBhcnNlcihkZXNjcmlwdGlvbj0i5Lyw566X5paH5a2X5riy5p+T5a695bqm77yIQ0pLIOaEn+efpe+8iSIpCiAgICBhcC5hZGRfYXJndW1lbnQoInRleHQiLCBuYXJncz0iPyIsIGhlbHA9IuimgeS8sOeul+eahOaWh+Wtl++8iC0tYmF0Y2gg5pe25Y+v55yB55Wl77yJIikKICAgIGFwLmFkZF9hcmd1bWVudCgiLS1zaXplIiwgdHlwZT1mbG9hdCwgZGVmYXVsdD0xNiwgaGVscD0i5a2X5Y+3IHB477yM6buY6K6kIDE2IikKICAgIGFwLmFkZF9hcmd1bWVudCgiLS1hbWJpZ3VvdXMiLCB0eXBlPWZsb2F0LCBkZWZhdWx0PTAuNSwKICAgICAgICAgICAgICAgICAgICBoZWxwPSLmrafkuYnlrZfnrKblrr3luqbns7vmlbDvvIzpu5jorqQgMC41IikKICAgIGFwLmFkZF9hcmd1bWVudCgiLS1iYXRjaCIsIGFjdGlvbj0ic3RvcmVfdHJ1ZSIsIGhlbHA9IuS7jiBzdGRpbiDpgJDooYzor7vlj5YiKQogICAgYXJncyA9IGFwLnBhcnNlX2FyZ3MoKQoKICAgIGRlZiByZXBvcnQocyk6CiAgICAgICAgdyA9IHRleHRfd2lkdGgocywgYXJncy5zaXplLCBhcmdzLmFtYmlndW91cykKICAgICAgICBwcmludChmIuWtl+WPtyB7YXJncy5zaXplOmd9cHggIOWuveW6puKJiHt3Oi4wZn1weCAgIFt7c31dIikKCiAgICBpZiBhcmdzLmJhdGNoOgogICAgICAgIGZvciBsaW5lIGluIHN5cy5zdGRpbjoKICAgICAgICAgICAgbGluZSA9IGxpbmUucnN0cmlwKCJcbiIpCiAgICAgICAgICAgIGlmIGxpbmUuc3RyaXAoKToKICAgICAgICAgICAgICAgIHJlcG9ydChsaW5lKQogICAgZWxpZiBhcmdzLnRleHQgaXMgbm90IE5vbmU6CiAgICAgICAgcmVwb3J0KGFyZ3MudGV4dCkKICAgIGVsc2U6CiAgICAgICAgYXAuZXJyb3IoIumcgOimgeaPkOS+m+aWh+Wtl++8jOaIlueUqCAtLWJhdGNoIOS7jiBzdGRpbiDor7vlj5YiKQoKCmlmIF9fbmFtZV9fID09ICJfX21haW5fXyI6CiAgICBtYWluKCkK
+#!/usr/bin/env python3
+"""CJK 感知的文字宽度估算（写 SVG 前先算，避免溢出/重叠）。
+
+用法：
+    python3 textwidth.py "凭什么敢和 Claude Code、Codex 叫板？" --size 37
+    python3 textwidth.py "深度分析 · AI 编程工具" --size 15
+    printf '%s\n' "第一行标题" "第二行文字" | python3 textwidth.py --batch --size 24
+
+参数：
+    --size N      字号（px），默认 16
+    --ambiguous F 歧义字符（·、— 等）按多少倍字号计，默认 0.5
+    --batch       从 stdin 逐行读取并估算（每行一条）
+
+依赖同目录 svgtext.py（纯 stdlib）。
+"""
+import argparse
+import sys
+
+from svgtext import text_width
+
+
+def main():
+    ap = argparse.ArgumentParser(description="估算文字渲染宽度（CJK 感知）")
+    ap.add_argument("text", nargs="?", help="要估算的文字（--batch 时可省略）")
+    ap.add_argument("--size", type=float, default=16, help="字号 px，默认 16")
+    ap.add_argument("--ambiguous", type=float, default=0.5,
+                    help="歧义字符宽度系数，默认 0.5")
+    ap.add_argument("--batch", action="store_true", help="从 stdin 逐行读取")
+    args = ap.parse_args()
+
+    def report(s):
+        w = text_width(s, args.size, args.ambiguous)
+        print(f"字号 {args.size:g}px  宽度≈{w:.0f}px   [{s}]")
+
+    if args.batch:
+        for line in sys.stdin:
+            line = line.rstrip("\n")
+            if line.strip():
+                report(line)
+    elif args.text is not None:
+        report(args.text)
+    else:
+        ap.error("需要提供文字，或用 --batch 从 stdin 读取")
+
+
+if __name__ == "__main__":
+    main()

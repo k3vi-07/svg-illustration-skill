@@ -1,1 +1,324 @@
-IyEvdXNyL2Jpbi9lbnYgcHl0aG9uMwoiIiJTVkcg5riy5p+T5YmN6Z2Z5oCB5qOA5p+l77ya5YaZ5LmL5YmN5YWI6aqM566X77yM5LiA5qyh55S75a+544CCCgrmo4Dmn6XpobnvvJoKICAxLiDmloflrZflrr3luqbkvLDnrpcgKyDmuqLlh7rnlLvluIPvvIjnoazplJnor6/vvInkuI7otLTov5HnlZnnmb3vvIjova/orablkYrvvInmo4DmtYsKICAyLiDnm7jpgrvmloflrZfmmK/lkKblnKjlkIzkuIDooYzluKblhoXmsLTlubPph43lj6AKICAzLiDmloflrZfmmK/lkKbotoXlh7rmiYDlnKggPHJlY3Q+IOiDjOaZr+ahhu+8iOiDtuWbii/ljaHniYfmoYbkuI3kvY/vvIkKICA0LiBTVkcg5YaF5piv5ZCm5Ye6546wIGVtb2pp77yIcnN2ZyDml6DlrZflvaIg4oaSIOWunuW/g+aWueWdl++8iQogIDUuIOaYr+WQpue8uiBmb250LWZhbWlsee+8iOS4reaWh+Wtl+S9k+mdmem7mOWbnumAgCDihpIg6LGG6IWQ5Z2X77yJCiAgNi4g5paH5a2XIGZpbGwg5LiO6IOM5pmv55qEIFdDQUcg5a+55q+U5bqm77yI6Ieq5Yqo5Y+W5omA5Zyo6IOM5pmv5qGGL+WNoeeJh+minOiJsu+8iQoK55So5rOV77yaCiAgICBweXRob24zIGNoZWNrLnB5IGRlc2lnbi5zdmcKICAgIHB5dGhvbjMgY2hlY2sucHkgZGVzaWduLnN2ZyAtLWNhbnZhcyA5MDAgNTIwIC0tbWFyZ2luIDQwCiAgICBweXRob24zIGNoZWNrLnB5IGRlc2lnbi5zdmcgLS1mb250LXNpemUgMTYgLS1jb250cmFzdCAiIzE2MjIzYSIKCuWPquivu++8jOS4jeS/ruaUueS7u+S9leaWh+S7tuOAguS+nei1luWQjOebruW9lSBzdmd0ZXh0LnB544CBY29udHJhc3QucHnvvIjnuq8gc3RkbGli77yJ44CCCgror7TmmI7vvJoKICAtICLnoazplJnor68iID0g5paH5a2X5a6e6ZmF6LaK5Ye655S75biDIC8g6YeN5Y+gIC8g5ZCrIGVtb2ppIC8g6LaF5Ye66IOM5pmv5qGG77yM5b+F6aG75L+u77ybCiAgLSAi6L2v6K2m5ZGKIiA9IOi0tOi/kei+uee8mOOAgeiDjOaZr+ahhuWBj+eqhOOAgeacquaYvuW8j+Wtl+S9k+OAgeWvueavlOW6puS4jei2s++8jOmcgOS6uuW3peehruiupOOAggogIC0gZm9udC1mYW1pbHkg5oyJ44CM5YWD57Sg6Ieq6LqrIOKGkiDnpZblhYgv5YWo5bGAIDxzdHlsZT7jgI3ov5HkvLzop6PmnpDvvIzml6Dms5XlrozmlbTmqKHmi58gQ1NTIOe6p+iBlOOAggoiIiIKaW1wb3J0IGFyZ3BhcnNlCmltcG9ydCByZQppbXBvcnQgc3lzCmltcG9ydCB4bWwuZXRyZWUuRWxlbWVudFRyZWUgYXMgRVQKCmZyb20gc3ZndGV4dCBpbXBvcnQgdGV4dF93aWR0aCwgZmluZF9lbW9qaQpmcm9tIGNvbnRyYXN0IGltcG9ydCBjb250cmFzdF9yYXRpbwoKUEFEID0gMTUgICAgICAgIyDog7blm4rog4zmma/moYblt6blj7PmnIDlsI/kvZnph4/vvIhweO+8iQpBU0NFTlQgPSAwLjggICAjIOWtl+W9ouS4iuWNh+mDqOebuOWvueWtl+WPt+eahOavlOS+i++8iOeUqOS6jue6teWQkeijgeWJquWIpOaWre+8iQpERVNDRU5UID0gMC4yNSAgIyDlrZflvaLkuIvpmY3pg6jnm7jlr7nlrZflj7fnmoTmr5TkvosKCkhFWF9SRSA9IHJlLmNvbXBpbGUociIjP1swLTlhLWZBLUZdezN9KFswLTlhLWZBLUZdezN9KT8iKQoKCmRlZiBsb2NhbG5hbWUodGFnKToKICAgIHJldHVybiB0YWcucnNwbGl0KCJ9IiwgMSlbLTFdCgoKZGVmIHBhcnNlX2xlbihzLCBkZWZhdWx0PTAuMCk6CiAgICBpZiBzIGlzIE5vbmU6CiAgICAgICAgcmV0dXJuIGRlZmF1bHQKICAgIHMgPSBzdHIocykuc3RyaXAoKS5sb3dlcigpCiAgICBpZiBzLmVuZHN3aXRoKCJweCIpOgogICAgICAgIHMgPSBzWzotMl0KICAgIGVsaWYgcy5lbmRzd2l0aCgicHQiKToKICAgICAgICByZXR1cm4gZmxvYXQoc1s6LTJdKSAqIDk2LjAgLyA3Mi4wCiAgICB0cnk6CiAgICAgICAgcmV0dXJuIGZsb2F0KHMpCiAgICBleGNlcHQgVmFsdWVFcnJvcjoKICAgICAgICByZXR1cm4gZGVmYXVsdAoKCmRlZiBwYXJzZV9zdHlsZShzdHlsZSk6CiAgICBkID0ge30KICAgIGlmIG5vdCBzdHlsZToKICAgICAgICByZXR1cm4gZAogICAgZm9yIHBhcnQgaW4gc3RyKHN0eWxlKS5zcGxpdCgiOyIpOgogICAgICAgIGlmICI6IiBpbiBwYXJ0OgogICAgICAgICAgICBrLCB2ID0gcGFydC5zcGxpdCgiOiIsIDEpCiAgICAgICAgICAgIGRbay5zdHJpcCgpLmxvd2VyKCldID0gdi5zdHJpcCgpCiAgICByZXR1cm4gZAoKCmRlZiBwYXJzZV90cmFuc2xhdGUoZWwpOgogICAgdHIgPSBlbC5nZXQoInRyYW5zZm9ybSIpIG9yICIiCiAgICBtID0gcmUuc2VhcmNoKHIidHJhbnNsYXRlXChccyooLT9bXGQuXSspWyxcc10rKC0/W1xkLl0rKVxzKlwpIiwgdHIpCiAgICBpZiBtOgogICAgICAgIHJldHVybiBmbG9hdChtLmdyb3VwKDEpKSwgZmxvYXQobS5ncm91cCgyKSkKICAgIHJldHVybiAwLjAsIDAuMAoKCmRlZiBmaW5kX2FsbChyb290LCBuYW1lKToKICAgIGZvciBlbCBpbiByb290Lml0ZXIoKToKICAgICAgICBpZiBsb2NhbG5hbWUoZWwudGFnKSA9PSBuYW1lOgogICAgICAgICAgICB5aWVsZCBlbAoKCmRlZiBmb250X3NpemVfb2YoZWwsIGRlZmF1bHQpOgogICAgc3QgPSBwYXJzZV9zdHlsZShlbC5nZXQoInN0eWxlIikpCiAgICByZXR1cm4gcGFyc2VfbGVuKGVsLmdldCgiZm9udC1zaXplIikgb3Igc3QuZ2V0KCJmb250LXNpemUiKSwgZGVmYXVsdCkKCgpkZWYgZm9udF9mYW1pbHlfb2YoZWwpOgogICAgcmV0dXJuIGVsLmdldCgiZm9udC1mYW1pbHkiKSBvciBwYXJzZV9zdHlsZShlbC5nZXQoInN0eWxlIikpLmdldCgiZm9udC1mYW1pbHkiKQoKCmRlZiBmaWxsX29mKGVsKToKICAgIHJldHVybiBlbC5nZXQoImZpbGwiKSBvciBwYXJzZV9zdHlsZShlbC5nZXQoInN0eWxlIikpLmdldCgiZmlsbCIpCgoKZGVmIGZvbnRfd2VpZ2h0X29mKGVsKToKICAgIGZ3ID0gKGVsLmdldCgiZm9udC13ZWlnaHQiKSBvciBwYXJzZV9zdHlsZShlbC5nZXQoInN0eWxlIikpLmdldCgiZm9udC13ZWlnaHQiKSBvciAiIikuc3RyaXAoKS5sb3dlcigpCiAgICByZXR1cm4gZncgaW4gKCJib2xkIiwgImJvbGRlciIsICI3MDAiLCAiODAwIiwgIjkwMCIpCgoKZGVmIGlzX2hleChjb2xvcik6CiAgICByZXR1cm4gYm9vbChjb2xvcikgYW5kIGJvb2woSEVYX1JFLmZ1bGxtYXRjaChjb2xvci5zdHJpcCgpKSkKCgpkZWYgZ2xvYmFsX2ZvbnRfZmFtaWx5KHJvb3QpOgogICAgaWYgcm9vdC5nZXQoImZvbnQtZmFtaWx5Iik6CiAgICAgICAgcmV0dXJuICIo5qC55YWD57Sg5aOw5piOKSIKICAgIGZvciBlbCBpbiBmaW5kX2FsbChyb290LCAic3R5bGUiKToKICAgICAgICBpZiAiZm9udC1mYW1pbHkiIGluICIiLmpvaW4oZWwuaXRlcnRleHQoKSk6CiAgICAgICAgICAgIHJldHVybiAiKDxzdHlsZT4g5aOw5piOKSIKICAgIHJldHVybiBOb25lCgoKZGVmIG1haW4oKToKICAgIGFwID0gYXJncGFyc2UuQXJndW1lbnRQYXJzZXIoZGVzY3JpcHRpb249IlNWRyDmuLLmn5PliY3pnZnmgIHmo4Dmn6UiKQogICAgYXAuYWRkX2FyZ3VtZW50KCJzdmciLCBoZWxwPSJTVkcg5paH5Lu26Lev5b6EIikKICAgIGFwLmFkZF9hcmd1bWVudCgiLS1jYW52YXMiLCBuYXJncz0yLCB0eXBlPWZsb2F0LCBtZXRhdmFyPSgiVyIsICJIIiksCiAgICAgICAgICAgICAgICAgICAgaGVscD0i55S75biD5a696auY77yIU1ZHIOacquWjsOaYjiB2aWV3Qm94L3dpZHRoL2hlaWdodCDml7bkvb/nlKjvvIkiKQogICAgYXAuYWRkX2FyZ3VtZW50KCItLW1hcmdpbiIsIHR5cGU9ZmxvYXQsIGRlZmF1bHQ9MC4wLAogICAgICAgICAgICAgICAgICAgIGhlbHA9IuWbm+WRqOeVmeeZvemYiOWAvCBweO+8iOi0tOi/kei+uee8mOWImeitpuWRiu+8ie+8jOm7mOiupCAwIikKICAgIGFwLmFkZF9hcmd1bWVudCgiLS1mb250LXNpemUiLCB0eXBlPWZsb2F0LCBkZWZhdWx0PTE2LjAsCiAgICAgICAgICAgICAgICAgICAgaGVscD0i5pyq6Kej5p6Q5YiwIGZvbnQtc2l6ZSDml7bnmoTpu5jorqTlrZflj7fvvIzpu5jorqQgMTYiKQogICAgYXAuYWRkX2FyZ3VtZW50KCItLWNvbnRyYXN0IiwgbWV0YXZhcj0iQkciLAogICAgICAgICAgICAgICAgICAgIGhlbHA9IueUu+W4g+iDjOaZr+iJsuWbnumAgO+8iOWmgiAjMTYyMjNh77yJ77yM55So5LqO5paH5a2X5a+55q+U5bqm5qOA5p+lIikKICAgIGFyZ3MgPSBhcC5wYXJzZV9hcmdzKCkKCiAgICB0cnk6CiAgICAgICAgdHJlZSA9IEVULnBhcnNlKGFyZ3Muc3ZnKQogICAgZXhjZXB0IEV4Y2VwdGlvbiBhcyBlOgogICAgICAgIHN5cy5leGl0KGYi6Kej5p6QIFNWRyDlpLHotKXvvJp7ZX0iKQogICAgcm9vdCA9IHRyZWUuZ2V0cm9vdCgpCgogICAgIyDnlLvluIPlsLrlr7jvvJrkvJjlhYggdmlld0JveO+8jOWFtuasoSB3aWR0aC9oZWlnaHTvvIzmnIDlkI4gLS1jYW52YXMKICAgIGN3ID0gY2ggPSBOb25lCiAgICB2YiA9IHJvb3QuZ2V0KCJ2aWV3Qm94IikKICAgIGlmIHZiOgogICAgICAgIG51bXMgPSBbZmxvYXQocCkgZm9yIHAgaW4gcmUuc3BsaXQociJbLFxzXSsiLCB2Yi5zdHJpcCgpKV0KICAgICAgICBpZiBsZW4obnVtcykgPj0gNDoKICAgICAgICAgICAgY3csIGNoID0gbnVtc1syXSwgbnVtc1szXQogICAgaWYgY3cgaXMgTm9uZToKICAgICAgICBjdyA9IHBhcnNlX2xlbihyb290LmdldCgid2lkdGgiKSwgTm9uZSkKICAgIGlmIGNoIGlzIE5vbmU6CiAgICAgICAgY2ggPSBwYXJzZV9sZW4ocm9vdC5nZXQoImhlaWdodCIpLCBOb25lKQogICAgaWYgYXJncy5jYW52YXM6CiAgICAgICAgY3csIGNoID0gYXJncy5jYW52YXMKICAgIGlmIG5vdCBjdyBvciBub3QgY2g6CiAgICAgICAgc3lzLmV4aXQoIuaXoOazleehruWumueUu+W4g+WwuuWvuO+8muivt+WcqCBTVkcg5aOw5piOIHZpZXdCb3gg5oiWIHdpZHRoL2hlaWdodO+8jOaIlueUqCAtLWNhbnZhcyBXIEgiKQoKICAgIHByaW50KGYiIyBTVkcg6Z2Z5oCB5qOA5p+lOiB7YXJncy5zdmd9ICDnlLvluIMge2N3Omd9w5d7Y2g6Z30gIOeVmeeZvemYiOWAvCB7YXJncy5tYXJnaW46Z31weCIpCgogICAgZ2ZhbWlseSA9IGdsb2JhbF9mb250X2ZhbWlseShyb290KQoKICAgICMg5pS26ZuG5paH5a2XCiAgICB0ZXh0cyA9IFtdCiAgICBmb3IgZWwgaW4gZmluZF9hbGwocm9vdCwgInRleHQiKToKICAgICAgICBjb250ZW50ID0gIiIuam9pbihlbC5pdGVydGV4dCgpKS5zdHJpcCgpCiAgICAgICAgaWYgbm90IGNvbnRlbnQ6CiAgICAgICAgICAgIGNvbnRpbnVlCiAgICAgICAgZnMgPSBmb250X3NpemVfb2YoZWwsIGFyZ3MuZm9udF9zaXplKQogICAgICAgIHggPSBwYXJzZV9sZW4oZWwuZ2V0KCJ4IiksIDAuMCkKICAgICAgICB5ID0gcGFyc2VfbGVuKGVsLmdldCgieSIpLCAwLjApCiAgICAgICAgdHgsIHR5ID0gcGFyc2VfdHJhbnNsYXRlKGVsKQogICAgICAgIHggKz0gdHgKICAgICAgICB5ICs9IHR5CiAgICAgICAgdyA9IHRleHRfd2lkdGgoY29udGVudCwgZnMpCiAgICAgICAgYW5jaG9yID0gKGVsLmdldCgidGV4dC1hbmNob3IiKSBvciAic3RhcnQiKS5zdHJpcCgpCiAgICAgICAgaWYgYW5jaG9yID09ICJtaWRkbGUiOgogICAgICAgICAgICBzdGFydCA9IHggLSB3IC8gMgogICAgICAgIGVsaWYgYW5jaG9yID09ICJlbmQiOgogICAgICAgICAgICBzdGFydCA9IHggLSB3CiAgICAgICAgZWxzZToKICAgICAgICAgICAgc3RhcnQgPSB4CiAgICAgICAgdGV4dHMuYXBwZW5kKGRpY3QoCiAgICAgICAgICAgIGNvbnRlbnQ9Y29udGVudCwgeD14LCB5PXksIHN0YXJ0PXN0YXJ0LCBlbmQ9c3RhcnQgKyB3LAogICAgICAgICAgICBmcz1mcywgdz13LCBlbW9qaT1maW5kX2Vtb2ppKGNvbnRlbnQpLAogICAgICAgICAgICBmYW1pbHk9Zm9udF9mYW1pbHlfb2YoZWwpIG9yIGdmYW1pbHksIGZpbGw9ZmlsbF9vZihlbCksCiAgICAgICAgICAgIGJvbGQ9Zm9udF93ZWlnaHRfb2YoZWwpLAogICAgICAgICkpCgogICAgIyDmlLbpm4bog4zmma/nn6nlvaLvvIjluKYgZmlsbO+8jOeUqOS6juiDjOaZr+ahhuWMheWQq+aAp+S4juWvueavlOW6puiDjOaZr++8iQogICAgcmVjdHMgPSBbXQogICAgZm9yIGVsIGluIGZpbmRfYWxsKHJvb3QsICJyZWN0Iik6CiAgICAgICAgcnggPSBwYXJzZV9sZW4oZWwuZ2V0KCJ4IiksIDAuMCkKICAgICAgICByeSA9IHBhcnNlX2xlbihlbC5nZXQoInkiKSwgMC4wKQogICAgICAgIHJ3ID0gcGFyc2VfbGVuKGVsLmdldCgid2lkdGgiKSwgMC4wKQogICAgICAgIHJoID0gcGFyc2VfbGVuKGVsLmdldCgiaGVpZ2h0IiksIDAuMCkKICAgICAgICBpZiBydyA+IDAgYW5kIHJoID4gMDoKICAgICAgICAgICAgcmVjdHMuYXBwZW5kKGRpY3QoeD1yeCwgeT1yeSwgdz1ydywgaD1yaCwgZmlsbD1maWxsX29mKGVsKSkpCgogICAgIyDlr7nmr5Tluqbog4zmma/lgJnpgIkgPSDnn6nlvaIgKyDlnIblvaLvvIjlnIblvaLmjInlpJbmjqXmoYblrprkvY3vvIzlj6rnlKjkuo7lj5bog4zmma/oibLvvIzkuI3lgZrmoYblrr3moKHpqozvvIkKICAgIGJnX2JveGVzID0gbGlzdChyZWN0cykKICAgIGZvciBlbCBpbiBmaW5kX2FsbChyb290LCAiY2lyY2xlIik6CiAgICAgICAgY3ggPSBwYXJzZV9sZW4oZWwuZ2V0KCJjeCIpLCAwLjApCiAgICAgICAgY3kgPSBwYXJzZV9sZW4oZWwuZ2V0KCJjeSIpLCAwLjApCiAgICAgICAgciA9IHBhcnNlX2xlbihlbC5nZXQoInIiKSwgMC4wKQogICAgICAgIGlmIHIgPiAwOgogICAgICAgICAgICBiZ19ib3hlcy5hcHBlbmQoZGljdCh4PWN4IC0gciwgeT1jeSAtIHIsIHc9MiAqIHIsIGg9MiAqIHIsIGZpbGw9ZmlsbF9vZihlbCkpKQoKICAgIGVycm9ycyA9IFtdICAjIOW/hemhu+S/rgogICAgd2FybnMgPSBbXSAgICMg6ZyA5Lq65bel56Gu6K6kCgogICAgcHJpbnQoZiJcblvmloflrZddIOWFsSB7bGVuKHRleHRzKX0g5aSEIikKICAgIGZvciBpLCB0IGluIGVudW1lcmF0ZSh0ZXh0cywgMSk6CiAgICAgICAgZmxhZ3MgPSBbXQogICAgICAgICMg56Gs6ZSZ6K+v77ya5a6e6ZmF6LaK5Ye655S75biDCiAgICAgICAgaWYgdFsic3RhcnQiXSA8IDA6CiAgICAgICAgICAgIGZsYWdzLmFwcGVuZChmIui2iuWHuuW3pui+ueeVjCh7dFsnc3RhcnQnXTouMGZ9PDApIikKICAgICAgICAgICAgZXJyb3JzLmFwcGVuZChmIuaWh+Wtl+OAjHt0Wydjb250ZW50J11bOjE2XX3jgI3otorlh7rnlLvluIPlt6bovrkiKQogICAgICAgIGlmIHRbImVuZCJdID4gY3c6CiAgICAgICAgICAgIGZsYWdzLmFwcGVuZChmIui2iuWHuuWPs+i+ueeVjCh7dFsnZW5kJ106LjBmfT57Y3c6Z30pIikKICAgICAgICAgICAgZXJyb3JzLmFwcGVuZChmIuaWh+Wtl+OAjHt0Wydjb250ZW50J11bOjE2XX3jgI3otorlh7rnlLvluIPlj7PovrkiKQogICAgICAgIGlmIHRbInkiXSAtIHRbImZzIl0gKiBBU0NFTlQgPCAwOgogICAgICAgICAgICBmbGFncy5hcHBlbmQoZiLotorlh7rpobbpg6goeS3lrZflvaLpq5g9e3RbJ3knXSAtIHRbJ2ZzJ10gKiBBU0NFTlQ6LjBmfTwwKSIpCiAgICAgICAgICAgIGVycm9ycy5hcHBlbmQoZiLmloflrZfjgIx7dFsnY29udGVudCddWzoxNl1944CN6LaK5Ye655S75biD6aG26YOoIikKICAgICAgICBpZiB0WyJ5Il0gKyB0WyJmcyJdICogREVTQ0VOVCA+IGNoOgogICAgICAgICAgICBmbGFncy5hcHBlbmQoZiLotorlh7rlupXpg6goeSvkuIvpmY3pg6g9e3RbJ3knXSArIHRbJ2ZzJ10gKiBERVNDRU5UOi4wZn0+e2NoOmd9KSIpCiAgICAgICAgICAgIGVycm9ycy5hcHBlbmQoZiLmloflrZfjgIx7dFsnY29udGVudCddWzoxNl1944CN6LaK5Ye655S75biD5bqV6YOoIikKICAgICAgICAjIOi9r+itpuWRiu+8mui0tOi/kei+uee8mO+8iOacqui+vuWIsOeVmeeZvemYiOWAvO+8iQogICAgICAgIGlmIGFyZ3MubWFyZ2luIGFuZCAwIDw9IHRbInN0YXJ0Il0gPCBhcmdzLm1hcmdpbjoKICAgICAgICAgICAgZmxhZ3MuYXBwZW5kKGYi6LS05bem6L65KHt0WydzdGFydCddOi4wZn0855WZ55m9e2FyZ3MubWFyZ2luOmd9KSIpCiAgICAgICAgICAgIHdhcm5zLmFwcGVuZChmIuaWh+Wtl+OAjHt0Wydjb250ZW50J11bOjE2XX3jgI3otLTov5Hlt6bovrnvvIg8e2FyZ3MubWFyZ2luOmd9cHgg55WZ55m977yJIikKICAgICAgICBpZiBhcmdzLm1hcmdpbiBhbmQgdFsiZW5kIl0gPD0gY3cgYW5kIHRbImVuZCJdID4gY3cgLSBhcmdzLm1hcmdpbjoKICAgICAgICAgICAgZmxhZ3MuYXBwZW5kKGYi6LS05Y+z6L65KHt0WydlbmQnXTouMGZ9PntjdyAtIGFyZ3MubWFyZ2luOmd9KSIpCiAgICAgICAgICAgIHdhcm5zLmFwcGVuZChmIuaWh+Wtl+OAjHt0Wydjb250ZW50J11bOjE2XX3jgI3otLTov5Hlj7PovrnvvIg8e2FyZ3MubWFyZ2luOmd9cHgg55WZ55m977yJIikKICAgICAgICBpZiBhcmdzLm1hcmdpbiBhbmQgdFsieSJdIC0gdFsiZnMiXSA8IGFyZ3MubWFyZ2luOgogICAgICAgICAgICBmbGFncy5hcHBlbmQoZiLotLTpobbpg6giKQogICAgICAgICAgICB3YXJucy5hcHBlbmQoZiLmloflrZfjgIx7dFsnY29udGVudCddWzoxNl1944CN6LS06L+R6aG26YOoIikKICAgICAgICBpZiBhcmdzLm1hcmdpbiBhbmQgdFsieSJdID4gY2ggLSBhcmdzLm1hcmdpbjoKICAgICAgICAgICAgZmxhZ3MuYXBwZW5kKGYi6LS05bqV6YOoIikKICAgICAgICAgICAgd2FybnMuYXBwZW5kKGYi5paH5a2X44CMe3RbJ2NvbnRlbnQnXVs6MTZdfeOAjei0tOi/keW6lemDqCIpCiAgICAgICAgaWYgdFsiZW1vamkiXToKICAgICAgICAgICAgZmxhZ3MuYXBwZW5kKCJlbW9qaToiICsgIiIuam9pbih0WyJlbW9qaSJdKSkKICAgICAgICAgICAgZXJyb3JzLmFwcGVuZChmIuaWh+Wtl+WQqyBlbW9qae+8mnsnJy5qb2luKHRbJ2Vtb2ppJ10pfSDihpIgcnN2ZyDkvJrmuLLmn5PmiJDmlrnlnZciKQogICAgICAgIGlmIG5vdCB0WyJmYW1pbHkiXToKICAgICAgICAgICAgZmxhZ3MuYXBwZW5kKCLmnKrorr4gZm9udC1mYW1pbHkiKQogICAgICAgICAgICB3YXJucy5hcHBlbmQoZiLmloflrZfjgIx7dFsnY29udGVudCddWzoxNl1944CN5pyq5pi+5byPIGZvbnQtZmFtaWx577yI5L6d6LWW57un5om/77yJIikKICAgICAgICAjIOiDjOaZr+ahhuWMheWQq+aAp++8muWPluWMheWQq+aWh+Wtl+mUmueCueeahOacgOWwj+efqeW9ou+8iOi3s+i/h+aVtOW5heeUu+W4g+iDjOaZr+efqeW9ou+8iQogICAgICAgIGNvbnRhaW5pbmcgPSBbciBmb3IgciBpbiByZWN0cwogICAgICAgICAgICAgICAgICAgICAgaWYgclsieCJdIDw9IHRbIngiXSA8PSByWyJ4Il0gKyByWyJ3Il0gYW5kIHJbInkiXSA8PSB0WyJ5Il0gPD0gclsieSJdICsgclsiaCJdCiAgICAgICAgICAgICAgICAgICAgICBhbmQgbm90IChyWyJ4Il0gPD0gMCBhbmQgclsieSJdIDw9IDAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIGFuZCByWyJ3Il0gPj0gY3cgLSAxIGFuZCByWyJoIl0gPj0gY2ggLSAxKV0KICAgICAgICBpZiBjb250YWluaW5nOgogICAgICAgICAgICBib3ggPSBtaW4oY29udGFpbmluZywga2V5PWxhbWJkYSByOiByWyJ3Il0gKiByWyJoIl0pCiAgICAgICAgICAgIGlmIHRbInN0YXJ0Il0gPCBib3hbIngiXSBvciB0WyJlbmQiXSA+IGJveFsieCJdICsgYm94WyJ3Il06CiAgICAgICAgICAgICAgICBmbGFncy5hcHBlbmQoZiLotoXlh7rog4zmma/moYYodz17Ym94Wyd3J106Z30pIikKICAgICAgICAgICAgICAgIGVycm9ycy5hcHBlbmQoZiLmloflrZfjgIx7dFsnY29udGVudCddWzoxNl1944CN5qiq5ZCR6LaF5Ye66IOM5pmv5qGGIHg9e2JveFsneCddOmd9IHc9e2JveFsndyddOmd9IikKICAgICAgICAgICAgZWxpZiBib3hbInciXSAtIHRbInciXSA8IDIgKiBQQUQ6CiAgICAgICAgICAgICAgICBmbGFncy5hcHBlbmQoZiLog4zmma/moYblgY/nqoQodz17Ym94Wyd3J106Z308e3RbJ3cnXTouMGZ9K3syICogUEFEfSkiKQogICAgICAgICAgICAgICAgd2FybnMuYXBwZW5kKGYi5paH5a2X44CMe3RbJ2NvbnRlbnQnXVs6MTZdfeOAjeiDjOaZr+ahhuWBj+eqhCIpCiAgICAgICAgc3RhdHVzID0gIk9LIiBpZiBub3QgZmxhZ3MgZWxzZSAi4pqgICIgKyAiIC8gIi5qb2luKGZsYWdzKQogICAgICAgIHByaW50KGYiICAje2k6PDJ9IHk9e3RbJ3knXTo8Nmd9IHg9e3RbJ3gnXTo8Nmd9IHt0WydmcyddOmd9cHggIgogICAgICAgICAgICAgIGYi5Lyw5a694omIe3RbJ3cnXTouMGZ9cHggW3t0WydzdGFydCddOi4wZn3ihpJ7dFsnZW5kJ106LjBmfV0gIgogICAgICAgICAgICAgIGYie3RbJ2NvbnRlbnQnXVs6MjJdfSAge3N0YXR1c30iKQoKICAgICMg5paH5a2X6Ze05rC05bmz6YeN5Y+gCiAgICBwcmludCgiXG5b6YeN5Y+gXSIpCiAgICBvdmVybGFwcyA9IDAKICAgIGZvciBpIGluIHJhbmdlKGxlbih0ZXh0cykpOgogICAgICAgIGZvciBqIGluIHJhbmdlKGkgKyAxLCBsZW4odGV4dHMpKToKICAgICAgICAgICAgYSwgYiA9IHRleHRzW2ldLCB0ZXh0c1tqXQogICAgICAgICAgICBpZiBhYnMoYVsieSJdIC0gYlsieSJdKSA8IDAuNyAqIG1heChhWyJmcyJdLCBiWyJmcyJdKToKICAgICAgICAgICAgICAgIGlmIGFbInN0YXJ0Il0gPCBiWyJlbmQiXSBhbmQgYlsic3RhcnQiXSA8IGFbImVuZCJdOgogICAgICAgICAgICAgICAgICAgIG92ZXJsYXBzICs9IDEKICAgICAgICAgICAgICAgICAgICBlcnJvcnMuYXBwZW5kKAogICAgICAgICAgICAgICAgICAgICAgICBmIuaWh+Wtl+OAjHthWydjb250ZW50J11bOjEyXX3jgI3kuI7jgIx7YlsnY29udGVudCddWzoxMl1944CN5Zyo5ZCM5LiA6KGM5bim5YaF5rC05bmz6YeN5Y+gIikKICAgICAgICAgICAgICAgICAgICBwcmludChmIiAg4pqgIHk9e2FbJ3knXTouMGZ944CMe2FbJ2NvbnRlbnQnXVs6MTJdfeOAjeS4jiAiCiAgICAgICAgICAgICAgICAgICAgICAgICAgZiJ5PXtiWyd5J106LjBmfeOAjHtiWydjb250ZW50J11bOjEyXX3jgI3ph43lj6AiKQogICAgaWYgb3ZlcmxhcHMgPT0gMDoKICAgICAgICBwcmludCgiICDml6AiKQoKICAgICMg5a+55q+U5bqm77ya6IOM5pmvID0g5omA5Zyo5pyA5bCP55+p5b2iIGZpbGwgPiDlhajnlLvluIPnn6nlvaIgZmlsbCA+IC0tY29udHJhc3QKICAgIGNvbnRyYXN0X3Jvd3MgPSBbXQogICAgZnVsbF9iZyA9IE5vbmUKICAgIGZ1bGxfcmVjdHMgPSBbciBmb3IgciBpbiBiZ19ib3hlcyBpZiByWyJ4Il0gPT0gMCBhbmQgclsieSJdID09IDAKICAgICAgICAgICAgICAgICAgYW5kIHJbInciXSA+PSBjdyAtIDEgYW5kIHJbImgiXSA+PSBjaCAtIDEgYW5kIGlzX2hleChyWyJmaWxsIl0pXQogICAgaWYgZnVsbF9yZWN0czoKICAgICAgICBmdWxsX2JnID0gZnVsbF9yZWN0c1swXVsiZmlsbCJdCiAgICBmYWxsYmFja19iZyA9IGZ1bGxfYmcgb3IgKGFyZ3MuY29udHJhc3QgaWYgYXJncy5jb250cmFzdCBhbmQgaXNfaGV4KGFyZ3MuY29udHJhc3QpIGVsc2UgTm9uZSkKCiAgICBmb3IgaSwgdCBpbiBlbnVtZXJhdGUodGV4dHMsIDEpOgogICAgICAgIGZpbGwgPSAodFsiZmlsbCJdIG9yICIiKS5zdHJpcCgpCiAgICAgICAgaWYgbm90IGlzX2hleChmaWxsKToKICAgICAgICAgICAgY29udGludWUKICAgICAgICBjb250YWluaW5nID0gW3IgZm9yIHIgaW4gYmdfYm94ZXMKICAgICAgICAgICAgICAgICAgICAgIGlmIHJbIngiXSA8PSB0WyJ4Il0gPD0gclsieCJdICsgclsidyJdIGFuZCByWyJ5Il0gPD0gdFsieSJdIDw9IHJbInkiXSArIHJbImgiXQogICAgICAgICAgICAgICAgICAgICAgYW5kIGlzX2hleChyWyJmaWxsIl0pXQogICAgICAgIGJnID0gTm9uZQogICAgICAgIGlmIGNvbnRhaW5pbmc6CiAgICAgICAgICAgIGJnID0gbWluKGNvbnRhaW5pbmcsIGtleT1sYW1iZGEgcjogclsidyJdICogclsiaCJdKVsiZmlsbCJdCiAgICAgICAgaWYgYmcgaXMgTm9uZToKICAgICAgICAgICAgYmcgPSBmYWxsYmFja19iZwogICAgICAgIGlmIGJnIGlzIE5vbmU6CiAgICAgICAgICAgIGNvbnRpbnVlCiAgICAgICAgcmF0aW8gPSBjb250cmFzdF9yYXRpbyhmaWxsLCBiZykKICAgICAgICAjIOWkp+Wtl++8muKJpTI0cHjvvIzmiJYg4omlMTguNjZweCDkuJTliqDnspfvvIhXQ0FHIGxhcmdlIHRleHTvvIkKICAgICAgICBpc19sYXJnZSA9IHRbImZzIl0gPj0gMjQgb3IgKHRbImZzIl0gPj0gMTguNjYgYW5kIHQuZ2V0KCJib2xkIikpCiAgICAgICAgbmVlZCA9IDMuMCBpZiBpc19sYXJnZSBlbHNlIDQuNQogICAgICAgIG9rID0gcmF0aW8gPj0gbmVlZAogICAgICAgIGNvbnRyYXN0X3Jvd3MuYXBwZW5kKChpLCB0LCBmaWxsLCBiZywgcmF0aW8sIG5lZWQsIG9rKSkKICAgICAgICBpZiBub3Qgb2s6CiAgICAgICAgICAgIHdhcm5zLmFwcGVuZChmIuaWh+Wtl+OAjHt0Wydjb250ZW50J11bOjE2XX3jgI1maWxsIHtmaWxsfSB2cyB7Ymd9IOWvueavlOW6piB7cmF0aW86LjJmfToxIDwge25lZWQ6Z30iKQoKICAgIGlmIGNvbnRyYXN0X3Jvd3M6CiAgICAgICAgcHJpbnQoZiJcblvlr7nmr5TluqZdIOWbnumAgOeUu+W4g+iDjOaZryB7ZmFsbGJhY2tfYmcgb3IgJ++8iOacquWumu+8iSd9IikKICAgICAgICBmb3IgKGksIHQsIGZpbGwsIGJnLCByYXRpbywgbmVlZCwgb2spIGluIGNvbnRyYXN0X3Jvd3M6CiAgICAgICAgICAgIHRhZyA9ICJPSyIgaWYgb2sgZWxzZSAi4pyXIOWBj+S9jiIKICAgICAgICAgICAgcHJpbnQoZiIgICN7aTo8Mn0gZmlsbCB7ZmlsbH0gdnMge2JnfSA9IHtyYXRpbzouMmZ9OjEgKOmcgOKJpXtuZWVkOmd9KSAge3RhZ30iKQoKICAgIHByaW50KGYiXG5b57uT6K66XSDplJnor68ge2xlbihlcnJvcnMpfSDlpIQsIOitpuWRiiB7bGVuKHdhcm5zKX0g5aSEIikKICAgIGZvciBlIGluIGVycm9yczoKICAgICAgICBwcmludChmIiAg4pyXIHtlfSIpCiAgICBmb3IgdyBpbiB3YXJuczoKICAgICAgICBwcmludChmIiAg4pqgIHt3fSIpCiAgICBpZiBlcnJvcnM6CiAgICAgICAgcHJpbnQoIiAg4oaSIOWtmOWcqOW/hemhu+S/ruWkjeeahOmXrumimO+8jOWFiOS/ruWGjea4suafk+OAgiIpCiAgICAgICAgc3lzLmV4aXQoMSkKICAgIGlmIHdhcm5zOgogICAgICAgIHByaW50KCIgIOKGkiDpgJrov4fvvIjlrZjlnKjorablkYrvvIzor7fkurrlt6Xnoa7orqTlkI7muLLmn5PvvInjgIIiKQogICAgZWxzZToKICAgICAgICBwcmludCgiICDihpIg4pyFIOmAmui/hyIpCiAgICBzeXMuZXhpdCgwKQoKCmlmIF9fbmFtZV9fID09ICJfX21haW5fXyI6CiAgICBtYWluKCkK
+#!/usr/bin/env python3
+"""SVG 渲染前静态检查：写之前先验算，一次画对。
+
+检查项：
+  1. 文字宽度估算 + 溢出画布（硬错误）与贴近留白（软警告）检测
+  2. 相邻文字是否在同一行带内水平重叠
+  3. 文字是否超出所在 <rect> 背景框（胶囊/卡片框不住）
+  4. SVG 内是否出现 emoji（rsvg 无字形 → 实心方块）
+  5. 是否缺 font-family（中文字体静默回退 → 豆腐块）
+  6. 文字 fill 与背景的 WCAG 对比度（自动取所在背景框/卡片颜色）
+
+用法：
+    python3 check.py design.svg
+    python3 check.py design.svg --canvas 900 520 --margin 40
+    python3 check.py design.svg --font-size 16 --contrast "#16223a"
+
+只读，不修改任何文件。依赖同目录 svgtext.py、contrast.py（纯 stdlib）。
+
+说明：
+  - "硬错误" = 文字实际越出画布 / 重叠 / 含 emoji / 超出背景框，必须修；
+  - "软警告" = 贴近边缘、背景框偏窄、未显式字体、对比度不足，需人工确认。
+  - font-family 按「元素自身 → 祖先/全局 <style>」近似解析，无法完整模拟 CSS 级联。
+"""
+import argparse
+import re
+import sys
+import xml.etree.ElementTree as ET
+
+from svgtext import text_width, find_emoji
+from contrast import contrast_ratio
+
+PAD = 15       # 胶囊背景框左右最小余量（px）
+ASCENT = 0.8   # 字形上升部相对字号的比例（用于纵向裁剪判断）
+DESCENT = 0.25  # 字形下降部相对字号的比例
+
+HEX_RE = re.compile(r"#?[0-9a-fA-F]{3}([0-9a-fA-F]{3})?")
+
+
+def localname(tag):
+    return tag.rsplit("}", 1)[-1]
+
+
+def parse_len(s, default=0.0):
+    if s is None:
+        return default
+    s = str(s).strip().lower()
+    if s.endswith("px"):
+        s = s[:-2]
+    elif s.endswith("pt"):
+        return float(s[:-2]) * 96.0 / 72.0
+    try:
+        return float(s)
+    except ValueError:
+        return default
+
+
+def parse_style(style):
+    d = {}
+    if not style:
+        return d
+    for part in str(style).split(";"):
+        if ":" in part:
+            k, v = part.split(":", 1)
+            d[k.strip().lower()] = v.strip()
+    return d
+
+
+def parse_translate(el):
+    tr = el.get("transform") or ""
+    m = re.search(r"translate\(\s*(-?[\d.]+)[,\s]+(-?[\d.]+)\s*\)", tr)
+    if m:
+        return float(m.group(1)), float(m.group(2))
+    return 0.0, 0.0
+
+
+def find_all(root, name):
+    for el in root.iter():
+        if localname(el.tag) == name:
+            yield el
+
+
+def font_size_of(el, default):
+    st = parse_style(el.get("style"))
+    return parse_len(el.get("font-size") or st.get("font-size"), default)
+
+
+def font_family_of(el):
+    return el.get("font-family") or parse_style(el.get("style")).get("font-family")
+
+
+def fill_of(el):
+    return el.get("fill") or parse_style(el.get("style")).get("fill")
+
+
+def font_weight_of(el):
+    fw = (el.get("font-weight") or parse_style(el.get("style")).get("font-weight") or "").strip().lower()
+    return fw in ("bold", "bolder", "700", "800", "900")
+
+
+def is_hex(color):
+    return bool(color) and bool(HEX_RE.fullmatch(color.strip()))
+
+
+def global_font_family(root):
+    if root.get("font-family"):
+        return "(根元素声明)"
+    for el in find_all(root, "style"):
+        if "font-family" in "".join(el.itertext()):
+            return "(<style> 声明)"
+    return None
+
+
+def main():
+    ap = argparse.ArgumentParser(description="SVG 渲染前静态检查")
+    ap.add_argument("svg", help="SVG 文件路径")
+    ap.add_argument("--canvas", nargs=2, type=float, metavar=("W", "H"),
+                    help="画布宽高（SVG 未声明 viewBox/width/height 时使用）")
+    ap.add_argument("--margin", type=float, default=0.0,
+                    help="四周留白阈值 px（贴近边缘则警告），默认 0")
+    ap.add_argument("--font-size", type=float, default=16.0,
+                    help="未解析到 font-size 时的默认字号，默认 16")
+    ap.add_argument("--contrast", metavar="BG",
+                    help="画布背景色回退（如 #16223a），用于文字对比度检查")
+    args = ap.parse_args()
+
+    try:
+        tree = ET.parse(args.svg)
+    except Exception as e:
+        sys.exit(f"解析 SVG 失败：{e}")
+    root = tree.getroot()
+
+    # 画布尺寸：优先 viewBox，其次 width/height，最后 --canvas
+    cw = ch = None
+    vb = root.get("viewBox")
+    if vb:
+        nums = [float(p) for p in re.split(r"[,\s]+", vb.strip())]
+        if len(nums) >= 4:
+            cw, ch = nums[2], nums[3]
+    if cw is None:
+        cw = parse_len(root.get("width"), None)
+    if ch is None:
+        ch = parse_len(root.get("height"), None)
+    if args.canvas:
+        cw, ch = args.canvas
+    if not cw or not ch:
+        sys.exit("无法确定画布尺寸：请在 SVG 声明 viewBox 或 width/height，或用 --canvas W H")
+
+    print(f"# SVG 静态检查: {args.svg}  画布 {cw:g}×{ch:g}  留白阈值 {args.margin:g}px")
+
+    gfamily = global_font_family(root)
+
+    # 收集文字
+    texts = []
+    for el in find_all(root, "text"):
+        content = "".join(el.itertext()).strip()
+        if not content:
+            continue
+        fs = font_size_of(el, args.font_size)
+        x = parse_len(el.get("x"), 0.0)
+        y = parse_len(el.get("y"), 0.0)
+        tx, ty = parse_translate(el)
+        x += tx
+        y += ty
+        w = text_width(content, fs)
+        anchor = (el.get("text-anchor") or "start").strip()
+        if anchor == "middle":
+            start = x - w / 2
+        elif anchor == "end":
+            start = x - w
+        else:
+            start = x
+        texts.append(dict(
+            content=content, x=x, y=y, start=start, end=start + w,
+            fs=fs, w=w, emoji=find_emoji(content),
+            family=font_family_of(el) or gfamily, fill=fill_of(el),
+            bold=font_weight_of(el),
+        ))
+
+    # 收集背景矩形（带 fill，用于背景框包含性与对比度背景）
+    rects = []
+    for el in find_all(root, "rect"):
+        rx = parse_len(el.get("x"), 0.0)
+        ry = parse_len(el.get("y"), 0.0)
+        rw = parse_len(el.get("width"), 0.0)
+        rh = parse_len(el.get("height"), 0.0)
+        if rw > 0 and rh > 0:
+            rects.append(dict(x=rx, y=ry, w=rw, h=rh, fill=fill_of(el)))
+
+    # 对比度背景候选 = 矩形 + 圆形（圆形按外接框定位，只用于取背景色，不做框宽校验）
+    bg_boxes = list(rects)
+    for el in find_all(root, "circle"):
+        cx = parse_len(el.get("cx"), 0.0)
+        cy = parse_len(el.get("cy"), 0.0)
+        r = parse_len(el.get("r"), 0.0)
+        if r > 0:
+            bg_boxes.append(dict(x=cx - r, y=cy - r, w=2 * r, h=2 * r, fill=fill_of(el)))
+
+    errors = []  # 必须修
+    warns = []   # 需人工确认
+
+    print(f"\n[文字] 共 {len(texts)} 处")
+    for i, t in enumerate(texts, 1):
+        flags = []
+        # 硬错误：实际越出画布
+        if t["start"] < 0:
+            flags.append(f"越出左边界({t['start']:.0f}<0)")
+            errors.append(f"文字「{t['content'][:16]}」越出画布左边")
+        if t["end"] > cw:
+            flags.append(f"越出右边界({t['end']:.0f}>{cw:g})")
+            errors.append(f"文字「{t['content'][:16]}」越出画布右边")
+        if t["y"] - t["fs"] * ASCENT < 0:
+            flags.append(f"越出顶部(y-字形高={t['y'] - t['fs'] * ASCENT:.0f}<0)")
+            errors.append(f"文字「{t['content'][:16]}」越出画布顶部")
+        if t["y"] + t["fs"] * DESCENT > ch:
+            flags.append(f"越出底部(y+下降部={t['y'] + t['fs'] * DESCENT:.0f}>{ch:g})")
+            errors.append(f"文字「{t['content'][:16]}」越出画布底部")
+        # 软警告：贴近边缘（未达到留白阈值）
+        if args.margin and 0 <= t["start"] < args.margin:
+            flags.append(f"贴左边({t['start']:.0f}<留白{args.margin:g})")
+            warns.append(f"文字「{t['content'][:16]}」贴近左边（<{args.margin:g}px 留白）")
+        if args.margin and t["end"] <= cw and t["end"] > cw - args.margin:
+            flags.append(f"贴右边({t['end']:.0f}>{cw - args.margin:g})")
+            warns.append(f"文字「{t['content'][:16]}」贴近右边（<{args.margin:g}px 留白）")
+        if args.margin and t["y"] - t["fs"] < args.margin:
+            flags.append(f"贴顶部")
+            warns.append(f"文字「{t['content'][:16]}」贴近顶部")
+        if args.margin and t["y"] > ch - args.margin:
+            flags.append(f"贴底部")
+            warns.append(f"文字「{t['content'][:16]}」贴近底部")
+        if t["emoji"]:
+            flags.append("emoji:" + "".join(t["emoji"]))
+            errors.append(f"文字含 emoji：{''.join(t['emoji'])} → rsvg 会渲染成方块")
+        if not t["family"]:
+            flags.append("未设 font-family")
+            warns.append(f"文字「{t['content'][:16]}」未显式 font-family（依赖继承）")
+        # 背景框包含性：取包含文字锚点的最小矩形（跳过整幅画布背景矩形）
+        containing = [r for r in rects
+                      if r["x"] <= t["x"] <= r["x"] + r["w"] and r["y"] <= t["y"] <= r["y"] + r["h"]
+                      and not (r["x"] <= 0 and r["y"] <= 0
+                               and r["w"] >= cw - 1 and r["h"] >= ch - 1)]
+        if containing:
+            box = min(containing, key=lambda r: r["w"] * r["h"])
+            if t["start"] < box["x"] or t["end"] > box["x"] + box["w"]:
+                flags.append(f"超出背景框(w={box['w']:g})")
+                errors.append(f"文字「{t['content'][:16]}」横向超出背景框 x={box['x']:g} w={box['w']:g}")
+            elif box["w"] - t["w"] < 2 * PAD:
+                flags.append(f"背景框偏窄(w={box['w']:g}<{t['w']:.0f}+{2 * PAD})")
+                warns.append(f"文字「{t['content'][:16]}」背景框偏窄")
+        status = "OK" if not flags else "⚠ " + " / ".join(flags)
+        print(f"  #{i:<2} y={t['y']:<6g} x={t['x']:<6g} {t['fs']:g}px "
+              f"估宽≈{t['w']:.0f}px [{t['start']:.0f}→{t['end']:.0f}] "
+              f"{t['content'][:22]}  {status}")
+
+    # 文字间水平重叠
+    print("\n[重叠]")
+    overlaps = 0
+    for i in range(len(texts)):
+        for j in range(i + 1, len(texts)):
+            a, b = texts[i], texts[j]
+            if abs(a["y"] - b["y"]) < 0.7 * max(a["fs"], b["fs"]):
+                if a["start"] < b["end"] and b["start"] < a["end"]:
+                    overlaps += 1
+                    errors.append(
+                        f"文字「{a['content'][:12]}」与「{b['content'][:12]}」在同一行带内水平重叠")
+                    print(f"  ⚠ y={a['y']:.0f}「{a['content'][:12]}」与 "
+                          f"y={b['y']:.0f}「{b['content'][:12]}」重叠")
+    if overlaps == 0:
+        print("  无")
+
+    # 对比度：背景 = 所在最小矩形 fill > 全画布矩形 fill > --contrast
+    contrast_rows = []
+    full_bg = None
+    full_rects = [r for r in bg_boxes if r["x"] == 0 and r["y"] == 0
+                  and r["w"] >= cw - 1 and r["h"] >= ch - 1 and is_hex(r["fill"])]
+    if full_rects:
+        full_bg = full_rects[0]["fill"]
+    fallback_bg = full_bg or (args.contrast if args.contrast and is_hex(args.contrast) else None)
+
+    for i, t in enumerate(texts, 1):
+        fill = (t["fill"] or "").strip()
+        if not is_hex(fill):
+            continue
+        containing = [r for r in bg_boxes
+                      if r["x"] <= t["x"] <= r["x"] + r["w"] and r["y"] <= t["y"] <= r["y"] + r["h"]
+                      and is_hex(r["fill"])]
+        bg = None
+        if containing:
+            bg = min(containing, key=lambda r: r["w"] * r["h"])["fill"]
+        if bg is None:
+            bg = fallback_bg
+        if bg is None:
+            continue
+        ratio = contrast_ratio(fill, bg)
+        # 大字：≥24px，或 ≥18.66px 且加粗（WCAG large text）
+        is_large = t["fs"] >= 24 or (t["fs"] >= 18.66 and t.get("bold"))
+        need = 3.0 if is_large else 4.5
+        ok = ratio >= need
+        contrast_rows.append((i, t, fill, bg, ratio, need, ok))
+        if not ok:
+            warns.append(f"文字「{t['content'][:16]}」fill {fill} vs {bg} 对比度 {ratio:.2f}:1 < {need:g}")
+
+    if contrast_rows:
+        print(f"\n[对比度] 回退画布背景 {fallback_bg or '（未定）'}")
+        for (i, t, fill, bg, ratio, need, ok) in contrast_rows:
+            tag = "OK" if ok else "✗ 偏低"
+            print(f"  #{i:<2} fill {fill} vs {bg} = {ratio:.2f}:1 (需≥{need:g})  {tag}")
+
+    print(f"\n[结论] 错误 {len(errors)} 处, 警告 {len(warns)} 处")
+    for e in errors:
+        print(f"  ✗ {e}")
+    for w in warns:
+        print(f"  ⚠ {w}")
+    if errors:
+        print("  → 存在必须修复的问题，先修再渲染。")
+        sys.exit(1)
+    if warns:
+        print("  → 通过（存在警告，请人工确认后渲染）。")
+    else:
+        print("  → ✅ 通过")
+    sys.exit(0)
+
+
+if __name__ == "__main__":
+    main()

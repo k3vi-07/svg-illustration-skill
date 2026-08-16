@@ -1,1 +1,202 @@
-IyEvdXNyL2Jpbi9lbnYgcHl0aG9uMwoiIiLmloflrZfmjpLniYggLyDlhYPntKDluIPlsYDorqHnrpflt6XlhbfvvIjnuq8gc3RkbGli77yM5YaZIFNWRyDliY3mjpLniYjnlKjvvInjgIIKCuino+WGsyBTVkcg5biD5bGA6YeM55qE6auY6aKR55eb54K577yIU1ZHIOeahCA8dGV4dD4g5LiN6Ieq5Yqo5o2i6KGMIC8g5LiN5bGF5LitIC8g5LiN5rWL6YeP77yJ77yaCiAgMS4g5paH5a2X6Ieq5Yqo5o2i6KGM77yaQ0pLIOaMieWtl+aWreihjO+8jOiLseaWhy/mlbDlrZfmjInor43mlq3ooYwKICAyLiDlpJrooYzmloflrZfnmoTooYzpq5jkuI7mr4/ooYwgYmFzZWxpbmUgeQogIDMuIOawtOW5syAvIOWeguebtOWxheS4reWvuem9kO+8iHRleHQtYW5jaG9yIOS4jiBiYXNlbGluZSDorqHnrpfvvIkKICA0LiBOIOS4quWFg+e0oOeahOWdh+WMgOe9keagvCAvIOWNleihjOetieWIhuWumuS9jQoK5a2Q5ZG95Luk77yaCiAgICB3cmFwIFRFWFQgICDmjInmnIDlpKflrr3luqbmjaLooYzvvIhDSksg5oSf55+l77yJ77yM5Y+v6L6T5Ye6IDx0ZXh0PiDniYfmrrUKICAgIGNlbnRlciBURVhUIOWcqOe7meWumuahhuWGheawtOW5syvlnoLnm7TlsYXkuK3vvIzovpPlh7ogeCAvIGJhc2VsaW5lIHkKICAgIGdyaWQgTiAgICAgIOetieWIhuWumuS9jSBOIOS4quWFg+e0oO+8iOWPr+mAieWkmuihjO+8iQoK55So5rOV56S65L6L77yaCiAgICBweXRob24zIGxheW91dC5weSB3cmFwICLlh63ku4DkuYjmlaLlkowgQ2xhdWRlIENvZGXjgIFDb2RleCDlj6vmnb/vvJ8iIC0tc2l6ZSAzNyAtLW1heC13aWR0aCA3MDAgLS1zdmcKICAgIHB5dGhvbjMgbGF5b3V0LnB5IHdyYXAgIuagh+mimOaWh+ahiCIgLS1zaXplIDQwIC0tbWF4LXdpZHRoIDcwMCAtLXkgMTAwIC0tbGluZS1oZWlnaHQgMS42CiAgICBweXRob24zIGxheW91dC5weSBjZW50ZXIgIua3seW6puWIhuaekCIgLS1zaXplIDI0IC0tYm94IDQwIDIwNSAyMzAgNDYKICAgIHB5dGhvbjMgbGF5b3V0LnB5IGdyaWQgNCAtLXdpZHRoIDkwMCAtLW1hcmdpbiA0MCAtLWdhcCAyNAoK5L6d6LWW5ZCM55uu5b2VIHN2Z3RleHQucHnvvIjnuq8gc3RkbGli77yJ44CCCiIiIgppbXBvcnQgYXJncGFyc2UKCmZyb20gc3ZndGV4dCBpbXBvcnQgdGV4dF93aWR0aCwgY2hhcl93aWR0aCwgaXNfd2lkZQoKCmRlZiBfdG9rZW5pemUodGV4dCk6CiAgICAiIiLmi4bmiJAgKGNqayDljZXlrZcgfCDmi4nkuIHor40gfCDnqbrmoLzliIbpmpQpIOeahOWNleWFg+a1geOAgiIiIgogICAgdW5pdHMgPSBbXQogICAgaSwgbiA9IDAsIGxlbih0ZXh0KQogICAgd2hpbGUgaSA8IG46CiAgICAgICAgY2ggPSB0ZXh0W2ldCiAgICAgICAgaWYgY2ggaW4gIiBcdCI6CiAgICAgICAgICAgIHdoaWxlIGkgPCBuIGFuZCB0ZXh0W2ldIGluICIgXHQiOgogICAgICAgICAgICAgICAgaSArPSAxCiAgICAgICAgICAgIHVuaXRzLmFwcGVuZCgoInNlcCIsIE5vbmUpKQogICAgICAgIGVsaWYgaXNfd2lkZShjaCk6CiAgICAgICAgICAgIHVuaXRzLmFwcGVuZCgoImNqayIsIGNoKSkKICAgICAgICAgICAgaSArPSAxCiAgICAgICAgZWxzZToKICAgICAgICAgICAgaiA9IGkKICAgICAgICAgICAgd2hpbGUgaiA8IG4gYW5kIG5vdCBpc193aWRlKHRleHRbal0pIGFuZCB0ZXh0W2pdIG5vdCBpbiAiIFx0IjoKICAgICAgICAgICAgICAgIGogKz0gMQogICAgICAgICAgICB1bml0cy5hcHBlbmQoKCJ3b3JkIiwgdGV4dFtpOmpdKSkKICAgICAgICAgICAgaSA9IGoKICAgIHJldHVybiB1bml0cwoKCmRlZiBfaGFyZF9zcGxpdCh3b3JkLCBtYXhfd2lkdGgsIGZvbnRfc2l6ZSwgYW1iaWd1b3VzKToKICAgICIiIuWNleivjeacrOi6q+i2heWuveaXtuaMieWtl+espuehrOWIh+OAgiIiIgogICAgY2h1bmtzID0gW10KICAgIGN1ciA9ICIiCiAgICBjdXJfdyA9IDAuMAogICAgZm9yIGNoIGluIHdvcmQ6CiAgICAgICAgdyA9IHRleHRfd2lkdGgoY2gsIGZvbnRfc2l6ZSwgYW1iaWd1b3VzKQogICAgICAgIGlmIGN1ciBhbmQgY3VyX3cgKyB3ID4gbWF4X3dpZHRoOgogICAgICAgICAgICBjaHVua3MuYXBwZW5kKGN1cikKICAgICAgICAgICAgY3VyID0gIiIKICAgICAgICAgICAgY3VyX3cgPSAwLjAKICAgICAgICBjdXIgKz0gY2gKICAgICAgICBjdXJfdyArPSB3CiAgICBpZiBjdXI6CiAgICAgICAgY2h1bmtzLmFwcGVuZChjdXIpCiAgICByZXR1cm4gY2h1bmtzCgoKZGVmIHdyYXBfdGV4dCh0ZXh0LCBtYXhfd2lkdGgsIGZvbnRfc2l6ZSwgYW1iaWd1b3VzPTAuNSk6CiAgICAiIiJDSksg5oSf55+l5o2i6KGM77ya6L+U5Zue6KGM5YiX6KGo44CC5Lit5paH5oyJ5a2X5pat6KGM77yM6Iux5paHL+aVsOWtl+aMieivjeaWreihjO+8iOS4jeaLhuivje+8ieOAgiIiIgogICAgbWF4X3dpZHRoID0gZmxvYXQobWF4X3dpZHRoKQogICAgaWYgbWF4X3dpZHRoIDw9IDA6CiAgICAgICAgcmFpc2UgVmFsdWVFcnJvcigibWF4LXdpZHRoIOW/hemhuyA+IDAiKQogICAgdG9rZW5zID0gX3Rva2VuaXplKHRleHQpCiAgICBsaW5lcyA9IFtdCiAgICBjdXIgPSAiIgogICAgY3VyX3cgPSAwLjAKICAgIGZvciBraW5kLCB2YWwgaW4gdG9rZW5zOgogICAgICAgIGlmIGtpbmQgPT0gInNlcCI6CiAgICAgICAgICAgIGlmIG5vdCBjdXI6CiAgICAgICAgICAgICAgICBjb250aW51ZSAgIyDooYzpppbnqbrmoLzkuKLlvIMKICAgICAgICAgICAgY3VyICs9ICIgIgogICAgICAgICAgICBjdXJfdyArPSBjaGFyX3dpZHRoKCIgIikgKiBmb250X3NpemUKICAgICAgICAgICAgY29udGludWUKICAgICAgICB3ID0gdGV4dF93aWR0aCh2YWwsIGZvbnRfc2l6ZSwgYW1iaWd1b3VzKQogICAgICAgIGlmIGN1ciBhbmQgY3VyX3cgKyB3ID4gbWF4X3dpZHRoOgogICAgICAgICAgICBsaW5lcy5hcHBlbmQoY3VyLnJzdHJpcCgpKQogICAgICAgICAgICBjdXIgPSAiIgogICAgICAgICAgICBjdXJfdyA9IDAuMAogICAgICAgIGlmIG5vdCBjdXIgYW5kIGtpbmQgPT0gIndvcmQiIGFuZCB3ID4gbWF4X3dpZHRoOgogICAgICAgICAgICBsaW5lcy5leHRlbmQoX2hhcmRfc3BsaXQodmFsLCBtYXhfd2lkdGgsIGZvbnRfc2l6ZSwgYW1iaWd1b3VzKSkKICAgICAgICAgICAgY3VyID0gIiIKICAgICAgICAgICAgY3VyX3cgPSAwLjAKICAgICAgICAgICAgY29udGludWUKICAgICAgICBjdXIgKz0gdmFsCiAgICAgICAgY3VyX3cgKz0gdwogICAgaWYgY3VyLnN0cmlwKCk6CiAgICAgICAgbGluZXMuYXBwZW5kKGN1ci5yc3RyaXAoKSkKICAgIHJldHVybiBsaW5lcyBvciBbIiJdCgoKZGVmIGNlbnRlcl94KGJveF94LCBib3hfdyk6CiAgICAiIiLmsLTlubPlsYXkuK3vvJrov5Tlm57mloflrZcgeO+8iOmFjeWQiCB0ZXh0LWFuY2hvcj0ibWlkZGxlIu+8ieOAgiIiIgogICAgcmV0dXJuIGJveF94ICsgYm94X3cgLyAyCgoKZGVmIGNlbnRlcl95KGJveF95LCBib3hfaCwgZm9udF9zaXplLCBmYWN0b3I9MC4zNSk6CiAgICAiIiLlnoLnm7TlsYXkuK3vvJrov5Tlm57mloflrZfnmoQgYmFzZWxpbmUgeeOAgmJveF95IOS4uuahhumhtu+8jGJveF9oIOS4uuahhumrmOOAggoKICAgIOi/keS8vOWFrOW8jyBiYXNlbGluZSA9IOahhuS4reW/gyB5ICsgZmFjdG9yw5flrZflj7fvvIhmYWN0b3Ig6buY6K6kIDAuMzXvvInjgIIKICAgIOiLpea4suafk+WQjuWBj+S4ii/lgY/kuIvvvIzlnKggMC4zfjAuNCDkuYvpl7Tlvq7osIPvvIjlj6/nlKggcHJldmlldy5weSDnm67mo4Dnoa7orqTvvInjgIIKICAgICIiIgogICAgcmV0dXJuIGJveF95ICsgYm94X2ggLyAyICsgZmFjdG9yICogZm9udF9zaXplCgoKZGVmIGdyaWQobiwgdG90YWxfdywgbWFyZ2luPTAsIGdhcD0wLCBjb2xzPU5vbmUpOgogICAgIiIi562J5YiG5a6a5L2NIG4g5Liq562J5a695YWD57Sg44CC6L+U5ZueICjlhYPntKDlrr3luqYsIFsoeCwg6KGM5Y+3MC1iYXNlZCksIC4uLl0p44CCCgogICAgY29scz1Ob25lIOaXtuWNleihjOetieWIhu+8m+e7meWumiBjb2xzIOWImeaMieWIl+aVsOaNouihjOOAggogICAgIiIiCiAgICBjb2xzID0gY29scyBvciBuCiAgICBjb2xzID0gbWF4KDEsIG1pbihjb2xzLCBuKSkKICAgIGlubmVyID0gdG90YWxfdyAtIDIgKiBtYXJnaW4gLSAoY29scyAtIDEpICogZ2FwCiAgICB3ID0gaW5uZXIgLyBjb2xzCiAgICBwb3NpdGlvbnMgPSBbKG1hcmdpbiArIChpICUgY29scykgKiAodyArIGdhcCksIGkgLy8gY29scykgZm9yIGkgaW4gcmFuZ2UobildCiAgICByZXR1cm4gdywgcG9zaXRpb25zCgoKIyAtLS0tIENMSSAtLS0tCgpkZWYgY21kX3dyYXAoYXJncyk6CiAgICBsaW5lcyA9IHdyYXBfdGV4dChhcmdzLnRleHQsIGFyZ3MubWF4X3dpZHRoLCBhcmdzLnNpemUsIGFyZ3MuYW1iaWd1b3VzKQogICAgbGggPSBhcmdzLmxpbmVfaGVpZ2h0ICogYXJncy5zaXplCiAgICBwcmludChmIuaNouihjOe7k+aenO+8iOWtl+WPtyB7YXJncy5zaXplOmd977yM5pyA5aSn6KGM5a69IHthcmdzLm1heF93aWR0aDpnfe+8jOihjOmrmCB7YXJncy5saW5lX2hlaWdodH3vvIkiKQogICAgZm9yIGksIGxpbmUgaW4gZW51bWVyYXRlKGxpbmVzKToKICAgICAgICB3ID0gdGV4dF93aWR0aChsaW5lLCBhcmdzLnNpemUsIGFyZ3MuYW1iaWd1b3VzKQogICAgICAgIHByaW50KGYiICDnrKx7aSArIDF96KGMIHk9e2FyZ3MueSArIGkgKiBsaDpnfSAg5Lyw5a694omIe3c6LjBmfXB4ICB7bGluZX0iKQogICAgcHJpbnQoZiLlhbEge2xlbihsaW5lcyl9IOihjO+8jOWdl+mrmOKJiHtsZW4obGluZXMpICogbGg6LjBmfXB4IikKICAgIGlmIGFyZ3Muc3ZnOgogICAgICAgIHByaW50KCJcbuWPr+ebtOaOpeeymOi0tOeahCA8dGV4dD7vvJoiKQogICAgICAgIGZvciBpLCBsaW5lIGluIGVudW1lcmF0ZShsaW5lcyk6CiAgICAgICAgICAgIHByaW50KGYnICA8dGV4dCB4PSJ7YXJncy54Omd9IiB5PSJ7YXJncy55ICsgaSAqIGxoOmd9IiBmb250LXNpemU9InthcmdzLnNpemU6Z30iPntsaW5lfTwvdGV4dD4nKQoKCmRlZiBjbWRfY2VudGVyKGFyZ3MpOgogICAgeDAsIHkwLCB3MCwgaDAgPSBhcmdzLmJveAogICAgdHcgPSB0ZXh0X3dpZHRoKGFyZ3MudGV4dCwgYXJncy5zaXplLCBhcmdzLmFtYmlndW91cykKICAgIGN4ID0gY2VudGVyX3goeDAsIHcwKQogICAgY3kgPSBjZW50ZXJfeSh5MCwgaDAsIGFyZ3Muc2l6ZSwgYXJncy5mYWN0b3IpCiAgICBwcmludChmIuaWh+Wtl+OAjHthcmdzLnRleHR944CN5a2X5Y+3IHthcmdzLnNpemU6Z33vvIzkvLDlrr3iiYh7dHc6LjBmfXB4IikKICAgIHByaW50KGYiICDmoYY6IHg9e3gwOmd9IHk9e3kwOmd9IHc9e3cwOmd9IGg9e2gwOmd9IikKICAgIHByaW50KGYiICDmsLTlubPlsYXkuK06IHg9e2N4Omd977yIdGV4dC1hbmNob3I9XCJtaWRkbGVcIu+8iSIpCiAgICBwcmludChmIiAg5Z6C55u05bGF5LitOiBiYXNlbGluZSB5PXtjeTpnfe+8iGZhY3Rvcj17YXJncy5mYWN0b3J977yM5Y+vIDAuM34wLjQg5b6u6LCD77yJIikKICAgIHByaW50KGYnICDlrozmlbQ6IDx0ZXh0IHg9IntjeDpnfSIgeT0ie2N5Omd9IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LXNpemU9InthcmdzLnNpemU6Z30iPnthcmdzLnRleHR9PC90ZXh0PicpCgoKZGVmIGNtZF9ncmlkKGFyZ3MpOgogICAgdywgcG9zaXRpb25zID0gZ3JpZChhcmdzLm4sIGFyZ3Mud2lkdGgsIGFyZ3MubWFyZ2luLCBhcmdzLmdhcCwgYXJncy5jb2xzKQogICAgY29scyA9IGFyZ3MuY29scyBvciBhcmdzLm4KICAgIHJvd3MgPSAoYXJncy5uICsgY29scyAtIDEpIC8vIGNvbHMKICAgIHByaW50KGYie2FyZ3Mubn0g5Liq562J5a695YWD57Sg77yIe2NvbHN9IOWIlyDDlyB7cm93c30g6KGM77yJ77yM5q+P5Liq5a69IHt3Oi4xZn1weCIpCiAgICBmb3IgaSwgKHgsIHIpIGluIGVudW1lcmF0ZShwb3NpdGlvbnMpOgogICAgICAgIHByaW50KGYiICDlhYPntKB7aSArIDF9OiB4PXt4Oi4xZn0gIOihjD17ciArIDF9IikKCgpkZWYgbWFpbigpOgogICAgYXAgPSBhcmdwYXJzZS5Bcmd1bWVudFBhcnNlcihkZXNjcmlwdGlvbj0i5paH5a2X5o6S54mIIC8g5YWD57Sg5biD5bGA6K6h566X5bel5YW3IikKICAgIHN1YiA9IGFwLmFkZF9zdWJwYXJzZXJzKGRlc3Q9ImNtZCIsIHJlcXVpcmVkPVRydWUpCgogICAgc3Bfd3JhcCA9IHN1Yi5hZGRfcGFyc2VyKCJ3cmFwIiwgaGVscD0i5oyJ5pyA5aSn5a695bqm5o2i6KGM77yIQ0pLIOaEn+efpe+8iSIpCiAgICBzcF93cmFwLmFkZF9hcmd1bWVudCgidGV4dCIsIGhlbHA9IuimgeaNouihjOeahOaWh+WtlyIpCiAgICBzcF93cmFwLmFkZF9hcmd1bWVudCgiLS1zaXplIiwgdHlwZT1mbG9hdCwgZGVmYXVsdD0yNCwgaGVscD0i5a2X5Y+3IHB4IikKICAgIHNwX3dyYXAuYWRkX2FyZ3VtZW50KCItLW1heC13aWR0aCIsIHR5cGU9ZmxvYXQsIHJlcXVpcmVkPVRydWUsIGhlbHA9IuacgOWkp+ihjOWuvSBweCIpCiAgICBzcF93cmFwLmFkZF9hcmd1bWVudCgiLS1hbWJpZ3VvdXMiLCB0eXBlPWZsb2F0LCBkZWZhdWx0PTAuNSwgaGVscD0i5q2n5LmJ5a2X56ym5a695bqm57O75pWwIikKICAgIHNwX3dyYXAuYWRkX2FyZ3VtZW50KCItLXkiLCB0eXBlPWZsb2F0LCBkZWZhdWx0PTAsIGhlbHA9IuesrOS4gOihjCBiYXNlbGluZSB5IikKICAgIHNwX3dyYXAuYWRkX2FyZ3VtZW50KCItLXgiLCB0eXBlPWZsb2F0LCBkZWZhdWx0PTAsIGhlbHA9IuaWh+WtlyB477yILS1zdmcg6L6T5Ye655So77yJIikKICAgIHNwX3dyYXAuYWRkX2FyZ3VtZW50KCItLWxpbmUtaGVpZ2h0IiwgdHlwZT1mbG9hdCwgZGVmYXVsdD0xLjUsIGhlbHA9IuihjOmrmOWAjeaVsO+8jOm7mOiupCAxLjUiKQogICAgc3Bfd3JhcC5hZGRfYXJndW1lbnQoIi0tc3ZnIiwgYWN0aW9uPSJzdG9yZV90cnVlIiwgaGVscD0i5ZCM5pe26L6T5Ye6IDx0ZXh0PiDniYfmrrUiKQogICAgc3Bfd3JhcC5zZXRfZGVmYXVsdHMoZnVuYz1jbWRfd3JhcCkKCiAgICBzcF9jZW50ZXIgPSBzdWIuYWRkX3BhcnNlcigiY2VudGVyIiwgaGVscD0i5qGG5YaF5bGF5LitIikKICAgIHNwX2NlbnRlci5hZGRfYXJndW1lbnQoInRleHQiLCBoZWxwPSLmloflrZciKQogICAgc3BfY2VudGVyLmFkZF9hcmd1bWVudCgiLS1zaXplIiwgdHlwZT1mbG9hdCwgZGVmYXVsdD0yNCwgaGVscD0i5a2X5Y+3IHB4IikKICAgIHNwX2NlbnRlci5hZGRfYXJndW1lbnQoIi0tYW1iaWd1b3VzIiwgdHlwZT1mbG9hdCwgZGVmYXVsdD0wLjUpCiAgICBzcF9jZW50ZXIuYWRkX2FyZ3VtZW50KCItLWJveCIsIG5hcmdzPTQsIHR5cGU9ZmxvYXQsIHJlcXVpcmVkPVRydWUsCiAgICAgICAgICAgICAgICAgICAgICAgICAgIG1ldGF2YXI9KCJYIiwgIlkiLCAiVyIsICJIIiksIGhlbHA9IuahhiB4IHkgdyBoIikKICAgIHNwX2NlbnRlci5hZGRfYXJndW1lbnQoIi0tZmFjdG9yIiwgdHlwZT1mbG9hdCwgZGVmYXVsdD0wLjM1LCBoZWxwPSLlnoLnm7TlsYXkuK3ns7vmlbDvvIzpu5jorqQgMC4zNSIpCiAgICBzcF9jZW50ZXIuc2V0X2RlZmF1bHRzKGZ1bmM9Y21kX2NlbnRlcikKCiAgICBzcF9ncmlkID0gc3ViLmFkZF9wYXJzZXIoImdyaWQiLCBoZWxwPSLnrYnliIblrprkvY0iKQogICAgc3BfZ3JpZC5hZGRfYXJndW1lbnQoIm4iLCB0eXBlPWludCwgaGVscD0i5YWD57Sg5Liq5pWwIikKICAgIHNwX2dyaWQuYWRkX2FyZ3VtZW50KCItLXdpZHRoIiwgdHlwZT1mbG9hdCwgZGVmYXVsdD05MDAsIGhlbHA9IueUu+W4g+Wuve+8jOm7mOiupCA5MDAiKQogICAgc3BfZ3JpZC5hZGRfYXJndW1lbnQoIi0tbWFyZ2luIiwgdHlwZT1mbG9hdCwgZGVmYXVsdD00MCwgaGVscD0i5bem5Y+z55WZ55m977yM6buY6K6kIDQwIikKICAgIHNwX2dyaWQuYWRkX2FyZ3VtZW50KCItLWdhcCIsIHR5cGU9ZmxvYXQsIGRlZmF1bHQ9MjQsIGhlbHA9IuWFg+e0oOmXtOi3ne+8jOm7mOiupCAyNCIpCiAgICBzcF9ncmlkLmFkZF9hcmd1bWVudCgiLS1jb2xzIiwgdHlwZT1pbnQsIGRlZmF1bHQ9Tm9uZSwgaGVscD0i5YiX5pWw77yI57y655yB5Y2V6KGM77yJIikKICAgIHNwX2dyaWQuc2V0X2RlZmF1bHRzKGZ1bmM9Y21kX2dyaWQpCgogICAgYXJncyA9IGFwLnBhcnNlX2FyZ3MoKQogICAgYXJncy5mdW5jKGFyZ3MpCgoKaWYgX19uYW1lX18gPT0gIl9fbWFpbl9fIjoKICAgIG1haW4oKQo=
+#!/usr/bin/env python3
+"""文字排版 / 元素布局计算工具（纯 stdlib，写 SVG 前排版用）。
+
+解决 SVG 布局里的高频痛点（SVG 的 <text> 不自动换行 / 不居中 / 不测量）：
+  1. 文字自动换行：CJK 按字断行，英文/数字按词断行
+  2. 多行文字的行高与每行 baseline y
+  3. 水平 / 垂直居中对齐（text-anchor 与 baseline 计算）
+  4. N 个元素的均匀网格 / 单行等分定位
+
+子命令：
+    wrap TEXT   按最大宽度换行（CJK 感知），可输出 <text> 片段
+    center TEXT 在给定框内水平+垂直居中，输出 x / baseline y
+    grid N      等分定位 N 个元素（可选多行）
+
+用法示例：
+    python3 layout.py wrap "凭什么敢和 Claude Code、Codex 叫板？" --size 37 --max-width 700 --svg
+    python3 layout.py wrap "标题文案" --size 40 --max-width 700 --y 100 --line-height 1.6
+    python3 layout.py center "深度分析" --size 24 --box 40 205 230 46
+    python3 layout.py grid 4 --width 900 --margin 40 --gap 24
+
+依赖同目录 svgtext.py（纯 stdlib）。
+"""
+import argparse
+
+from svgtext import text_width, char_width, is_wide
+
+
+def _tokenize(text):
+    """拆成 (cjk 单字 | 拉丁词 | 空格分隔) 的单元流。"""
+    units = []
+    i, n = 0, len(text)
+    while i < n:
+        ch = text[i]
+        if ch in " \t":
+            while i < n and text[i] in " \t":
+                i += 1
+            units.append(("sep", None))
+        elif is_wide(ch):
+            units.append(("cjk", ch))
+            i += 1
+        else:
+            j = i
+            while j < n and not is_wide(text[j]) and text[j] not in " \t":
+                j += 1
+            units.append(("word", text[i:j]))
+            i = j
+    return units
+
+
+def _hard_split(word, max_width, font_size, ambiguous):
+    """单词本身超宽时按字符硬切。"""
+    chunks = []
+    cur = ""
+    cur_w = 0.0
+    for ch in word:
+        w = text_width(ch, font_size, ambiguous)
+        if cur and cur_w + w > max_width:
+            chunks.append(cur)
+            cur = ""
+            cur_w = 0.0
+        cur += ch
+        cur_w += w
+    if cur:
+        chunks.append(cur)
+    return chunks
+
+
+def wrap_text(text, max_width, font_size, ambiguous=0.5):
+    """CJK 感知换行：返回行列表。中文按字断行，英文/数字按词断行（不拆词）。"""
+    max_width = float(max_width)
+    if max_width <= 0:
+        raise ValueError("max-width 必须 > 0")
+    tokens = _tokenize(text)
+    lines = []
+    cur = ""
+    cur_w = 0.0
+    for kind, val in tokens:
+        if kind == "sep":
+            if not cur:
+                continue  # 行首空格丢弃
+            cur += " "
+            cur_w += char_width(" ") * font_size
+            continue
+        w = text_width(val, font_size, ambiguous)
+        if cur and cur_w + w > max_width:
+            lines.append(cur.rstrip())
+            cur = ""
+            cur_w = 0.0
+        if not cur and kind == "word" and w > max_width:
+            lines.extend(_hard_split(val, max_width, font_size, ambiguous))
+            cur = ""
+            cur_w = 0.0
+            continue
+        cur += val
+        cur_w += w
+    if cur.strip():
+        lines.append(cur.rstrip())
+    return lines or [""]
+
+
+def center_x(box_x, box_w):
+    """水平居中：返回文字 x（配合 text-anchor="middle"）。"""
+    return box_x + box_w / 2
+
+
+def center_y(box_y, box_h, font_size, factor=0.35):
+    """垂直居中：返回文字的 baseline y。box_y 为框顶，box_h 为框高。
+
+    近似公式 baseline = 框中心 y + factor×字号（factor 默认 0.35）。
+    若渲染后偏上/偏下，在 0.3~0.4 之间微调（可用 preview.py 目检确认）。
+    """
+    return box_y + box_h / 2 + factor * font_size
+
+
+def grid(n, total_w, margin=0, gap=0, cols=None):
+    """等分定位 n 个等宽元素。返回 (元素宽度, [(x, 行号0-based), ...])。
+
+    cols=None 时单行等分；给定 cols 则按列数换行。
+    """
+    cols = cols or n
+    cols = max(1, min(cols, n))
+    inner = total_w - 2 * margin - (cols - 1) * gap
+    w = inner / cols
+    positions = [(margin + (i % cols) * (w + gap), i // cols) for i in range(n)]
+    return w, positions
+
+
+# ---- CLI ----
+
+def cmd_wrap(args):
+    lines = wrap_text(args.text, args.max_width, args.size, args.ambiguous)
+    lh = args.line_height * args.size
+    print(f"换行结果（字号 {args.size:g}，最大行宽 {args.max_width:g}，行高 {args.line_height}）")
+    for i, line in enumerate(lines):
+        w = text_width(line, args.size, args.ambiguous)
+        print(f"  第{i + 1}行 y={args.y + i * lh:g}  估宽≈{w:.0f}px  {line}")
+    print(f"共 {len(lines)} 行，块高≈{len(lines) * lh:.0f}px")
+    if args.svg:
+        print("\n可直接粘贴的 <text>：")
+        for i, line in enumerate(lines):
+            print(f'  <text x="{args.x:g}" y="{args.y + i * lh:g}" font-size="{args.size:g}">{line}</text>')
+
+
+def cmd_center(args):
+    x0, y0, w0, h0 = args.box
+    tw = text_width(args.text, args.size, args.ambiguous)
+    cx = center_x(x0, w0)
+    cy = center_y(y0, h0, args.size, args.factor)
+    print(f"文字「{args.text}」字号 {args.size:g}，估宽≈{tw:.0f}px")
+    print(f"  框: x={x0:g} y={y0:g} w={w0:g} h={h0:g}")
+    print(f"  水平居中: x={cx:g}（text-anchor=\"middle\"）")
+    print(f"  垂直居中: baseline y={cy:g}（factor={args.factor}，可 0.3~0.4 微调）")
+    print(f'  完整: <text x="{cx:g}" y="{cy:g}" text-anchor="middle" font-size="{args.size:g}">{args.text}</text>')
+
+
+def cmd_grid(args):
+    w, positions = grid(args.n, args.width, args.margin, args.gap, args.cols)
+    cols = args.cols or args.n
+    rows = (args.n + cols - 1) // cols
+    print(f"{args.n} 个等宽元素（{cols} 列 × {rows} 行），每个宽 {w:.1f}px")
+    for i, (x, r) in enumerate(positions):
+        print(f"  元素{i + 1}: x={x:.1f}  行={r + 1}")
+
+
+def main():
+    ap = argparse.ArgumentParser(description="文字排版 / 元素布局计算工具")
+    sub = ap.add_subparsers(dest="cmd", required=True)
+
+    sp_wrap = sub.add_parser("wrap", help="按最大宽度换行（CJK 感知）")
+    sp_wrap.add_argument("text", help="要换行的文字")
+    sp_wrap.add_argument("--size", type=float, default=24, help="字号 px")
+    sp_wrap.add_argument("--max-width", type=float, required=True, help="最大行宽 px")
+    sp_wrap.add_argument("--ambiguous", type=float, default=0.5, help="歧义字符宽度系数")
+    sp_wrap.add_argument("--y", type=float, default=0, help="第一行 baseline y")
+    sp_wrap.add_argument("--x", type=float, default=0, help="文字 x（--svg 输出用）")
+    sp_wrap.add_argument("--line-height", type=float, default=1.5, help="行高倍数，默认 1.5")
+    sp_wrap.add_argument("--svg", action="store_true", help="同时输出 <text> 片段")
+    sp_wrap.set_defaults(func=cmd_wrap)
+
+    sp_center = sub.add_parser("center", help="框内居中")
+    sp_center.add_argument("text", help="文字")
+    sp_center.add_argument("--size", type=float, default=24, help="字号 px")
+    sp_center.add_argument("--ambiguous", type=float, default=0.5)
+    sp_center.add_argument("--box", nargs=4, type=float, required=True,
+                           metavar=("X", "Y", "W", "H"), help="框 x y w h")
+    sp_center.add_argument("--factor", type=float, default=0.35, help="垂直居中系数，默认 0.35")
+    sp_center.set_defaults(func=cmd_center)
+
+    sp_grid = sub.add_parser("grid", help="等分定位")
+    sp_grid.add_argument("n", type=int, help="元素个数")
+    sp_grid.add_argument("--width", type=float, default=900, help="画布宽，默认 900")
+    sp_grid.add_argument("--margin", type=float, default=40, help="左右留白，默认 40")
+    sp_grid.add_argument("--gap", type=float, default=24, help="元素间距，默认 24")
+    sp_grid.add_argument("--cols", type=int, default=None, help="列数（缺省单行）")
+    sp_grid.set_defaults(func=cmd_grid)
+
+    args = ap.parse_args()
+    args.func(args)
+
+
+if __name__ == "__main__":
+    main()

@@ -1,1 +1,4 @@
-X19weWNhY2hlX18vCioucHlbY29kXQoqLnBuZwouRFNfU3RvcmUK
+__pycache__/
+*.py[cod]
+*.png
+.DS_Store
