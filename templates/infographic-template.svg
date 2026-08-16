@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="520" viewBox="0 0 900 520">
+  <!--
+    正文信息图模板（900×520）
+    使用前必做：
+      1. fc-match 验证字体，替换 font-family
+      2. python3 scripts/check.py 本文件（留白阈值 40px，对比背景 #f7f9fc）
+    设计规则（见 SKILL.md）：
+      - 浅色背景图：图形/文字是暗像素（小于 120），验证用 mode=dark
+      - 各分区独立高度带，卡片之间留 24px 间隔
+  -->
+  <defs>
+    <style>
+      text { font-family: "PingFang SC", "Hiragino Sans GB", "Noto Sans CJK SC", "Source Han Sans CN", "Microsoft YaHei", sans-serif; }
+    </style>
+  </defs>
+
+  <!-- 浅色背景 + 边框 -->
+  <rect width="900" height="520" fill="#f7f9fc"/>
+  <rect x="1" y="1" width="898" height="518" fill="none" stroke="#e8eef6" stroke-width="2"/>
+
+  <!-- 标题 -->
+  <text x="40" y="66" font-size="34" font-weight="bold" fill="#16223a">信息图标题：一句话点题</text>
+  <text x="40" y="102" font-size="20" fill="#5a6b85">副标题说明</text>
+
+  <!-- 三张卡片（独立高度带，y 不重叠） -->
+  <!-- 卡片 1 -->
+  <rect x="40" y="130" width="820" height="90" rx="12" fill="#ffffff" stroke="#e8eef6"/>
+  <circle cx="80" cy="175" r="20" fill="#1A6FC4"/>
+  <text x="80" y="181" font-size="20" font-weight="bold" fill="#ffffff" text-anchor="middle">1</text>
+  <text x="120" y="180" font-size="24" font-weight="bold" fill="#16223a">要点一</text>
+  <text x="120" y="206" font-size="18" fill="#5a6b85">一句补充说明</text>
+
+  <!-- 卡片 2 -->
+  <rect x="40" y="244" width="820" height="90" rx="12" fill="#ffffff" stroke="#e8eef6"/>
+  <circle cx="80" cy="289" r="20" fill="#1A6FC4"/>
+  <text x="80" y="295" font-size="20" font-weight="bold" fill="#ffffff" text-anchor="middle">2</text>
+  <text x="120" y="294" font-size="24" font-weight="bold" fill="#16223a">要点二</text>
+  <text x="120" y="320" font-size="18" fill="#5a6b85">一句补充说明</text>
+
+  <!-- 卡片 3 -->
+  <rect x="40" y="358" width="820" height="90" rx="12" fill="#ffffff" stroke="#e8eef6"/>
+  <circle cx="80" cy="403" r="20" fill="#1A6FC4"/>
+  <text x="80" y="409" font-size="20" font-weight="bold" fill="#ffffff" text-anchor="middle">3</text>
+  <text x="120" y="408" font-size="24" font-weight="bold" fill="#16223a">要点三</text>
+  <text x="120" y="434" font-size="18" fill="#5a6b85">一句补充说明</text>
+
+  <!-- 底部结论条（深色，文字为亮像素） -->
+  <rect x="40" y="468" width="820" height="40" rx="8" fill="#16223a"/>
+  <text x="60" y="494" font-size="20" font-weight="bold" fill="#ffffff">结论：一句总结</text>
+</svg>
