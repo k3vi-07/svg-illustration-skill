@@ -62,7 +62,7 @@ python3 -c "import cairosvg"    # 备选（Python）
 | 文艺 / 手写 / 金句卡 | `LXGW WenKai`（霞鹜文楷） | 楷体 |
 | 标题 / 展示 / 海报 | `Smiley Sans`（得意黑，斜体窄黑，视觉冲击强） | 黑体 |
 
-> **版权**：上表全部为 [SIL OFL 1.1](https://openfontlicense.org/)，免费商用、可嵌入 PDF/SVG、可把 .otf/.ttf **内置打包**进项目（例如 [得意黑 Smiley Sans](https://github.com/atelier-anchor/smiley-sans)）。系统专有字体（`PingFang SC` / `Hiragino Sans GB` / `Microsoft YaHei`）本机有也能渲染，但**不可分发/内置**，**不要写进默认链**。
+> **版权（重要）**：上表全部为 [SIL OFL 1.1](https://openfontlicense.org/)，免费商用、可嵌入 PDF/SVG、可把 .otf/.ttf **内置打包**进项目（例如 [得意黑 Smiley Sans](https://github.com/atelier-anchor/smiley-sans)）。**系统字体 ≠ 免费商用**：`PingFang SC`（苹方）、`Microsoft YaHei`（微软雅黑，版权在方正）等本机虽能正常显示，但把它们的渲染结果用于**公众号封面、商品图、海报、logo 等商用场景存在侵权风险**，也**不可分发/内置**——**商用一律用上表 OFL 字体，系统字体不要写进默认链**。
 
 #### ② 查你机器上实际有哪些（30 秒）
 
@@ -103,7 +103,7 @@ fc-match "Smiley Sans"   # 必须返回中文字体；返回 DejaVu Sans 就说�
 1. **先 `fc-match` 验证，再写 SVG**，把验证过的字体名放 `font-family` 第一位。
 2. **SVG 里绝对不要放 emoji**（🚗🛸🧱📊🏆 等）——rsvg 无 emoji 字形会渲染成实心方块。用矢量图形或纯文字代替。
 3. fontconfig 报 `No writable cache directories` 是噪音，忽略；只要 `fc-match` 返回正确即可。
-4. **字体版权**：优先 OFL 字体（可商用 / 嵌入 / 再分发）；系统字体（PingFang / Hiragino / 微软雅黑）仅本机渲染、**勿把 .ttf/.ttc 提交进仓库再分发**。本 skill 只写字体名不打包字体文件，PNG 输出是位图，无版权风险。
+4. **字体版权：能显示 ≠ 能免费商用**。公众号封面、商品图、海报等**商用场景一律用 OFL 字体**；`PingFang SC` / `Microsoft YaHei` 等系统字体即便本机能正常显示，商用渲染也**有侵权风险**（微软雅黑版权在方正）。本 skill 默认链只含 OFL 字体、只写字体名不打包字体文件，无版权风险。
 
 ---
 
