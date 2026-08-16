@@ -49,24 +49,26 @@ python3 -c "import cairosvg"    # 备选（Python）
 
 ### 1b. 确定中文字体（★ 最关键，务必逐字照做）
 
-**先说结论**：默认用 **OFL 开源字体**（思源黑体 / 霞鹜文楷等）；渲染前必须 `fc-match` 验证字体真实存在，把**验证过的字体名写到 `font-family` 的第一位**。
+**先说结论**：默认用 **OFL 免费商用字体**（思源黑体 / 霞鹜文楷 / 得意黑等，全部可商用、可嵌入、可内置打包）；渲染前必须 `fc-match` 验证字体真实存在，把**验证过的字体名写到 `font-family` 的第一位**。
 
 **为什么**：SVG 里的 `font-family` 只是"请求"，找不到就静默回退——回退到无中文字形的字体时，中文全部变**豆腐块（□□□）**。
 
-#### ① 推荐字体清单（按用途选；前三类 OFL 可商用）
+#### ① 推荐字体清单（全部 SIL OFL 1.1，免费商用 + 可嵌入 + 可内置）
 
-| 用途 | 写在 font-family 里的名字 | 类别 | 许可证 |
-|---|---|---|---|
-| 信息图 / 封面默认 | `Source Han Sans SC` / `Noto Sans CJK SC` | 黑体 | OFL 1.1 |
-| 国风 / 正文 / 标题 | `Source Han Serif SC` / `Noto Serif SC` | 宋体 | OFL 1.1 |
-| 文艺 / 手写 / 金句卡 | `LXGW WenKai`（霞鹜文楷） | 楷体 | OFL 1.1 |
-| 系统自带（仅本机渲染，勿分发字体文件） | `PingFang SC` / `Hiragino Sans GB` / `Microsoft YaHei` | 黑体 | 专有 |
+| 用途 | 写在 font-family 里的名字 | 类别 |
+|---|---|---|
+| 信息图 / 封面默认 | `Source Han Sans SC` / `Noto Sans CJK SC`（思源黑体） | 黑体 |
+| 国风 / 正文 / 标题 | `Source Han Serif SC` / `Noto Serif SC`（思源宋体） | 宋体 |
+| 文艺 / 手写 / 金句卡 | `LXGW WenKai`（霞鹜文楷） | 楷体 |
+| 标题 / 展示 / 海报 | `Smiley Sans`（得意黑，斜体窄黑，视觉冲击强） | 黑体 |
+
+> **版权**：上表全部为 [SIL OFL 1.1](https://openfontlicense.org/)，免费商用、可嵌入 PDF/SVG、可把 .otf/.ttf **内置打包**进项目（例如 [得意黑 Smiley Sans](https://github.com/atelier-anchor/smiley-sans)）。系统专有字体（`PingFang SC` / `Hiragino Sans GB` / `Microsoft YaHei`）本机有也能渲染，但**不可分发/内置**，**不要写进默认链**。
 
 #### ② 查你机器上实际有哪些（30 秒）
 
 ```bash
-fc-list | grep -iE "pingfang|hiragino|yahei|noto|source han|wenkai|wangkai|songti" | head
-fc-match "LXGW WenKai"   # 必须返回中文字体；返回 DejaVu Sans 就说明该字体不存在
+fc-list | grep -iE "source han|noto|wenkai|wangkai|smiley|songti|pingfang|hiragino|yahei" | head
+fc-match "Smiley Sans"   # 必须返回中文字体；返回 DejaVu Sans 就说明该字体不存在
 ```
 
 **踩坑实录**：某系统 `fc-match "PingFang SC"` 回退到 `DejaVuSans.ttf`（无中文字形）→ 全部中文变豆腐块；该机实际可用的是 `LXGW WenKai`、`Noto Serif SC`、`Hiragino Kaku Gothic Pro`。
@@ -78,19 +80,21 @@ fc-match "LXGW WenKai"   # 必须返回中文字体；返回 DejaVu Sans 就说�
 ```svg
 <svg xmlns="http://www.w3.org/2000/svg" width="900" height="520" viewBox="0 0 900 520">
   <style>
-    text { font-family: "LXGW WenKai", "Source Han Sans SC", "Noto Sans CJK SC", "PingFang SC", sans-serif; }
+    text { font-family: "Source Han Sans SC", "Noto Sans CJK SC", "LXGW WenKai", "Smiley Sans", sans-serif; }
   </style>
   <text x="40" y="80" font-size="40" fill="#16223a">标题文字</text>
 </svg>
 ```
 
-**默认回退链（可直接复制；第一位务必换成你 `fc-match` 验证过的字体）**：
+**默认回退链（全部免费商用；可直接复制，第一位务必换成你 `fc-match` 验证过的字体）**：
 
 ```
-"Source Han Sans SC", "Noto Sans CJK SC", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "LXGW WenKai", sans-serif
+"Source Han Sans SC", "Noto Sans CJK SC", "LXGW WenKai", "Smiley Sans", sans-serif
 ```
 
-末尾放 `LXGW WenKai`（OFL、全 CJK 覆盖）兜底，避免最后落到无中文字形的 `sans-serif` 变豆腐块。`gen.py` 的默认字体和模板都用这条链，用 `--font` 传验证过的字体即可覆盖。
+末尾放 `LXGW WenKai`、`Smiley Sans`（均 OFL、全 CJK 覆盖）兜底，避免最后落到无中文字形的 `sans-serif` 变豆腐块。`gen.py` 的默认字体和模板都用这条链，用 `--font` 传验证过的字体即可覆盖。
+
+> **想彻底不依赖系统字体**：直接下载一款 OFL 字体的 .otf/.ttf（如 [得意黑 Smiley Sans 的 release](https://github.com/atelier-anchor/smiley-sans/releases)）内置到项目，安装或 `fontconfig` 挂载后渲染——OFL 允许这样做，绝无版权风险。
 
 > 写法区别：写在 `<style>` 的 CSS 里，带空格的字体名要**加引号**（如模板那样）；写在 `<text font-family="...">` **属性**里则**不加引号**（如 `gen.py` 的默认值）。两种都可用，效果一致。
 

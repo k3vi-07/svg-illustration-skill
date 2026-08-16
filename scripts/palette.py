@@ -242,7 +242,7 @@ def cmd_check(args):
 # 配色卡里含中文（卡名/角色说明），font-family 需含中文字体；用 --font 覆盖为 fc-match 验证过的字体
 # 注意：这是写进 SVG `font-family="..."` 属性里的形式，字体名之间用逗号分隔、不带引号；
 # 若写进 <style> CSS 里，可为带空格的字体名加引号（见 templates/*.svg）。
-DEFAULT_FONT = 'Source Han Sans SC, Noto Sans CJK SC, PingFang SC, Hiragino Sans GB, Microsoft YaHei, LXGW WenKai, sans-serif'
+DEFAULT_FONT = 'Source Han Sans SC, Noto Sans CJK SC, LXGW WenKai, Smiley Sans, sans-serif'
 
 
 # 配色卡上更紧凑的角色标签（完整说明见 ROLES / `palette.py roles`）

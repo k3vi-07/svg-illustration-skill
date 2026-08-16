@@ -156,7 +156,7 @@ svg-illustration-skill/
 
 本仓库**只写字体名、不打包任何字体文件**；渲染在你本机用已安装的字体完成，输出是 PNG 位图，因此不涉及字体再分发或嵌入问题。
 
-- **推荐使用 OFL 开源字体**（免费可商用、可嵌入、可再分发）：霞鹜文楷（LXGW WenKai）、思源黑体（Source Han Sans / Noto Sans CJK）、思源宋体（Source Han Serif / Noto Serif SC）
+- **推荐使用 OFL 免费商用字体**（可商用、可嵌入、可再分发）：思源黑体（Source Han Sans / Noto Sans CJK SC）、思源宋体（Source Han Serif / Noto Serif SC）、霞鹜文楷（LXGW WenKai）、得意黑（[Smiley Sans](https://github.com/atelier-anchor/smiley-sans)，斜体窄黑，适合标题/展示）
 - **系统专有字体**（PingFang SC、Hiragino、微软雅黑）本机渲染没问题，但**不要提交其 .ttf/.ttc 文件到仓库再分发**
 
 本项目 README 中的演示图均使用霞鹜文楷（OFL 1.1）渲染。

@@ -12,7 +12,7 @@
   -->
   <defs>
     <style>
-      text { font-family: "Source Han Sans SC", "Noto Sans CJK SC", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "LXGW WenKai", sans-serif; }
+      text { font-family: "Source Han Sans SC", "Noto Sans CJK SC", "LXGW WenKai", "Smiley Sans", sans-serif; }
     </style>
   </defs>
 
