@@ -47,22 +47,59 @@ python3 -c "import cairosvg"    # 备选（Python）
 
 至少有一个可用才继续。**推荐 `rsvg-convert`**：快、纯 CLI、无 GUI 依赖。
 
-### 1b. 检查中文字体（★ 最容易被忽略的坑）
+### 1b. 确定中文字体（★ 最关键，务必逐字照做）
 
-**SVG 里的中文用什么字体渲染，取决于渲染时 fontconfig 能找到什么字体。** SVG 里写的 `font-family` 只是"请求"，找不到就静默回退——回退到无中文字形的字体时，中文全部变**豆腐块（□□□）**。
+**先说结论**：默认用 **OFL 开源字体**（思源黑体 / 霞鹜文楷等）；渲染前必须 `fc-match` 验证字体真实存在，把**验证过的字体名写到 `font-family` 的第一位**。
+
+**为什么**：SVG 里的 `font-family` 只是"请求"，找不到就静默回退——回退到无中文字形的字体时，中文全部变**豆腐块（□□□）**。
+
+#### ① 推荐字体清单（按用途选；前三类 OFL 可商用）
+
+| 用途 | 写在 font-family 里的名字 | 类别 | 许可证 |
+|---|---|---|---|
+| 信息图 / 封面默认 | `Source Han Sans SC` / `Noto Sans CJK SC` | 黑体 | OFL 1.1 |
+| 国风 / 正文 / 标题 | `Source Han Serif SC` / `Noto Serif SC` | 宋体 | OFL 1.1 |
+| 文艺 / 手写 / 金句卡 | `LXGW WenKai`（霞鹜文楷） | 楷体 | OFL 1.1 |
+| 系统自带（仅本机渲染，勿分发字体文件） | `PingFang SC` / `Hiragino Sans GB` / `Microsoft YaHei` | 黑体 | 专有 |
+
+#### ② 查你机器上实际有哪些（30 秒）
 
 ```bash
-fc-list | grep -iE "pingfang|hiragino|yahei|noto.*cjk|source han|wangkai|songti" | head   # 看有哪些中文字体
-fc-match "PingFang SC"    # 验证某个字体是否真的可用（返回的必须是中文字体，不是 DejaVu Sans!）
+fc-list | grep -iE "pingfang|hiragino|yahei|noto|source han|wenkai|wangkai|songti" | head
+fc-match "LXGW WenKai"   # 必须返回中文字体；返回 DejaVu Sans 就说明该字体不存在
 ```
 
-**踩坑实录**：某系统 `fc-match "PingFang SC"` 回退到 `DejaVuSans.ttf`（无中文字形）→ 全部中文变豆腐块。另一台机器上实际可用的是 `LXGW WenKai`、`Noto Serif SC`、`Hiragino Kaku Gothic Pro`。
+**踩坑实录**：某系统 `fc-match "PingFang SC"` 回退到 `DejaVuSans.ttf`（无中文字形）→ 全部中文变豆腐块；该机实际可用的是 `LXGW WenKai`、`Noto Serif SC`、`Hiragino Kaku Gothic Pro`。
 
-**铁律**：
-1. **先 `fc-match` 验证字体，再写 SVG**。不要凭印象写字体名——同一字体名在不同系统可能不存在。SVG 里写"验证过存在的字体"，并留备选：`font-family="LXGW WenKai, Hiragino Sans GB, PingFang SC, sans-serif"`
-2. **SVG 里绝对不要放 emoji（🚗🛸🧱📊🏆 等）**。rsvg 没有 emoji 字形，会渲染成实心方块（看起来像元素重叠/错乱）。**用矢量图形代替**（画个车形、圆点、图标），或干脆纯文字。
-3. fontconfig 缓存报 `No writable cache directories` 是噪音，可忽略——只要 `fc-match` 返回正确字体即可。
-4. **字体版权**：优先用 **OFL 开源字体**（霞鹜文楷 LXGW WenKai / 思源黑体 Source Han Sans / 思源宋体 Source Han Serif / Noto CJK）——免费可商用、可嵌入、可再分发。系统专有字体（PingFang SC、Hiragino、微软雅黑）**本机渲染没问题，但别把 .ttf/.ttc 字体文件提交进仓库再分发**。本 skill 只写字体名、不打包字体文件，PNG 输出是位图，均无版权风险。
+#### ③ 写进 SVG（字体名换成②里验证过的，放第一位）
+
+统一用 `<style>` 声明（模板和 `gen.py` 都这样做），给整份图一条回退链：
+
+```svg
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="520" viewBox="0 0 900 520">
+  <style>
+    text { font-family: "LXGW WenKai", "Source Han Sans SC", "Noto Sans CJK SC", "PingFang SC", sans-serif; }
+  </style>
+  <text x="40" y="80" font-size="40" fill="#16223a">标题文字</text>
+</svg>
+```
+
+**默认回退链（可直接复制；第一位务必换成你 `fc-match` 验证过的字体）**：
+
+```
+"Source Han Sans SC", "Noto Sans CJK SC", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "LXGW WenKai", sans-serif
+```
+
+末尾放 `LXGW WenKai`（OFL、全 CJK 覆盖）兜底，避免最后落到无中文字形的 `sans-serif` 变豆腐块。`gen.py` 的默认字体和模板都用这条链，用 `--font` 传验证过的字体即可覆盖。
+
+> 写法区别：写在 `<style>` 的 CSS 里，带空格的字体名要**加引号**（如模板那样）；写在 `<text font-family="...">` **属性**里则**不加引号**（如 `gen.py` 的默认值）。两种都可用，效果一致。
+
+#### ④ 铁律
+
+1. **先 `fc-match` 验证，再写 SVG**，把验证过的字体名放 `font-family` 第一位。
+2. **SVG 里绝对不要放 emoji**（🚗🛸🧱📊🏆 等）——rsvg 无 emoji 字形会渲染成实心方块。用矢量图形或纯文字代替。
+3. fontconfig 报 `No writable cache directories` 是噪音，忽略；只要 `fc-match` 返回正确即可。
+4. **字体版权**：优先 OFL 字体（可商用 / 嵌入 / 再分发）；系统字体（PingFang / Hiragino / 微软雅黑）仅本机渲染、**勿把 .ttf/.ttc 提交进仓库再分发**。本 skill 只写字体名不打包字体文件，PNG 输出是位图，无版权风险。
 
 ---
 

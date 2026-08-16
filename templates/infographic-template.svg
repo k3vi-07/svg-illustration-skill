@@ -10,7 +10,7 @@
   -->
   <defs>
     <style>
-      text { font-family: "PingFang SC", "Hiragino Sans GB", "Noto Sans CJK SC", "Source Han Sans CN", "Microsoft YaHei", sans-serif; }
+      text { font-family: "Source Han Sans SC", "Noto Sans CJK SC", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "LXGW WenKai", sans-serif; }
     </style>
   </defs>
 
