@@ -19,6 +19,7 @@ description: 用 SVG 设计信息图/配图/封面并导出 PNG 的技能。Use 
 | `scripts/contrast.py` | WCAG 对比度计算 | 选颜色时 |
 | `scripts/preview.py` | PNG → ASCII 可视化（看布局） | 渲染之后 |
 | `scripts/verify.py` | 像素级范围/包围盒/颜色定位 | 渲染之后 |
+| `tests/run_all.py` | 回归测试：12 版式×2 配色全链路（生成→校验→渲染→断言）+ 6 边界用例 | 改动 scripts/ 后必跑 |
 
 ---
 

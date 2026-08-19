@@ -103,20 +103,36 @@ def _t(x, y, s, size, fill, font, bold=False, anchor="start"):
             f'{w} fill="{fill}" text-anchor="{anchor}">{esc(s)}</text>')
 
 
+def _fit(s, size, maxw):
+    """按估算宽度截断文本，尾部加省略号（U+2026，中文字体自带字形）。"""
+    if text_width(s, size) <= maxw:
+        return s
+    while s and text_width(s + "…", size) > maxw:
+        s = s[:-1]
+    return s + "…"
+
+
+MIN_W, MIN_H = 360, 200
+
+
 def resolve_canvas(args, default_w, default_h):
     if args.size:
         m = re.fullmatch(r"\s*(\d+)\s*[xX×,]\s*(\d+)\s*", args.size)
         if not m:
             sys.exit("--size 格式应为「宽x高」，如 1200x630")
-        return int(m.group(1)), int(m.group(2))
-    if args.aspect:
+        W, H = int(m.group(1)), int(m.group(2))
+    elif args.aspect:
         m = re.fullmatch(r"\s*(\d+(?:\.\d+)?)\s*[:：/]\s*(\d+(?:\.\d+)?)\s*", args.aspect)
         if not m:
             sys.exit("--aspect 格式应为「宽:高」，如 16:9")
         rw, rh = float(m.group(1)), float(m.group(2))
         w = args.width or default_w
-        return int(w), int(round(w * rh / rw))
-    return default_w, default_h
+        W, H = int(w), int(round(w * rh / rw))
+    else:
+        W, H = default_w, default_h
+    if W < MIN_W or H < MIN_H:
+        sys.exit(f"画布过小：{W}x{H}。最小支持 {MIN_W}x{MIN_H}——再小放不下标题+内容+安全留白，请放大尺寸或精简内容。")
+    return W, H
 
 
 def deco(c, W, H, kind):
@@ -534,17 +550,33 @@ def build_chart(c, title, chart_type, data, font, W, H):
 
     if chart_type == "bar":
         top = 120
-        maxv = max((v for _, v in items), default=1) or 1
         bar_h = 30
         gap = 24
+        # 行数守卫：超出画布容量的数据截断（不再默默画出界）
+        max_rows = max(1, int((H - top - 30) // (bar_h + gap)))
+        if len(items) > max_rows:
+            print(f"[gen] 数据过多，柱状图最多画 {max_rows} 条，已截断", file=sys.stderr)
+            items = items[:max_rows]
+        maxv = max((v for _, v in items), default=1) or 1
+        # 标签列宽按最长标签自适应（80~300px），超长标签截断，保证不压到柱子
+        label_w = min(300, max(80, max((text_width(l, 17) for l, _ in items), default=80)))
+        bar_x = M + label_w + 16
         for i, (label, v) in enumerate(items):
             y = top + i * (bar_h + gap)
-            parts.append(_t(M, y + 20, label, 17, c["ink"], font))
-            bw = max(20, (W - 2 * M - 240) * (v / maxv))
+            shown = _fit(label, 17, label_w)
+            if shown != label:
+                print(f"[gen] 标签「{label}」过长，已截断为「{shown}」", file=sys.stderr)
+            parts.append(_t(M, y + 20, shown, 17, c["ink"], font))
+            bw = max(20, (W - M - bar_x - 110) * (v / maxv))
             color = c[PIE_COLORS[i % len(PIE_COLORS)]]
-            parts.append(f'<rect x="{M + 140:g}" y="{y:g}" width="{bw:g}" height="{bar_h:g}" rx="6" fill="{color}"/>')
-            parts.append(_t(M + 140 + bw + 12, y + 20, f"{v:g}", 17, c["ink"], font, bold=True))
+            parts.append(f'<rect x="{bar_x:g}" y="{y:g}" width="{bw:g}" height="{bar_h:g}" rx="6" fill="{color}"/>')
+            parts.append(_t(bar_x + bw + 12, y + 20, f"{v:g}", 17, c["ink"], font, bold=True))
     else:  # donut
+        # 图例行数守卫
+        max_rows = max(1, int((H - 180) // 34))
+        if len(items) > max_rows:
+            print(f"[gen] 数据过多，环形图图例最多 {max_rows} 项，已截断", file=sys.stderr)
+            items = items[:max_rows]
         cx = W * 0.32
         cy = H / 2 + 10
         R = min(W, H) * 0.30

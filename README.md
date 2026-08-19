@@ -171,6 +171,8 @@ svg-illustration-skill/
 │   ├── contrast.py                 # WCAG 对比度计算
 │   ├── preview.py                  # PNG → ASCII 可视化
 │   └── verify.py                   # 像素级范围/包围盒/颜色定位
+├── tests/
+│   └── run_all.py                  # 回归测试（12 版式×2 配色 + 边界用例，纯 stdlib）
 └── templates/
     ├── cover-template.svg          # 公众号封面模板（含安全区提示）
     └── infographic-template.svg    # 正文信息图模板
