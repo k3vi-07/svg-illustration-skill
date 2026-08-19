@@ -23,104 +23,106 @@
 
 ## 特性
 
-- **中文排版**：`east_asian_width` 驱动的宽度估算，中文按字断行、英文按词断行，保留中英空格
+- **11 种版式**：封面 / 信息图 / 金句卡 / 对比 / 步骤 / 数据卡 / 时间线 / 两栏图文 / 柱状图 / 环形图 / 流程图 / 杂志海报
+- **版式变体**：`--align left/center`、`--cols 1/2/N`、`--side left/right`、`--chart-type bar/donut`
+- **丰富排版层次**：`--kicker` 眉题 + `--footer` 页脚 + `--deco dots/circles/grid/diag` 背景底纹
+- **中文排版**：`east_asian_width` 驱动的宽度估算，中文按字断行、英文按词断行
 - **写前验算**：SVG 静态检查（溢出 / 重叠 / emoji / 字体 / 对比度），先算后画，杜绝返工
+- **守卫机制**：最小画布 360×200 硬校验、图表数据条数守卫、长标签自动截断——不再产出「校验通过但视觉是废图」的结果
 - **程序化验证**：ASCII 预览 + 像素级包围盒 / 颜色定位 —— AI 无法直接看图时的「眼睛」
-- **专业配色卡**：8 套对比度校验过的配色卡 + 系列配色 + 配色卡图生成
-- **一键生成**：套配色卡 + 自动排版 + 指定尺寸/比例 + 校验 + 渲染，一条命令
-- **内置模板**：公众号封面 / 正文信息图，含安全区提示
+- **专业配色卡**：54 套对比度校验过的配色卡 + 系列配色 + 配色卡图生成
+- **回归测试**：`tests/run_all.py`，12 版式用例 × 2 配色卡 + 6 边界用例共 142 项断言，改代码 15 秒验回归
 
 ## 效果演示
 
-以下 **30 张示例**均由本 skill 一键生成（选配色卡 → 自动排版 → 静态校验 → 渲染），覆盖 **11 种版式 × 15+ 配色卡 × 4 种比例**：
+以下 **23 张示例**均由本 skill 一键生成（选配色卡 → 自动排版 → 静态校验 → 渲染），覆盖 **11 种版式 × 54 配色卡 × 4 种比例**：
 
-### 公众号封面（2.35:1，标题换行 + 徽章 + 结论条）
-
-<p align="center">
-  <img src="examples/cover-tech.png" width="48%" alt="AI 编程助手横评 · 深海蓝">
-  <img src="examples/cover-sale.png" width="48%" alt="双十一 · 国潮红">
-  <img src="examples/cover-finance.png" width="48%" alt="资产配置 · 金融科技">
-  <img src="examples/cover-food.png" width="48%" alt="深夜食堂 · 暖阳橙">
-</p>
-
-### 正文信息图（编号卡片 + 标题/说明双行 + 结论条）
+### 封面 cover（900×383，`--align` / `--kicker` / `--deco` 变体）
 
 <p align="center">
-  <img src="examples/info-copywriting.png" width="48%" alt="爆款标题 · 教育">
-  <img src="examples/info-guofeng.png" width="48%" alt="中国传统色 · 墨玉青">
-  <img src="examples/info-tutorial.png" width="48%" alt="三步配图 · 松石蓝绿">
-  <img src="examples/info-eco.png" width="48%" alt="日常减碳 · 静谧绿">
+  <img src="examples/cover-tech.png" width="48%" alt="科技封面 · 深海蓝（眉题+底纹）">
+  <img src="examples/cover-sale.png" width="48%" alt="促销封面 · 国潮红">
+  <img src="examples/cover-finance.png" width="48%" alt="理财封面 · 金融科技">
+  <img src="examples/cover-center.png" width="48%" alt="居中封面 · 晨雾蓝灰">
 </p>
 
-### 金句卡（1:1，居中排版 + 署名）
+### 信息图 infographic（编号卡片，`--cols 2` / `--kicker` 变体）
 
 <p align="center">
-  <img src="examples/quote-munger.png" width="24%" alt="芒格 · 曜石黑金">
-  <img src="examples/quote-literary.png" width="24%" alt="高晓松 · 绛紫霞">
-  <img src="examples/quote-minimal.png" width="24%" alt="少即是多 · 极简黑白">
-  <img src="examples/quote-space.png" width="24%" alt="肯尼迪 · 太空">
+  <img src="examples/info-tutorial.png" width="48%" alt="教程信息图 · 教育">
+  <img src="examples/info-guofeng.png" width="48%" alt="国风信息图 · 墨玉青（眉题+页脚）">
+  <img src="examples/info-cols2.png" width="48%" alt="两列卡片 · 松石蓝绿（--cols 2）">
 </p>
 
-### 竖版海报（3:4，`--aspect 3:4`）
+### 金句卡 quote（1:1，居中排版 + `--kicker`/`--deco` 变体）
 
 <p align="center">
-  <img src="examples/poster-sakura.png" width="24%" alt="春日 · 春日樱">
-  <img src="examples/poster-dunhuang.png" width="24%" alt="敦煌 · 敦煌">
+  <img src="examples/quote-munger.png" width="24%" alt="芒格金句 · 曜石黑金">
+  <img src="examples/quote-literary.png" width="24%" alt="文学金句 · 绛紫霞（眉题+页脚+底纹）">
 </p>
 
-### 横版 Banner（16:9，`--aspect 16:9 --width 1200`）
+### 对比 / 步骤 / 流程 / 时间线
 
 <p align="center">
-  <img src="examples/banner-launch.png" width="60%" alt="产品发布会 · 晨雾蓝灰"><br>
-  <img src="examples/banner-cyber.png" width="60%" alt="赛博之夜 · 霓虹赛博">
+  <img src="examples/compare-dev.png" width="48%" alt="对比图 · 墨玉青">
+  <img src="examples/steps-flow.png" width="48%" alt="步骤图 · 松石蓝绿">
+  <img src="examples/flow-process.png" width="48%" alt="流程图 · 晨雾蓝灰">
+  <img src="examples/timeline-project.png" width="48%" alt="时间线 · 墨玉青">
 </p>
 
-### 配色卡（`palette.py card`，54 套配色任意出卡）
+### 数据卡 / 柱状图 / 环形图
+
+<p align="center">
+  <img src="examples/stats-data.png" width="48%" alt="数据卡 · 深海蓝（--cols 4 + 底纹）">
+  <img src="examples/chart-bar.png" width="48%" alt="柱状图 · 静谧绿（标签列自适应）">
+  <img src="examples/chart-donut.png" width="48%" alt="环形图 · 深海蓝">
+</p>
+
+### 两栏图文 / 杂志海报
+
+<p align="center">
+  <img src="examples/feature-adv.png" width="48%" alt="两栏图文 · 绛紫霞">
+  <img src="examples/poster-magazine.png" width="32%" alt="杂志海报 · 曜石黑金（大数字+目录）">
+</p>
+
+### 任意比例（`--aspect` / `--size`）
+
+<p align="center">
+  <img src="examples/banner-launch.png" width="48%" alt="16:9 Banner（1200×675）">
+  <img src="examples/poster-sakura.png" width="24%" alt="3:4 竖版（900×1200）">
+  <img src="examples/og-share.png" width="48%" alt="1.91:1 OG 图（1200×630）">
+</p>
+
+### 配色卡（`palette.py card`，54 套任意出卡）
 
 <p align="center">
   <img src="examples/palette-deep.png" width="44%" alt="配色卡 · 深海蓝">
   <img src="examples/palette-jade.png" width="44%" alt="配色卡 · 墨玉青">
 </p>
 
-### 更多版式（对比 / 步骤 / 数据卡 / 居中封面）
+## 11 种版式速查
 
-除上面三种，`gen.py` 还内置对比图、横向步骤、数据卡、居中封面等版式：
+| 版式 | 默认尺寸 | 必填 | 常用可选参数 |
+|---|---|---|---|
+| `cover` | 900×383 | `--title` | `--subtitle --badge --conclusion --kicker --footer --align left/center --deco` |
+| `infographic` | 900×520 | `--title --points` | `--subtitle --conclusion --kicker --footer --cols 1/2` |
+| `quote` | 900×900 | `--text` | `--author --kicker --footer --deco` |
+| `compare` | 900×560 | `--title --left --right` | `--left-points --right-points --conclusion` |
+| `steps` | 900×380 | `--title --steps` | 每项支持「标题:说明」 |
+| `stats` | 900×420 | `--title --stats` | `--conclusion --cols N --deco`，每项「数值:标签」 |
+| `timeline` | 900×560 | `--title --events` | 每项「时间\|标题\|说明」 |
+| `feature` | 900×480 | `--title --points` | `--subtitle --side left/right`，每项「标题:说明」 |
+| `chart` | 900×500 | `--title --data` | `--chart-type bar/donut`，每项「标签:数值」 |
+| `flow` | 900×400 | `--title --steps` | 每项「标题:说明」 |
+| `poster` | 900×1200 | `--title` | `--kicker --number --points --footer --deco` |
 
-<p align="center">
-  <img src="examples/compare-dev.png" width="48%" alt="对比图 · 墨玉青">
-  <img src="examples/steps-flow.png" width="48%" alt="步骤图 · 松石蓝绿">
-  <img src="examples/stats-data.png" width="48%" alt="数据卡 · 深海蓝">
-  <img src="examples/cover-center.png" width="48%" alt="居中封面 · 晨雾蓝灰">
-</p>
-
-### 时间线 / 图表 / 图文 / 流程图
-
-还有时间线、柱状图、环形图、两栏图文、流程图等版式：
-
-<p align="center">
-  <img src="examples/timeline-project.png" width="48%" alt="时间线 · 墨玉青">
-  <img src="examples/feature-adv.png" width="48%" alt="两栏图文 · 绛紫霞">
-  <img src="examples/chart-donut.png" width="48%" alt="环形图 · 深海蓝">
-  <img src="examples/chart-bar.png" width="48%" alt="柱状图 · 静谧绿">
-  <img src="examples/flow-process.png" width="48%" alt="流程图 · 松石蓝绿">
-</p>
-
-### 杂志风海报 + 眉题/页脚（丰富排版层次）
-
-`poster` 版式（大标题 + 大数字 + 目录式内容），以及 `--kicker`（眉题）+ `--footer`（页脚）+ `--deco`（底纹）让版面不再空：
-
-<p align="center">
-  <img src="examples/poster-magazine.png" width="34%" alt="杂志风海报 · 曜石黑金">
-  <img src="examples/cover-rich.png" width="48%" alt="丰富封面 · 深海蓝">
-  <img src="examples/quote-rich.png" width="34%" alt="丰富金句卡 · 绛紫霞">
-</p>
+所有版式通用：`--palette`（配色卡）、`--size 宽x高` / `--aspect 宽:高 --width N`（任意比例）、`--font`、`--out`、`--check`（静态校验）、`--render`（导出 PNG）。
 
 ## 快速开始
 
 ### 依赖
 
-- Python 3.8+
-- [Pillow](https://python-pillow.org/)（`pip install Pillow`）
+- Python 3.8+（生成/校验全链路纯 stdlib）
 - [rsvg-convert](https://gitlab.gnome.org/GNOME/librsvg)（librsvg，SVG→PNG）
 - 一款中文字体（用 `fc-match` 验证真实存在）
 
@@ -135,13 +137,21 @@ python3 scripts/gen.py cover \
   --palette 深海蓝 \
   --title "AI 编程工具横评：谁更强" \
   --subtitle "Claude Code / Codex / Cursor 实测" \
-  --badge "深度分析" \
+  --kicker "特别企划" --badge "深度分析" \
   --conclusion "谁更值得用？一图看懂" \
+  --footer "2026 · 第 88 期" --deco circles \
   --font "LXGW WenKai" --check --render
+
+# 其它版式
+python3 scripts/gen.py chart --palette 静谧绿 --title "季度营收" --chart-type bar \
+  --data "Q1:120" "Q2:185" "Q3:240" "Q4:326" --check --render
+python3 scripts/gen.py timeline --palette 墨玉青 --title "产品里程碑" \
+  --events "2024|立项|方向确定" "2025|公测|注册 10 万" "2026|商业化|首次盈利" --check --render
 
 # 指定比例 / 尺寸
 python3 scripts/gen.py cover --palette 晨雾蓝灰 --title "活动预告" --aspect 16:9 --width 1200
-python3 scripts/gen.py quote --palette 曜石黑金 --text "把复杂的事讲简单" --aspect 3:4 --width 900
+python3 scripts/gen.py quote --palette 春日樱 --text "樱花落下的速度，是秒速五厘米" --aspect 3:4 --width 900
+python3 scripts/gen.py cover --palette 靛蓝 --title "分享卡" --size 1200x630
 ```
 
 ### 手动流程（完全可控）
@@ -156,6 +166,17 @@ python3 scripts/preview.py design.png              # 5. ASCII 目检布局
 python3 scripts/verify.py design.png --boxes --mode bright --svg-width 900
 ```
 
+### 回归测试
+
+改过 `scripts/` 之后先跑测试套件（15 秒，纯 stdlib）：
+
+```bash
+python3 tests/run_all.py
+# ✅ 全部 142 项断言通过（12 版式用例 × 2 配色卡 + 6 个边界用例）
+```
+
+边界用例是历史真实 bug 的回归锁：柱状图长标签不压柱、小画布（<360×200）必须拒绝、图表数据超量必须截断并警告等。
+
 ## 目录结构
 
 ```
@@ -167,12 +188,12 @@ svg-illustration-skill/
 │   ├── layout.py                   # 换行 / 居中 / 网格定位（wrap/center/grid）
 │   ├── check.py                    # SVG 静态检查（溢出/重叠/emoji/字体/对比度）
 │   ├── palette.py                  # 专业配色卡库 + 系列配色（list/show/check/card）
-│   ├── gen.py                      # 一键生成（11 种版式 + 眉题页脚 + 装饰底纹，支持任意比例）
+│   ├── gen.py                      # 一键生成（11 种版式 + 变体 + 装饰，任意比例）
 │   ├── contrast.py                 # WCAG 对比度计算
 │   ├── preview.py                  # PNG → ASCII 可视化
 │   └── verify.py                   # 像素级范围/包围盒/颜色定位
 ├── tests/
-│   └── run_all.py                  # 回归测试（12 版式×2 配色 + 边界用例，纯 stdlib）
+│   └── run_all.py                  # 回归测试（12 版式×2 配色 + 6 边界用例）
 └── templates/
     ├── cover-template.svg          # 公众号封面模板（含安全区提示）
     └── infographic-template.svg    # 正文信息图模板
@@ -190,10 +211,11 @@ svg-illustration-skill/
 | `gen.py` | 一键生成（11 种版式） | 写之前 |
 | `preview.py` | ASCII 预览 | 渲染后 |
 | `verify.py` | 像素级检测 | 渲染后 |
+| `tests/run_all.py` | 回归测试 | 改动 scripts 后必跑 |
 
 ## 内置配色卡
 
-54 套经过对比度校验的专业配色卡（`python3 scripts/palette.py list`）：
+54 套经过对比度校验的专业配色卡（以 `python3 scripts/palette.py list` 为准），节选：
 
 | 配色卡 | 定位 | 深底 / 主强调 / 点缀 |
 |---|---|---|
@@ -205,52 +227,11 @@ svg-illustration-skill/
 | 松石蓝绿 | 清新 / 教育 / 医疗 | `#12333B` / `#0EA5E9` / `#2DD4BF` |
 | 静谧绿 | 环保 / 健康 / 自然 | `#14271E` / `#22C55E` / `#A3E635` |
 | 曜石黑金 | 高端 / 发布会 / 奢华 | `#161616` / `#D4AF37` / `#9CA3AF` |
-| 珊瑚粉 | 女性 / 母婴 / 婚恋 | `#33101F` / `#F43F5E` / `#FB7185` |
-| 电光紫 | 科技 / AI / 未来 | `#170A2E` / `#8B5CF6` / `#22D3EE` |
-| 极简黑白 | 极简 / 杂志 / 高端 | `#111111` / `#52525B` / `#A1A1AA` |
 | 国潮红 | 节日 / 促销 / 国潮 | `#6B1414` / `#DC2626` / `#FBBF24` |
-| 莫兰迪 | 文艺 / 柔和 / 治愈 | `#3E3A36` / `#9C8A74` / `#8E8AA0` |
-| 薄荷绿 | 健康 / 医疗 / 清新 | `#0E2A22` / `#10B981` / `#34D399` |
-| 咖啡棕 | 咖啡 / 复古 / 商务 | `#2B1D15` / `#C2703D` / `#A1622B` |
-| 香槟金 | 婚庆 / 高端 / 轻奢 | `#4A3823` / `#C9A227` / `#B8912B` |
-| 马卡龙 | 甜点 / 可爱 / 儿童 | `#3D2B3A` / `#F472B6` / `#A78BFA` |
-| 复古橄榄 | 复古 / 军工 / 户外 | `#2A2A1A` / `#B9A61A` / `#6B8E23` |
-| 春日樱 | 春日 / 少女 / 浪漫 | `#3A1A2E` / `#EC4899` / `#F472B6` |
-| 夏日海 | 夏日 / 海洋 / 清凉 | `#0A3D4B` / `#06B6D4` / `#0EA5E9` |
-| 秋日枫 | 秋日 / 丰收 / 温暖 | `#3B2013` / `#EA580C` / `#C2410C` |
-| 冬日雪 | 冬日 / 冰雪 / 纯净 | `#0F2E45` / `#38BDF8` / `#7DD3FC` |
-| 圣诞 | 圣诞 / 节日 / 温暖 | `#0E2E1F` / `#16A34A` / `#DC2626` |
-| 万圣节 | 万圣 / 鬼怪 / 派对 | `#1A0B14` / `#F97316` / `#A855F7` |
-| 春节 | 春节 / 新年 / 喜庆 | `#991B1B` / `#DC2626` / `#FACC15` |
-| 靛蓝 | 金融 / 法律 / 权威 | `#1E1B4B` / `#4F46E5` / `#6366F1` |
-| 天空蓝 | 亲子 / 教育 / 医疗 | `#0C4A6E` / `#0284C7` / `#38BDF8` |
-| 酒红 | 红酒 / 复古 / 奢华 | `#3D0F1E` / `#9F1239` / `#C0A062` |
-| 鼠尾草 | 极简 / 家居 / 北欧 | `#2F3A30` / `#7C8B6F` / `#9CAF88` |
 | 霓虹赛博 | 赛博朋克 / 游戏 / 电音 | `#0D0A14` / `#D946EF` / `#22D3EE` |
-| 房地产 | 房产 / 家居 / 建筑 | `#241F1A` / `#8A6D3B` / `#5B6B7A` |
-| 餐饮美食 | 餐饮 / 美食 / 食欲 | `#3B1212` / `#E0522D` / `#F59E0B` |
-| 运动健身 | 运动 / 健身 / 活力 | `#1E2A3A` / `#F97316` / `#0EA5E9` |
-| 母婴 | 母婴 / 亲子 / 温柔 | `#3A2230` / `#EC4899` / `#FCD34D` |
-| 宠物 | 宠物 / 萌宠 / 温暖 | `#3B2A18` / `#D97706` / `#92400E` |
-| 金融科技 | 金融 / 科技 / 信赖 | `#0B1F33` / `#0EA5E9` / `#14B8A6` |
-| 教育 | 教育 / 培训 / 成长 | `#16324A` / `#2563EB` / `#F59E0B` |
-| 娱乐影视 | 娱乐 / 影视 / 星光 | `#1A0B2E` / `#D946EF` / `#C9A227` |
-| 汽车 | 汽车 / 工业 / 硬朗 | `#1A1F24` / `#3B82F6` / `#94A3B8` |
-| 暮色紫 | 黄昏 / 氛围 / 情绪 | `#1B1433` / `#8B5CF6` / `#FB923C` |
-| 海洋珊瑚 | 海岛 / 度假 / 热带 | `#0A3A43` / `#06B6D4` / `#FB7185` |
-| 石墨银 | 硬件 / 科技 / 极客 | `#17191C` / `#60A5FA` / `#94A3B8` |
-| 和风 | 日式 / 侘寂 / 极简 | `#26333F` / `#4A6B8A` / `#C73E3A` |
-| 港风 | 港风 / 复古 / 霓虹 | `#2A0E12` / `#E53935` / `#39D98A` |
-| 北欧 | 北欧 / 极简 / 家居 | `#2E2E2C` / `#8B7355` / `#5B7A9D` |
-| 新中式 | 新中式 / 东方 / 雅致 | `#1F2E2B` / `#B03A2E` / `#C9A227` |
-| 敦煌 | 敦煌 / 西域 / 壁画 | `#4A2018` / `#C4703A` / `#2E8B7A` |
-| 双十一 | 电商 / 促销 / 狂欢 | `#A01818` / `#F97316` / `#FACC15` |
-| 世界杯 | 足球 / 体育 / 激情 | `#0E3B2E` / `#16A34A` / `#FACC15` |
-| 音乐节 | 音乐节 / 演出 / 狂欢 | `#2A1030` / `#EC4899` / `#FACC15` |
-| 复古波普 | 波普 / 撞色 / 潮流 | `#1A1A2E` / `#FF3B5C` / `#FFD23F` |
-| 极光 | 极光 / 自然 / 梦幻 | `#0B1D33` / `#34D399` / `#A78BFA` |
-| 太空 | 太空 / 航天 / 深空 | `#0A0A14` / `#6366F1` / `#38BDF8` |
-| 宋韵 | 宋式 / 留白 / 雅致 | `#2A2E33` / `#6B7280` / `#B04A3A` |
+| 春日樱 | 春日 / 少女 / 浪漫 | `#3A1A2E` / `#EC4899` / `#F472B6` |
+| 靛蓝 | 金融 / 法律 / 权威 | `#1E1B4B` / `#4F46E5` / `#6366F1` |
+| …… | 共 54 套（含节日 / 行业 / 四季 / 风格系列） | `palette.py list` 查看 |
 
 ## 常用画布尺寸
 
