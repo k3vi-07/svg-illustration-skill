@@ -32,7 +32,7 @@
 
 ## 效果演示
 
-以下 **18 张示例**均由本 skill 一键生成（选配色卡 → 自动排版 → 静态校验 → 渲染），覆盖 **6 种版式 × 12+ 配色卡 × 4 种比例**：
+以下 **27 张示例**均由本 skill 一键生成（选配色卡 → 自动排版 → 静态校验 → 渲染），覆盖 **10 种版式 × 15+ 配色卡 × 4 种比例**：
 
 ### 公众号封面（2.35:1，标题换行 + 徽章 + 结论条）
 
@@ -93,6 +93,18 @@
   <img src="examples/cover-center.png" width="48%" alt="居中封面 · 晨雾蓝灰">
 </p>
 
+### 时间线 / 图表 / 图文 / 流程图
+
+还有时间线、柱状图、环形图、两栏图文、流程图等版式：
+
+<p align="center">
+  <img src="examples/timeline-project.png" width="48%" alt="时间线 · 墨玉青">
+  <img src="examples/feature-adv.png" width="48%" alt="两栏图文 · 绛紫霞">
+  <img src="examples/chart-donut.png" width="48%" alt="环形图 · 深海蓝">
+  <img src="examples/chart-bar.png" width="48%" alt="柱状图 · 静谧绿">
+  <img src="examples/flow-process.png" width="48%" alt="流程图 · 松石蓝绿">
+</p>
+
 ## 快速开始
 
 ### 依赖
@@ -145,7 +157,7 @@ svg-illustration-skill/
 │   ├── layout.py                   # 换行 / 居中 / 网格定位（wrap/center/grid）
 │   ├── check.py                    # SVG 静态检查（溢出/重叠/emoji/字体/对比度）
 │   ├── palette.py                  # 专业配色卡库 + 系列配色（list/show/check/card）
-│   ├── gen.py                      # 一键生成（6 种版式，支持任意比例）
+│   ├── gen.py                      # 一键生成（10 种版式 + 装饰底纹，支持任意比例）
 │   ├── contrast.py                 # WCAG 对比度计算
 │   ├── preview.py                  # PNG → ASCII 可视化
 │   └── verify.py                   # 像素级范围/包围盒/颜色定位
@@ -163,7 +175,7 @@ svg-illustration-skill/
 | `check.py` | SVG 静态检查 | 写之前 |
 | `palette.py` | 配色卡库 + 系列配色 | 选色 |
 | `contrast.py` | WCAG 对比度 | 选色 |
-| `gen.py` | 一键生成（6 种版式） | 写之前 |
+| `gen.py` | 一键生成（10 种版式） | 写之前 |
 | `preview.py` | ASCII 预览 | 渲染后 |
 | `verify.py` | 像素级检测 | 渲染后 |
 
