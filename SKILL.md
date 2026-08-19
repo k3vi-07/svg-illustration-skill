@@ -13,7 +13,7 @@ description: 用 SVG 设计信息图/配图/封面并导出 PNG 的技能。Use 
 |---|---|---|
 | `scripts/textwidth.py` | 估算文字渲染宽度（CJK 感知） | 写 SVG 之前 |
 | `scripts/layout.py` | 文字换行 / 居中 / 网格定位计算 | 写 SVG 之前 |
-| `scripts/gen.py` | 一键生成封面/信息图/金句卡（配色卡+自动排版） | 写 SVG 之前 |
+| `scripts/gen.py` | 一键生成 6 种版式（封面/信息图/金句卡/对比/步骤/数据卡） | 写 SVG 之前 |
 | `scripts/check.py` | **SVG 静态检查**：溢出/重叠/emoji/字体/对比度 | 写 SVG 之前 |
 | `scripts/palette.py` | 专业配色卡库 + 系列配色 + 生成配色卡图 | 选颜色时 |
 | `scripts/contrast.py` | WCAG 对比度计算 | 选颜色时 |
@@ -192,7 +192,7 @@ python3 scripts/contrast.py "#1A6FC4" "#16223a"   # 主蓝 on 深底（实测 3.
 | 正文信息图 | `900×520` ~ `900×560` |
 | 正方形金句卡 | `900×900` |
 
-**任意比例/尺寸**：手写 SVG 直接改 `width/height/viewBox`；用 `gen.py` 生成则加 `--size 宽x高`（精确）或 `--aspect 宽:高 --width 宽`（按比例），三种图（cover/infographic/quote）都支持。常用平台尺寸速查：`python3 scripts/gen.py sizes`（公众号封面 / 小红书 3:4 / OG 1.91:1 / Banner 16:9 / 竖版海报 9:16 等）。
+**任意比例/尺寸**：手写 SVG 直接改 `width/height/viewBox`；用 `gen.py` 生成则加 `--size 宽x高`（精确）或 `--aspect 宽:高 --width 宽`（按比例），六种版式（cover/infographic/quote/compare/steps/stats）都支持。常用平台尺寸速查：`python3 scripts/gen.py sizes`（公众号封面 / 小红书 3:4 / OG 1.91:1 / Banner 16:9 / 竖版海报 9:16 等）。
 
 - **四周留白 ≥ 40px**，元素不要贴边
 - **分区独立**：标题区 / 图形区 / 底部结论条 各占一块，**不同功能区的元素禁止共用同一高度带**（这是"重叠"的第一来源）
@@ -224,7 +224,7 @@ python3 scripts/contrast.py "#1A6FC4" "#16223a"   # 主蓝 on 深底（实测 3.
 
 模板已内置：分区独立、留白、字体回退链、徽章框宽、无 emoji、对比度达标。**用前先做两件事**：① `fc-match` 把 `font-family` 换成验证过的字体；② `python3 scripts/check.py` 该文件验算一遍。
 
-> **更快的方式**：`scripts/gen.py` 一键生成（套配色卡 + 自动换行/居中/网格 + 可选校验/渲染），见下方 3f 与「完整工作流示例」。
+> **更快的方式**：`scripts/gen.py` 一键生成（套配色卡 + 自动换行/居中/网格 + 可选校验/渲染）。**6 种版式**：`cover`（封面，支持 `--align left/center`）/ `infographic`（信息图）/ `quote`（金句卡）/ `compare`（左右对比）/ `steps`（横向步骤）/ `stats`（数据卡）。每种都支持 `--size`/`--aspect` 定尺寸，用 `python3 scripts/gen.py <类型> --help` 看参数。
 
 > 小坑：SVG 的 XML 注释里**不能出现 `--`**（会被当成注释结束符导致解析失败）。模板注释里若写命令行参数，用「留白阈值 40px」这类描述代替 `--margin 40`。
 
@@ -474,7 +474,7 @@ python3 scripts/verify.py assets/design.png --boxes --mode bright --svg-width 90
 - `scripts/svgtext.py` —— 共享模块：CJK 宽度估算 + emoji 检测（`textwidth.py` / `check.py` 依赖它）
 - `scripts/textwidth.py` —— 文字宽度估算（CLI，`--batch` 支持逐行）
 - `scripts/layout.py` —— 文字换行 / 居中 / 网格定位（wrap / center / grid）
-- `scripts/gen.py` —— 一键生成配图（cover / infographic / quote，套配色卡+自动排版）
+- `scripts/gen.py` —— 一键生成配图（cover / infographic / quote / compare / steps / stats，套配色卡+自动排版）
 - `scripts/check.py` —— SVG 静态检查（溢出/重叠/emoji/字体/对比度）
 - `scripts/palette.py` —— 专业配色卡库 + 系列配色（list/show/check/card）
 - `scripts/contrast.py` —— WCAG 对比度计算
