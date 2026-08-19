@@ -32,38 +32,54 @@
 
 ## 效果演示
 
-以下示例均由本 skill 一键生成（选配色卡 → 自动排版 → 静态校验 → 渲染），展示三种内容类型、任意比例、丰富排版能力：
+以下 **18 张示例**均由本 skill 一键生成（选配色卡 → 自动排版 → 静态校验 → 渲染），覆盖 **3 种内容类型 × 10+ 配色卡 × 4 种比例**：
 
-### 公众号封面（深海蓝 · 900×383，2.35:1）
-
-标题自动换行 + 徽章 + 底部结论条，一次生成：
+### 公众号封面（2.35:1，标题换行 + 徽章 + 结论条）
 
 <p align="center">
-  <img src="examples/cover.png" width="600" alt="公众号封面 · 深海蓝配色">
+  <img src="examples/cover-tech.png" width="48%" alt="AI 编程助手横评 · 深海蓝">
+  <img src="examples/cover-sale.png" width="48%" alt="双十一 · 国潮红">
+  <img src="examples/cover-finance.png" width="48%" alt="资产配置 · 金融科技">
+  <img src="examples/cover-food.png" width="48%" alt="深夜食堂 · 暖阳橙">
 </p>
 
-### 正文信息图（教育 · 900×640，4 要点带说明）
-
-编号卡片 + 标题/说明双行排版 + 底部结论条：
+### 正文信息图（编号卡片 + 标题/说明双行 + 结论条）
 
 <p align="center">
-  <img src="examples/infographic.png" width="600" alt="正文信息图 · 教育配色">
+  <img src="examples/info-copywriting.png" width="48%" alt="爆款标题 · 教育">
+  <img src="examples/info-guofeng.png" width="48%" alt="中国传统色 · 墨玉青">
+  <img src="examples/info-tutorial.png" width="48%" alt="三步配图 · 松石蓝绿">
+  <img src="examples/info-eco.png" width="48%" alt="日常减碳 · 静谧绿">
 </p>
 
-### 配色卡 · 金句卡 · 竖版海报（三列）
+### 金句卡（1:1，居中排版 + 署名）
 
 <p align="center">
-  <img src="examples/palette-card.png" width="30%" alt="配色卡 · 深海蓝">
-  <img src="examples/quote.png" width="30%" alt="金句卡 · 曜石黑金">
-  <img src="examples/poster.png" width="30%" alt="竖版海报 · 绛紫霞（3:4）">
+  <img src="examples/quote-munger.png" width="24%" alt="芒格 · 曜石黑金">
+  <img src="examples/quote-literary.png" width="24%" alt="高晓松 · 绛紫霞">
+  <img src="examples/quote-minimal.png" width="24%" alt="少即是多 · 极简黑白">
+  <img src="examples/quote-space.png" width="24%" alt="肯尼迪 · 太空">
 </p>
 
-### 横版 Banner（晨雾蓝灰 · 16:9）
-
-用 `--aspect 16:9 --width 1200` 一键切任意比例：
+### 竖版海报（3:4，`--aspect 3:4`）
 
 <p align="center">
-  <img src="examples/banner.png" width="600" alt="横版 Banner · 晨雾蓝灰（16:9）">
+  <img src="examples/poster-sakura.png" width="24%" alt="春日 · 春日樱">
+  <img src="examples/poster-dunhuang.png" width="24%" alt="敦煌 · 敦煌">
+</p>
+
+### 横版 Banner（16:9，`--aspect 16:9 --width 1200`）
+
+<p align="center">
+  <img src="examples/banner-launch.png" width="60%" alt="产品发布会 · 晨雾蓝灰"><br>
+  <img src="examples/banner-cyber.png" width="60%" alt="赛博之夜 · 霓虹赛博">
+</p>
+
+### 配色卡（`palette.py card`，54 套配色任意出卡）
+
+<p align="center">
+  <img src="examples/palette-deep.png" width="44%" alt="配色卡 · 深海蓝">
+  <img src="examples/palette-jade.png" width="44%" alt="配色卡 · 墨玉青">
 </p>
 
 ## 快速开始
