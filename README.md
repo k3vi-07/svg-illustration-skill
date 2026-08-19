@@ -32,21 +32,38 @@
 
 ## 效果演示
 
-以下三张图均由 `scripts/gen.py` 一键生成（文案 → 套配色卡 → 自动排版 → 校验 → 渲染）：
+以下示例均由本 skill 一键生成（选配色卡 → 自动排版 → 静态校验 → 渲染），展示三种内容类型、任意比例、丰富排版能力：
+
+### 公众号封面（深海蓝 · 900×383，2.35:1）
+
+标题自动换行 + 徽章 + 底部结论条，一次生成：
 
 <p align="center">
-  <img src="examples/cover.png" width="560" alt="公众号封面 · 深海蓝配色"><br>
-  <em>公众号封面 · 深海蓝配色（900×383，2.35:1）</em>
+  <img src="examples/cover.png" width="600" alt="公众号封面 · 深海蓝配色">
 </p>
 
-<p align="center">
-  <img src="examples/infographic.png" width="560" alt="正文信息图 · 墨玉青配色"><br>
-  <em>正文信息图 · 墨玉青配色（900×520）</em>
-</p>
+### 正文信息图（教育 · 900×640，4 要点带说明）
+
+编号卡片 + 标题/说明双行排版 + 底部结论条：
 
 <p align="center">
-  <img src="examples/quote.png" width="420" alt="金句卡 · 绛紫霞配色"><br>
-  <em>金句卡 · 绛紫霞配色（900×900）</em>
+  <img src="examples/infographic.png" width="600" alt="正文信息图 · 教育配色">
+</p>
+
+### 配色卡 · 金句卡 · 竖版海报（三列）
+
+<p align="center">
+  <img src="examples/palette-card.png" width="30%" alt="配色卡 · 深海蓝">
+  <img src="examples/quote.png" width="30%" alt="金句卡 · 曜石黑金">
+  <img src="examples/poster.png" width="30%" alt="竖版海报 · 绛紫霞（3:4）">
+</p>
+
+### 横版 Banner（晨雾蓝灰 · 16:9）
+
+用 `--aspect 16:9 --width 1200` 一键切任意比例：
+
+<p align="center">
+  <img src="examples/banner.png" width="600" alt="横版 Banner · 晨雾蓝灰（16:9）">
 </p>
 
 ## 快速开始
