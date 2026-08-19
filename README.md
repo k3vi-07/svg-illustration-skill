@@ -32,7 +32,7 @@
 
 ## 效果演示
 
-以下 **27 张示例**均由本 skill 一键生成（选配色卡 → 自动排版 → 静态校验 → 渲染），覆盖 **10 种版式 × 15+ 配色卡 × 4 种比例**：
+以下 **30 张示例**均由本 skill 一键生成（选配色卡 → 自动排版 → 静态校验 → 渲染），覆盖 **11 种版式 × 15+ 配色卡 × 4 种比例**：
 
 ### 公众号封面（2.35:1，标题换行 + 徽章 + 结论条）
 
@@ -105,6 +105,16 @@
   <img src="examples/flow-process.png" width="48%" alt="流程图 · 松石蓝绿">
 </p>
 
+### 杂志风海报 + 眉题/页脚（丰富排版层次）
+
+`poster` 版式（大标题 + 大数字 + 目录式内容），以及 `--kicker`（眉题）+ `--footer`（页脚）+ `--deco`（底纹）让版面不再空：
+
+<p align="center">
+  <img src="examples/poster-magazine.png" width="34%" alt="杂志风海报 · 曜石黑金">
+  <img src="examples/cover-rich.png" width="48%" alt="丰富封面 · 深海蓝">
+  <img src="examples/quote-rich.png" width="34%" alt="丰富金句卡 · 绛紫霞">
+</p>
+
 ## 快速开始
 
 ### 依赖
@@ -157,7 +167,7 @@ svg-illustration-skill/
 │   ├── layout.py                   # 换行 / 居中 / 网格定位（wrap/center/grid）
 │   ├── check.py                    # SVG 静态检查（溢出/重叠/emoji/字体/对比度）
 │   ├── palette.py                  # 专业配色卡库 + 系列配色（list/show/check/card）
-│   ├── gen.py                      # 一键生成（10 种版式 + 装饰底纹，支持任意比例）
+│   ├── gen.py                      # 一键生成（11 种版式 + 眉题页脚 + 装饰底纹，支持任意比例）
 │   ├── contrast.py                 # WCAG 对比度计算
 │   ├── preview.py                  # PNG → ASCII 可视化
 │   └── verify.py                   # 像素级范围/包围盒/颜色定位
@@ -175,7 +185,7 @@ svg-illustration-skill/
 | `check.py` | SVG 静态检查 | 写之前 |
 | `palette.py` | 配色卡库 + 系列配色 | 选色 |
 | `contrast.py` | WCAG 对比度 | 选色 |
-| `gen.py` | 一键生成（10 种版式） | 写之前 |
+| `gen.py` | 一键生成（11 种版式） | 写之前 |
 | `preview.py` | ASCII 预览 | 渲染后 |
 | `verify.py` | 像素级检测 | 渲染后 |
 

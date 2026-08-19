@@ -86,7 +86,7 @@ DEFAULTS = {
     "cover": (900, 383), "infographic": (900, 520), "quote": (900, 900),
     "compare": (900, 560), "steps": (900, 380), "stats": (900, 420),
     "timeline": (900, 560), "feature": (900, 480), "chart": (900, 500),
-    "flow": (900, 400),
+    "flow": (900, 400), "poster": (900, 1200),
 }
 
 PIE_COLORS = ["primary", "accent", "warning", "success", "danger", "primary_soft"]
@@ -146,7 +146,7 @@ def deco(c, W, H, kind):
     return out
 
 
-def build_cover(c, title, subtitle, badge, conclusion, font, W, H, align="left", deco_kind="none"):
+def build_cover(c, title, subtitle, badge, conclusion, footer, kicker, font, W, H, align="left", deco_kind="none"):
     M = 40
     center = (align == "center")
     band_h = max(56, min(96, round(H * 0.21)))
@@ -159,13 +159,21 @@ def build_cover(c, title, subtitle, badge, conclusion, font, W, H, align="left",
     if not center:
         parts.append(f'<rect x="0" y="{band_y}" width="{accent_w}" height="{band_h}" fill="{c["primary"]}"/>')
 
+    # 眉题（kicker）
+    y0 = 110
+    if kicker:
+        kx = W / 2 if center else M
+        anchor = "middle" if center else "start"
+        parts.append(f'<rect x="{kx - 14:g}" y="62" width="28" height="4" rx="2" fill="{c["accent"]}"/>')
+        parts.append(_t(kx + 20 if not center else kx, 74, kicker, 18, c["accent"], font, bold=True, anchor=anchor))
+        y0 = 128
+
     size = 44
     lines = wrap_text(title, W - 2 * M, size)
     while len(lines) > 2 and size > 26:
         size -= 2
         lines = wrap_text(title, W - 2 * M, size)
     lh = 1.35
-    y0 = 110
     for i, ln in enumerate(lines):
         parts.append(_t(W / 2 if center else M, y0 + i * size * lh, ln, size, c["light"], font, bold=True,
                         anchor="middle" if center else "start"))
@@ -189,23 +197,32 @@ def build_cover(c, title, subtitle, badge, conclusion, font, W, H, align="left",
     if conclusion:
         parts.append(_t(W / 2 if center else accent_w + 30, center_y(band_y, band_h, 26), conclusion, 26, c["light"], font, bold=True,
                         anchor="middle" if center else "start"))
+    if footer:
+        parts.append(_t(W - M, center_y(band_y, band_h, 14), footer, 14, c["primary_soft"], font, anchor="end"))
     parts.append("</svg>")
     return "\n".join(parts)
 
 
-def build_infographic(c, title, subtitle, points, conclusion, font, W, H, cols=1):
+def build_infographic(c, title, subtitle, points, conclusion, footer, kicker, font, W, H, cols=1):
     M = 40
     parts = [f'<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}">']
     parts.append(f'<rect width="{W}" height="{H}" fill="{c["surface"]}"/>')
     parts.append(f'<rect x="1" y="1" width="{W - 2}" height="{H - 2}" fill="none" stroke="{c["border"]}" stroke-width="2"/>')
-    parts.append(_t(M, 74, title, 32, c["ink"], font, bold=True))
-    if subtitle:
-        parts.append(_t(M, 106, subtitle, 18, c["ink_muted"], font))
 
-    top = 130
+    off = 0
+    if kicker:
+        parts.append(f'<rect x="{M:g}" y="48" width="28" height="4" rx="2" fill="{c["primary"]}"/>')
+        parts.append(_t(M + 40, 60, kicker, 16, c["primary"], font, bold=True))
+        off = 30
+    parts.append(_t(M, 74 + off, title, 32, c["ink"], font, bold=True))
+    if subtitle:
+        parts.append(_t(M, 106 + off, subtitle, 18, c["ink_muted"], font))
+
+    top = 130 + off
     gap = 16
     card_h = 80
-    max_rows = max(1, int((H - top - 70) // (card_h + gap)))
+    reserve = 70 + (26 if footer else 0)
+    max_rows = max(1, int((H - top - reserve) // (card_h + gap)))
     pts = list(points)
     if cols == 1:
         max_cards = max_rows
@@ -239,16 +256,23 @@ def build_infographic(c, title, subtitle, points, conclusion, font, W, H, cols=1
     parts.append(f'<rect x="{M:g}" y="{concl_y:g}" width="{W - 2 * M:g}" height="44" rx="8" fill="{c["bg"]}"/>')
     if conclusion:
         parts.append(_t(M + 20, center_y(concl_y, 44, 20), conclusion, 20, c["light"], font, bold=True))
+    if footer:
+        fy = H - 14
+        parts.append(f'<line x1="{M}" y1="{fy - 14}" x2="{W - M}" y2="{fy - 14}" stroke="{c["border"]}" stroke-width="1"/>')
+        parts.append(_t(W - M, fy, footer, 12, c["ink_muted"], font, anchor="end"))
     parts.append("</svg>")
     return "\n".join(parts)
 
 
-def build_quote(c, text, author, font, W, H, deco_kind="none"):
+def build_quote(c, text, author, footer, kicker, font, W, H, deco_kind="none"):
     M = 80
     parts = [f'<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}">']
     parts.append(f'<rect width="{W}" height="{H}" fill="{c["bg"]}"/>')
     parts += deco(c, W, H, deco_kind)
-    parts.append(f'<rect x="{W / 2 - 40:g}" y="{H * 0.14:g}" width="80" height="6" rx="3" fill="{c["accent"]}"/>')
+    bar_y = H * 0.14
+    if kicker:
+        parts.append(_t(W / 2, bar_y - 26, kicker, 18, c["accent"], font, bold=True, anchor="middle"))
+    parts.append(f'<rect x="{W / 2 - 40:g}" y="{bar_y:g}" width="80" height="6" rx="3" fill="{c["accent"]}"/>')
 
     size = 56
     maxw = W - 2 * M - 60
@@ -263,6 +287,8 @@ def build_quote(c, text, author, font, W, H, deco_kind="none"):
         parts.append(_t(W / 2, y0 + i * size * lh, ln, size, c["light"], font, bold=True, anchor="middle"))
     if author:
         parts.append(_t(W / 2, y0 + block_h + 60, author, 26, c["primary_soft"], font, anchor="middle"))
+    if footer:
+        parts.append(_t(W / 2, H - 40, footer, 14, c["primary_soft"], font, anchor="middle"))
     parts.append("</svg>")
     return "\n".join(parts)
 
@@ -579,6 +605,52 @@ def build_flow(c, title, steps, font, W, H):
     return "\n".join(parts)
 
 
+def build_poster(c, title, kicker, number, points, footer, font, W, H, deco_kind="none"):
+    """杂志风海报：眉题 + 大标题 + 大数字高亮 + 目录式内容 + 页脚，非套路构图。"""
+    M = 50
+    parts = [f'<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}">']
+    parts.append(f'<rect width="{W}" height="{H}" fill="{c["bg"]}"/>')
+    parts += deco(c, W, H, deco_kind)
+
+    y = 90
+    if kicker:
+        parts.append(f'<rect x="{M:g}" y="{y - 14:g}" width="30" height="4" rx="2" fill="{c["accent"]}"/>')
+        parts.append(_t(M + 42, y, kicker, 20, c["accent"], font, bold=True))
+        y += 46
+
+    size = 56
+    lines = wrap_text(title, W - 2 * M, size)
+    while len(lines) > 3 and size > 34:
+        size -= 4
+        lines = wrap_text(title, W - 2 * M, size)
+    lh = 1.3
+    for i, ln in enumerate(lines):
+        parts.append(_t(M, y + i * size * lh, ln, size, c["light"], font, bold=True))
+    title_bottom = y + (len(lines) - 1) * size * lh
+
+    if number:
+        nbase = title_bottom + 130
+        parts.append(_t(M, nbase, number, 100, c["primary_soft"], font, bold=True))
+        parts.append(f'<rect x="{M:g}" y="{nbase + 40:g}" width="{W - 2 * M:g}" height="3" fill="{c["primary"]}" opacity="0.4"/>')
+        ty = nbase + 82
+    else:
+        parts.append(f'<rect x="{M:g}" y="{title_bottom + 36:g}" width="{W - 2 * M:g}" height="3" fill="{c["primary"]}" opacity="0.4"/>')
+        ty = title_bottom + 72
+
+    for i, p in enumerate(points):
+        if ty + 30 > H - 70:
+            break
+        parts.append(_t(M, ty, f"{i + 1:02d}", 24, c["primary"], font, bold=True))
+        parts.append(_t(M + 56, ty, p, 20, c["light"], font))
+        parts.append(f'<line x1="{M}" y1="{ty + 12}" x2="{W - M}" y2="{ty + 12}" stroke="{c["primary_soft"]}" stroke-width="1" opacity="0.25"/>')
+        ty += 48
+
+    if footer:
+        parts.append(_t(M, H - 40, footer, 14, c["primary_soft"], font))
+    parts.append("</svg>")
+    return "\n".join(parts)
+
+
 def _palette_or_exit(name):
     p = find_palette(name)
     if not p:
@@ -611,21 +683,23 @@ def _write(out, svg, kind, W, H, args):
 def cmd_cover(args):
     c = _palette_or_exit(args.palette)
     W, H = resolve_canvas(args, *DEFAULTS["cover"])
-    svg = build_cover(c, args.title, args.subtitle or "", args.badge or "", args.conclusion or "", args.font, W, H, args.align, args.deco)
+    svg = build_cover(c, args.title, args.subtitle or "", args.badge or "", args.conclusion or "",
+                      args.footer or "", args.kicker or "", args.font, W, H, args.align, args.deco)
     _write(args.out, svg, "封面", W, H, args)
 
 
 def cmd_infographic(args):
     c = _palette_or_exit(args.palette)
     W, H = resolve_canvas(args, *DEFAULTS["infographic"])
-    svg = build_infographic(c, args.title, args.subtitle or "", args.points, args.conclusion or "", args.font, W, H, args.cols)
+    svg = build_infographic(c, args.title, args.subtitle or "", args.points, args.conclusion or "",
+                            args.footer or "", args.kicker or "", args.font, W, H, args.cols)
     _write(args.out, svg, "信息图", W, H, args)
 
 
 def cmd_quote(args):
     c = _palette_or_exit(args.palette)
     W, H = resolve_canvas(args, *DEFAULTS["quote"])
-    svg = build_quote(c, args.text, args.author or "", args.font, W, H, args.deco)
+    svg = build_quote(c, args.text, args.author or "", args.footer or "", args.kicker or "", args.font, W, H, args.deco)
     _write(args.out, svg, "金句卡", W, H, args)
 
 
@@ -678,6 +752,13 @@ def cmd_flow(args):
     _write(args.out, svg, "流程图", W, H, args)
 
 
+def cmd_poster(args):
+    c = _palette_or_exit(args.palette)
+    W, H = resolve_canvas(args, *DEFAULTS["poster"])
+    svg = build_poster(c, args.title, args.kicker or "", args.number or "", args.points, args.footer or "", args.font, W, H, args.deco)
+    _write(args.out, svg, "海报", W, H, args)
+
+
 def cmd_sizes(args):
     print(f"常用画布尺寸/比例（共 {len(SIZES)} 个）\n")
     print(f"{'用途':<18}{'尺寸':<14}{'比例'}")
@@ -709,6 +790,8 @@ def main():
     sp_cover.add_argument("--subtitle", default="")
     sp_cover.add_argument("--badge", default="")
     sp_cover.add_argument("--conclusion", default="")
+    sp_cover.add_argument("--kicker", default="", help="眉题（标题上方的小标签）")
+    sp_cover.add_argument("--footer", default="", help="页脚（底部元信息，如来源/日期）")
     sp_cover.add_argument("--align", default="left", choices=["left", "center"])
     add_deco(sp_cover)
     add_common(sp_cover)
@@ -719,6 +802,8 @@ def main():
     sp_info.add_argument("--subtitle", default="")
     sp_info.add_argument("--points", nargs="*", default=[])
     sp_info.add_argument("--conclusion", default="")
+    sp_info.add_argument("--kicker", default="", help="眉题（标题上方小标签）")
+    sp_info.add_argument("--footer", default="", help="页脚（底部元信息）")
     sp_info.add_argument("--cols", type=int, default=1, choices=[1, 2], help="卡片列数 1/2")
     add_common(sp_info)
     sp_info.set_defaults(func=cmd_infographic)
@@ -726,6 +811,8 @@ def main():
     sp_quote = sub.add_parser("quote", help="金句卡式（默认 900×900）")
     sp_quote.add_argument("--text", required=True)
     sp_quote.add_argument("--author", default="")
+    sp_quote.add_argument("--kicker", default="", help="眉题（正文上方小标签）")
+    sp_quote.add_argument("--footer", default="", help="页脚（底部元信息）")
     add_deco(sp_quote)
     add_common(sp_quote)
     sp_quote.set_defaults(func=cmd_quote)
@@ -781,6 +868,16 @@ def main():
     sp_flow.add_argument("--steps", nargs="*", default=[], help="步骤列表「标题:说明」")
     add_common(sp_flow)
     sp_flow.set_defaults(func=cmd_flow)
+
+    sp_poster = sub.add_parser("poster", help="杂志风海报式（默认 900×1200）")
+    sp_poster.add_argument("--title", required=True, help="大标题")
+    sp_poster.add_argument("--kicker", default="", help="眉题（分类标签）")
+    sp_poster.add_argument("--number", default="", help="大数字高亮，如 2026 / NO.01")
+    sp_poster.add_argument("--points", nargs="*", default=[], help="目录式内容预览行")
+    sp_poster.add_argument("--footer", default="", help="页脚元信息")
+    add_deco(sp_poster)
+    add_common(sp_poster)
+    sp_poster.set_defaults(func=cmd_poster)
 
     sp_sizes = sub.add_parser("sizes", help="列出常用画布尺寸/比例")
     sp_sizes.set_defaults(func=cmd_sizes)

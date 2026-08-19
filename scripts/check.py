@@ -97,6 +97,14 @@ def font_weight_of(el):
     return fw in ("bold", "bolder", "700", "800", "900")
 
 
+def opacity_of(el):
+    o = (el.get("opacity") or parse_style(el.get("style")).get("opacity") or "").strip()
+    try:
+        return float(o) if o else 1.0
+    except ValueError:
+        return 1.0
+
+
 def is_hex(color):
     return bool(color) and bool(HEX_RE.fullmatch(color.strip()))
 
@@ -183,7 +191,8 @@ def main():
         ry = parse_len(el.get("y"), 0.0)
         rw = parse_len(el.get("width"), 0.0)
         rh = parse_len(el.get("height"), 0.0)
-        if rw > 0 and rh > 0:
+        # 半透明（<0.3）的矩形是装饰底纹，不作为背景框/背景色参与判定
+        if rw > 0 and rh > 0 and opacity_of(el) >= 0.3:
             rects.append(dict(x=rx, y=ry, w=rw, h=rh, fill=fill_of(el)))
 
     # 对比度背景候选 = 矩形 + 圆形（圆形按外接框定位，只用于取背景色，不做框宽校验）
@@ -192,7 +201,7 @@ def main():
         cx = parse_len(el.get("cx"), 0.0)
         cy = parse_len(el.get("cy"), 0.0)
         r = parse_len(el.get("r"), 0.0)
-        if r > 0:
+        if r > 0 and opacity_of(el) >= 0.3:
             bg_boxes.append(dict(x=cx - r, y=cy - r, w=2 * r, h=2 * r, fill=fill_of(el)))
 
     errors = []  # 必须修
