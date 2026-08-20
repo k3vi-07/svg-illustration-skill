@@ -225,7 +225,15 @@ python3 scripts/contrast.py "#1A6FC4" "#16223a"   # 主蓝 on 深底（实测 3.
 
 模板已内置：分区独立、留白、字体回退链、徽章框宽、无 emoji、对比度达标。**用前先做两件事**：① `fc-match` 把 `font-family` 换成验证过的字体；② `python3 scripts/check.py` 该文件验算一遍。
 
-> **更快的方式**：`scripts/gen.py` 一键生成（套配色卡 + 自动换行/居中/网格 + 可选校验/渲染）。**12 种版式**：`cover`（封面，`--align left/center`）/ `infographic`（信息图，`--cols 1/2`）/ `quote`（金句卡）/ `compare`（左右对比）/ `steps`（横向步骤）/ `stats`（数据卡，`--cols N`）/ `timeline`（时间线）/ `feature`（两栏图文）/ `chart`（柱状+环形图）/ `flow`（线性流程）/ `flowchart`（完整流程图：菱形判断+分支+汇合+循环回跳）/ `poster`（杂志风海报）。`cover`/`infographic`/`quote` 支持 `--kicker`（眉题）+ `--footer`（页脚）丰富排版层次，深底版式支持 `--deco dots/circles/grid/diag` 背景底纹，每种都支持 `--size`/`--aspect` 定尺寸，用 `python3 scripts/gen.py <类型> --help` 看参数。多分支交叉的复杂网状/泳道图超出表达范围，建议改用 Mermaid/graphviz。
+> **更快的方式**：`scripts/gen.py` 一键生成（套配色卡 + 自动换行/居中/网格 + 可选校验/渲染）。**12 种版式**：`cover`（封面，`--align left/center`）/ `infographic`（信息图，`--cols 1/2`）/ `quote`（金句卡）/ `compare`（左右对比）/ `steps`（横向步骤）/ `stats`（数据卡，`--cols N`）/ `timeline`（时间线）/ `feature`（两栏图文）/ `chart`（柱状+环形图）/ `flow`（线性流程）/ `flowchart`（完整流程图：菱形判断+分支+汇合+循环回跳）/ `poster`（杂志风海报）。`cover`/`infographic`/`quote` 支持 `--kicker`（眉题）+ `--footer`（页脚）丰富排版层次，深底版式支持 `--deco dots/circles/grid/diag` 背景底纹，每种都支持 `--size`/`--aspect` 定尺寸，用 `python3 scripts/gen.py <类型> --help` 看参数。
+
+> **gen.py 覆盖不到的图形 → 直接手写 SVG，不要换工具**。泳道图、并行分支（fork/join）、任意网状交叉、嵌套子流程等，本 skill 的手写路径完全支持，参照示例 `examples/swimlane-manual.svg`（手写泳道图）。手写时按顺序过这 6 条约束，产出与 gen.py 同等质量：
+> 1. **取色**：`palette.py show <配色卡名>` 查角色色，按语义用（bg/band=深底，surface=浅底，primary/accent=强调，ink/ink_muted=浅底正文，light=深底正文），不要自己调色
+> 2. **字体**：用回退链 `Source Han Sans SC, Noto Sans CJK SC, LXGW WenKai, Smiley Sans, sans-serif`，单一字体名在某些机器会缺失变豆腐块
+> 3. **无 emoji**：图标用矢量（`<marker>` 箭头 / `<polygon>` / `<path>`），rsvg 对 emoji 渲染成方块
+> 4. **写前验宽**：`textwidth.py "文案" --size N`，容器宽度 ≥ 文宽 + 左右各 15px 留白，防溢出
+> 5. **对比度 ≥4.5:1**：深底（bg/band）上用 light/surface 白字；浅底（surface/white）上用 ink/band 深字。**白字不要直接放 primary/success 等中亮度色上**（实测 #fff on #3b82f6 仅 3.5:1 会被 check.py 警告）——需要彩色容器时用 band 深底 + 主色描边区分
+> 6. **校验渲染目检**：`check.py x.svg --margin 40` 必须 exit 0（警告逐条确认）→ `rsvg-convert -w 900 x.svg -o x.png` → `preview.py x.png` 目检布局。布局用行式/道式分区（每节点独占行或泳道），箭头走空白通道，静态坐标算好不打架
 
 > 小坑：SVG 的 XML 注释里**不能出现 `--`**（会被当成注释结束符导致解析失败）。模板注释里若写命令行参数，用「留白阈值 40px」这类描述代替 `--margin 40`。
 

@@ -35,7 +35,7 @@
 
 ## 效果演示
 
-以下 **24 张示例**均由本 skill 一键生成（选配色卡 → 自动排版 → 静态校验 → 渲染），覆盖 **12 种版式 × 54 配色卡 × 4 种比例**：
+以下 **25 张示例**覆盖 **12 种版式 × 54 配色卡 × 4 种比例**（24 张由 gen.py 一键生成 + 1 张手写路径产物）：
 
 ### 封面 cover（900×383，`--align` / `--kicker` / `--deco` 变体）
 
@@ -69,6 +69,14 @@
   <img src="examples/flowchart-refund.png" width="32%" alt="完整流程图 · 晨雾蓝灰（菱形判断+分支+循环回跳）">
   <img src="examples/flow-process.png" width="48%" alt="线性流程 · 晨雾蓝灰">
   <img src="examples/timeline-project.png" width="48%" alt="时间线 · 墨玉青">
+</p>
+
+### 手写路径：gen.py 覆盖不到的图形直接手写 SVG
+
+泳道图、并行分支、任意网状交叉等超出 12 种版式的图形，按 SKILL.md 的 6 条约束（配色卡取色 / 字体回退链 / 无 emoji / 写前验宽 / 对比度≥4.5 / 校验渲染目检）手写，产出与生成器同等质量。下图即手写产物（`examples/swimlane-manual.svg`）：
+
+<p align="center">
+  <img src="examples/swimlane-manual.png" width="60%" alt="手写泳道图 · 晨雾蓝灰（check.py 全链路校验通过）">
 </p>
 
 ### 数据卡 / 柱状图 / 环形图
