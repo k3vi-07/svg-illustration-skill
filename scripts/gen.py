@@ -4,7 +4,7 @@
 把「选配色卡 → 填文案 → 选版式 → 排版 → 校验 → 渲染」串成一条命令。
 生成的 SVG 已内置：分区独立、留白、字体回退、无 emoji、对比度达标。
 
-子命令（10 种版式）：
+子命令（12 种版式）：
     cover         封面式（深底 + 标题 + 底部结论条），默认 900×383，支持 --align left/center
     infographic   信息图式（浅底 + 编号卡片），默认 900×520，支持 --cols 1/2
     quote         金句卡式（居中正文），默认 900×900
@@ -14,7 +14,9 @@
     timeline      时间线式（竖线 + 事件），默认 900×560
     feature       两栏图文式（插图 + 要点），默认 900×480
     chart         图表式（bar 柱状 / donut 环形），默认 900×500
-    flow          流程图式（方框 + 箭头），默认 900×400
+    flow          流程图式（方框 + 箭头，线性），默认 900×400
+    flowchart     完整流程图（菱形判断 + 分支 + 汇合 + 循环回跳），默认 900×高度自适应
+    poster        杂志风海报（大标题 + 大数字 + 目录），默认 900×1200
     sizes         列出常用画布尺寸/比例速查
 
 装饰元素（cover / quote / stats 支持）：
@@ -44,6 +46,11 @@
 
     python3 gen.py flow --palette 松石蓝绿 --title "处理流程" \
         --steps "提交申请" "系统审核" "结果通知" --font "LXGW WenKai"
+
+    python3 gen.py flowchart --palette 晨雾蓝灰 --title "退款处理流程" \
+        --main "开始" "提交申请" "客服初审" "金额超限?" "财务打款" "结束" \
+        --branches "金额超限?|是|主管复核" \
+        --loops "客服初审|资料不全|提交申请" --font "LXGW WenKai" --check --render
 
 通用参数：
     --palette NAME  配色卡名称（palette.py list 查看）
@@ -86,7 +93,7 @@ DEFAULTS = {
     "cover": (900, 383), "infographic": (900, 520), "quote": (900, 900),
     "compare": (900, 560), "steps": (900, 380), "stats": (900, 420),
     "timeline": (900, 560), "feature": (900, 480), "chart": (900, 500),
-    "flow": (900, 400), "poster": (900, 1200),
+    "flow": (900, 400), "poster": (900, 1200), "flowchart": (900, 640),
 }
 
 PIE_COLORS = ["primary", "accent", "warning", "success", "danger", "primary_soft"]
@@ -637,6 +644,190 @@ def build_flow(c, title, steps, font, W, H):
     return "\n".join(parts)
 
 
+def _parse_flow_node(spec):
+    """解析节点「名称[:类型]」。类型 start/end/process/decision；「名称?」自动 decision；
+    名为 开始/结束 也自动识别为端点。"""
+    name, ntype = spec, ""
+    if ":" in spec:
+        cand_name, cand_type = spec.rsplit(":", 1)
+        if cand_type in ("start", "end", "process", "decision"):
+            name, ntype = cand_name.strip(), cand_type
+    name = name.strip()
+    if not ntype:
+        if name.endswith(("?", "？")):
+            ntype = "decision"
+        elif name in ("开始", "start", "Start"):
+            ntype = "start"
+        elif name in ("结束", "end", "End"):
+            ntype = "end"
+        else:
+            ntype = "process"
+    return name, ntype
+
+
+def _flow_node_geom(name, ntype, w_max, font):
+    fs = 18
+    tw = text_width(name, fs)
+    if ntype == "decision":
+        w = min(w_max, max(180, round(tw * 1.9) + 44))
+        h = 86
+        label = _fit(name, fs, w * 0.55)
+    elif ntype in ("start", "end"):
+        w = min(w_max, max(120, round(tw) + 56))
+        h = 52
+        label = _fit(name, fs, w - 36)
+    else:
+        w = min(w_max, max(150, round(tw) + 48))
+        h = 60
+        label = _fit(name, fs, w - 30)
+    if label != name:
+        print(f"[gen] 节点「{name}」过长，已截断为「{label}」", file=sys.stderr)
+    return w, h, label, fs
+
+
+def build_flowchart(c, title, main, branches, loops, font, W, H):
+    """完整流程图：主干竖排（开始/结束端点、方框步骤、菱形判断）+ 右侧分支列（汇合回
+    主干）+ 左侧循环回跳。行式布局（每节点独占一行高度），静态计算保证不重叠。
+    branches: 「锚点|标签|节点;节点…」，可加第四段「锚点|分支标签|主干标签|节点…」
+    loops:    「源|标签|目标」，目标必须在源上方（回跳）。"""
+    if not main:
+        sys.exit("flowchart 至少需要一个主步骤（--main）")
+    TOP, GAP, LX = 132, 46, 68
+    CX = round(W * 0.38)
+    BX = round(W * 0.76)
+    main_w_max = max(150, min(280, 2 * (BX - 90 - CX)))
+    branch_w_max = max(140, 2 * (W - 40 - BX))
+
+    brs = {}
+    for spec in branches:
+        seg = spec.split("|")
+        if len(seg) == 4:
+            anchor, blabel, tlabel, nodes_s = seg
+        elif len(seg) == 3:
+            anchor, blabel, nodes_s = seg
+            tlabel = ""
+        else:
+            sys.exit(f'--branches 应为「锚点|标签|节点;节点…」（或四段含主干标签）：{spec}')
+        nodes = [n.strip() for n in nodes_s.split(";") if n.strip()]
+        if not nodes:
+            sys.exit(f"分支没有节点：{spec}")
+        brs.setdefault(anchor.strip(), []).append({"label": blabel, "tlabel": tlabel, "nodes": nodes})
+
+    rows, main_rows = [], []
+    y = TOP
+
+    def add_row(kind, cx, spec, w_max):
+        nonlocal y
+        name, ntype = _parse_flow_node(spec)
+        w, h, label, fs = _flow_node_geom(name, ntype, w_max, font)
+        rows.append(dict(kind=kind, cx=cx, y=y, w=w, h=h, name=name, type=ntype, label=label, fs=fs))
+        y += h + GAP
+        return len(rows) - 1
+
+    for spec in main:
+        ridx = add_row("main", CX, spec, main_w_max)
+        main_rows.append(ridx)
+        for b in brs.get(rows[ridx]["name"], []):
+            b["anchor_row"] = ridx
+            b["rows"] = [add_row("branch", BX, n, branch_w_max) for n in b["nodes"]]
+    for anchor in brs:
+        if not any(rows[i]["name"] == anchor for i in main_rows):
+            sys.exit(f'分支锚点「{anchor}」不在 --main 列表中')
+
+    next_main = {main_rows[i]: (main_rows[i + 1] if i + 1 < len(main_rows) else None)
+                 for i in range(len(main_rows))}
+    for i in main_rows:
+        for b in brs.get(rows[i]["name"], []):
+            b["merge_row"] = next_main[i]
+
+    needed_h = y - GAP + 56
+    final_h = max(H or 0, needed_h)
+    if H and H < needed_h:
+        print(f"[gen] 内容需要高 {needed_h}px，画布已自动扩展（忽略请求的 {H}px）", file=sys.stderr)
+
+    AR = c["ink_muted"]
+    parts = [f'<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{final_h}" viewBox="0 0 {W} {final_h}">']
+    parts.append(f'<defs><marker id="fa" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" '
+                 f'markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="{AR}"/>'
+                 f'</marker></defs>')
+    parts.append(f'<rect width="{W}" height="{final_h}" fill="{c["surface"]}"/>')
+    parts.append(f'<rect x="1" y="1" width="{W - 2}" height="{final_h - 2}" fill="none" stroke="{c["border"]}" stroke-width="2"/>')
+    parts.append(_t(40, 62, title, 30, c["ink"], font, bold=True))
+    parts.append(f'<rect x="40" y="78" width="56" height="4" rx="2" fill="{c["primary"]}"/>')
+
+    def arrow(x1, yy1, x2, yy2):
+        return (f'<line x1="{x1:g}" y1="{yy1:g}" x2="{x2:g}" y2="{yy2:g}" stroke="{AR}" '
+                f'stroke-width="2.2" marker-end="url(#fa)"/>')
+
+    # 节点
+    for r in rows:
+        x, cy = r["cx"] - r["w"] / 2, r["y"] + r["h"] / 2
+        if r["type"] == "decision":
+            pts = (f'{x:g},{cy:g} {r["cx"]:g},{r["y"]:g} {r["cx"] + r["w"] / 2:g},{cy:g} '
+                   f'{r["cx"]:g},{r["y"] + r["h"]:g}')
+            parts.append(f'<polygon points="{pts}" fill="{c["accent"]}"/>')
+            parts.append(_t(r["cx"], cy + 6, r["label"], r["fs"], best_text(c["accent"]), font, bold=True, anchor="middle"))
+        elif r["type"] in ("start", "end"):
+            parts.append(f'<rect x="{x:g}" y="{r["y"]:g}" width="{r["w"]:g}" height="{r["h"]:g}" rx="{r["h"] / 2:g}" fill="{c["primary"]}"/>')
+            parts.append(_t(r["cx"], cy + 6, r["label"], r["fs"], best_text(c["primary"]), font, bold=True, anchor="middle"))
+        else:
+            parts.append(f'<rect x="{x:g}" y="{r["y"]:g}" width="{r["w"]:g}" height="{r["h"]:g}" rx="10" fill="#ffffff" stroke="{c["border"]}" stroke-width="2"/>')
+            parts.append(_t(r["cx"], cy + 6, r["label"], r["fs"], c["ink"], font, anchor="middle"))
+
+    # 主干箭头（连续 main 行之间；判断节点的主干边自动带「否」标签）
+    for i in main_rows:
+        nxt = next_main[i]
+        if nxt is None:
+            continue
+        r, t = rows[i], rows[nxt]
+        parts.append(arrow(CX, r["y"] + r["h"], CX, t["y"]))
+        lbl = ""
+        for b in brs.get(r["name"], []):
+            lbl = b["tlabel"] or ("否" if (b["label"] == "是" and r["type"] == "decision") else "")
+        if lbl:
+            parts.append(_t(CX + 10, (r["y"] + r["h"] + t["y"]) / 2 + 5, lbl, 14, c["ink"], font, bold=True))
+
+    # 分支：锚点 → 右列 → 汇合回主干
+    for i in main_rows:
+        for b in brs.get(rows[i]["name"], []):
+            a, first = rows[b["anchor_row"]], rows[b["rows"][0]]
+            ymid = a["y"] + a["h"] / 2
+            x0 = a["cx"] + a["w"] / 2
+            parts.append(f'<path d="M {x0:g} {ymid:g} H {BX:g} V {first["y"]:g}" fill="none" '
+                         f'stroke="{AR}" stroke-width="2.2" marker-end="url(#fa)"/>')
+            if b["label"]:
+                parts.append(_t((x0 + BX) / 2, ymid - 8, b["label"], 14, c["ink"], font, bold=True, anchor="middle"))
+            for k in range(len(b["rows"]) - 1):
+                r1, r2 = rows[b["rows"][k]], rows[b["rows"][k + 1]]
+                parts.append(arrow(BX, r1["y"] + r1["h"], BX, r2["y"]))
+            if b["merge_row"] is not None:
+                tgt, last = rows[b["merge_row"]], rows[b["rows"][-1]]
+                parts.append(f'<path d="M {BX:g} {last["y"] + last["h"]:g} V {tgt["y"] + tgt["h"] / 2:g} '
+                             f'H {tgt["cx"] + tgt["w"] / 2 + 6:g}" fill="none" stroke="{AR}" '
+                             f'stroke-width="2.2" marker-end="url(#fa)"/>')
+
+    # 循环回跳：源左缘 → 左通道 → 目标左缘
+    for spec in loops:
+        seg = spec.split("|")
+        if len(seg) != 3:
+            sys.exit(f'--loops 应为「源|标签|目标」：{spec}')
+        src_n, lbl, dst_n = (s.strip() for s in seg)
+        src = next((rows[i] for i in main_rows if rows[i]["name"] == src_n), None)
+        dst = next((rows[i] for i in main_rows if rows[i]["name"] == dst_n), None)
+        if src is None or dst is None:
+            sys.exit(f'循环的源/目标不在 --main 中：{spec}')
+        if dst["y"] >= src["y"]:
+            sys.exit(f'循环目标必须在源上方（回跳）：{spec}')
+        sy, dy = src["y"] + src["h"] / 2, dst["y"] + dst["h"] / 2
+        parts.append(f'<path d="M {src["cx"] - src["w"] / 2:g} {sy:g} H {LX:g} V {dy:g} '
+                     f'H {dst["cx"] - dst["w"] / 2 - 6:g}" fill="none" stroke="{AR}" '
+                     f'stroke-width="2.2" marker-end="url(#fa)"/>')
+        lbl2 = _fit(lbl, 13, CX - main_w_max / 2 - LX - 26)
+        parts.append(_t(LX + 10, (sy + dy) / 2 + 4, lbl2, 13, c["ink_muted"], font))
+    parts.append("</svg>")
+    return "\n".join(parts)
+
+
 def build_poster(c, title, kicker, number, points, footer, font, W, H, deco_kind="none"):
     """杂志风海报：眉题 + 大标题 + 大数字高亮 + 目录式内容 + 页脚，非套路构图。"""
     M = 50
@@ -691,15 +882,16 @@ def _palette_or_exit(name):
 
 
 def _finish(out, do_check, do_render, font):
+    out_abs = os.path.abspath(out)  # check.py 以 scripts/ 为 cwd 运行，必须传绝对路径
     if do_check:
-        r = subprocess.run([sys.executable, os.path.join(SCRIPT_DIR, "check.py"), out, "--margin", "40"], cwd=SCRIPT_DIR)
+        r = subprocess.run([sys.executable, os.path.join(SCRIPT_DIR, "check.py"), out_abs, "--margin", "40"], cwd=SCRIPT_DIR)
         if r.returncode != 0:
             sys.exit(f"check.py 校验未通过（{out}），请按上面提示调整")
         print("check.py 校验通过 ✅")
     if do_render:
         if shutil.which("rsvg-convert"):
             png = os.path.splitext(out)[0] + ".png"
-            subprocess.run(["rsvg-convert", "-w", "900", out, "-o", png], check=True)
+            subprocess.run(["rsvg-convert", "-w", "900", out_abs, "-o", png], check=True)
             print(f"已导出 PNG: {png}")
         else:
             print("[gen] 未找到 rsvg-convert，跳过 PNG 导出", file=sys.stderr)
@@ -782,6 +974,14 @@ def cmd_flow(args):
     W, H = resolve_canvas(args, *DEFAULTS["flow"])
     svg = build_flow(c, args.title, args.steps, args.font, W, H)
     _write(args.out, svg, "流程图", W, H, args)
+
+
+def cmd_flowchart(args):
+    c = _palette_or_exit(args.palette)
+    W, H = resolve_canvas(args, *DEFAULTS["flowchart"])
+    svg = build_flowchart(c, args.title, args.main, args.branches, args.loops, args.font, W, H)
+    real_h = re.search(r'height="(\d+)"', svg)
+    _write(args.out, svg, "完整流程图", W, int(real_h.group(1)) if real_h else H, args)
 
 
 def cmd_poster(args):
@@ -895,11 +1095,22 @@ def main():
     add_common(sp_chart)
     sp_chart.set_defaults(func=cmd_chart)
 
-    sp_flow = sub.add_parser("flow", help="流程图式（默认 900×400）")
+    sp_flow = sub.add_parser("flow", help="流程图式（线性方框+箭头，默认 900×400）")
     sp_flow.add_argument("--title", required=True)
     sp_flow.add_argument("--steps", nargs="*", default=[], help="步骤列表「标题:说明」")
     add_common(sp_flow)
     sp_flow.set_defaults(func=cmd_flow)
+
+    sp_fc = sub.add_parser("flowchart", help="完整流程图（菱形判断+分支+汇合+循环，高度自适应）")
+    sp_fc.add_argument("--title", required=True)
+    sp_fc.add_argument("--main", nargs="+", required=True,
+                       help='主干节点列表；「名称?」为判断菱形，开始/结束为端点，也可写「名称:start/end/decision」')
+    sp_fc.add_argument("--branches", nargs="*", default=[],
+                       help='分支：「锚点|标签|节点;节点…」，锚点须在 --main 中；第四段可指定主干边标签')
+    sp_fc.add_argument("--loops", nargs="*", default=[],
+                       help='循环回跳：「源|标签|目标」，目标须在源上方')
+    add_common(sp_fc)
+    sp_fc.set_defaults(func=cmd_flowchart)
 
     sp_poster = sub.add_parser("poster", help="杂志风海报式（默认 900×1200）")
     sp_poster.add_argument("--title", required=True, help="大标题")

@@ -13,7 +13,7 @@ description: 用 SVG 设计信息图/配图/封面并导出 PNG 的技能。Use 
 |---|---|---|
 | `scripts/textwidth.py` | 估算文字渲染宽度（CJK 感知） | 写 SVG 之前 |
 | `scripts/layout.py` | 文字换行 / 居中 / 网格定位计算 | 写 SVG 之前 |
-| `scripts/gen.py` | 一键生成 11 种版式（封面/信息图/金句卡/对比/步骤/数据卡/时间线/图文/图表/流程/海报） | 写 SVG 之前 |
+| `scripts/gen.py` | 一键生成 12 种版式（封面/信息图/金句卡/对比/步骤/数据卡/时间线/图文/图表/流程/完整流程图/海报） | 写 SVG 之前 |
 | `scripts/check.py` | **SVG 静态检查**：溢出/重叠/emoji/字体/对比度 | 写 SVG 之前 |
 | `scripts/palette.py` | 专业配色卡库 + 系列配色 + 生成配色卡图 | 选颜色时 |
 | `scripts/contrast.py` | WCAG 对比度计算 | 选颜色时 |
@@ -225,7 +225,7 @@ python3 scripts/contrast.py "#1A6FC4" "#16223a"   # 主蓝 on 深底（实测 3.
 
 模板已内置：分区独立、留白、字体回退链、徽章框宽、无 emoji、对比度达标。**用前先做两件事**：① `fc-match` 把 `font-family` 换成验证过的字体；② `python3 scripts/check.py` 该文件验算一遍。
 
-> **更快的方式**：`scripts/gen.py` 一键生成（套配色卡 + 自动换行/居中/网格 + 可选校验/渲染）。**11 种版式**：`cover`（封面，`--align left/center`）/ `infographic`（信息图，`--cols 1/2`）/ `quote`（金句卡）/ `compare`（左右对比）/ `steps`（横向步骤）/ `stats`（数据卡，`--cols N`）/ `timeline`（时间线）/ `feature`（两栏图文）/ `chart`（柱状+环形图）/ `flow`（流程图）/ `poster`（杂志风海报）。`cover`/`infographic`/`quote` 支持 `--kicker`（眉题）+ `--footer`（页脚）丰富排版层次，深底版式支持 `--deco dots/circles/grid/diag` 背景底纹，每种都支持 `--size`/`--aspect` 定尺寸，用 `python3 scripts/gen.py <类型> --help` 看参数。
+> **更快的方式**：`scripts/gen.py` 一键生成（套配色卡 + 自动换行/居中/网格 + 可选校验/渲染）。**12 种版式**：`cover`（封面，`--align left/center`）/ `infographic`（信息图，`--cols 1/2`）/ `quote`（金句卡）/ `compare`（左右对比）/ `steps`（横向步骤）/ `stats`（数据卡，`--cols N`）/ `timeline`（时间线）/ `feature`（两栏图文）/ `chart`（柱状+环形图）/ `flow`（线性流程）/ `flowchart`（完整流程图：菱形判断+分支+汇合+循环回跳）/ `poster`（杂志风海报）。`cover`/`infographic`/`quote` 支持 `--kicker`（眉题）+ `--footer`（页脚）丰富排版层次，深底版式支持 `--deco dots/circles/grid/diag` 背景底纹，每种都支持 `--size`/`--aspect` 定尺寸，用 `python3 scripts/gen.py <类型> --help` 看参数。多分支交叉的复杂网状/泳道图超出表达范围，建议改用 Mermaid/graphviz。
 
 > 小坑：SVG 的 XML 注释里**不能出现 `--`**（会被当成注释结束符导致解析失败）。模板注释里若写命令行参数，用「留白阈值 40px」这类描述代替 `--margin 40`。
 

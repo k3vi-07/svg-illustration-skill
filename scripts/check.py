@@ -203,6 +203,12 @@ def main():
         r = parse_len(el.get("r"), 0.0)
         if r > 0 and opacity_of(el) >= 0.3:
             bg_boxes.append(dict(x=cx - r, y=cy - r, w=2 * r, h=2 * r, fill=fill_of(el)))
+    for el in find_all(root, "polygon"):
+        nums = [float(n) for n in re.findall(r"-?\d+(?:\.\d+)?", el.get("points") or "")]
+        if len(nums) >= 4 and opacity_of(el) >= 0.3:
+            xs, ys = nums[0::2], nums[1::2]
+            bg_boxes.append(dict(x=min(xs), y=min(ys), w=max(xs) - min(xs),
+                                 h=max(ys) - min(ys), fill=fill_of(el)))
 
     errors = []  # 必须修
     warns = []   # 需人工确认

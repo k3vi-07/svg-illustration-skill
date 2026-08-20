@@ -11,6 +11,9 @@
      R4 环形图图例超出容量必须截断并警告
      R5 palette.py check 全配色卡对比度校验
      R6 gen.py sizes 子命令可用
+     R7 flowchart 分支锚点不存在必须报错
+     R8 flowchart 循环目标不在源上方必须报错
+     R9 相对路径 --out + --check 必须可用（check.py cwd 与调用方不同）
 
 用法（在仓库任意位置执行）：
     python3 tests/run_all.py
@@ -68,6 +71,11 @@ CASES = [
     ("flow", ["flow", "--title", "流程回归",
               "--steps", "提交:填写表单", "审核:人工复核", "发布:全网推送", "复盘:数据回顾"],
      ["提交", "发布", "复盘"]),
+    ("flowchart", ["flowchart", "--title", "退款流程",
+                   "--main", "开始", "提交申请", "客服初审", "金额超限?", "财务打款", "结束",
+                   "--branches", "金额超限?|是|主管复核",
+                   "--loops", "客服初审|资料不全|提交申请"],
+     ["polygon", "金额超限", ">是<", ">否<", "主管复核", "资料不全"]),
     ("poster", ["poster", "--title", "年度特辑", "--kicker", "SPECIAL", "--number", "2026",
                 "--points", "内容一", "内容二", "内容三", "--footer", "页脚", "--deco", "circles"],
      ["2026", "内容一", "SPECIAL"]),
@@ -167,6 +175,30 @@ def main():
                            capture_output=True, text=True, cwd=str(SCRIPTS))
         ok(r.returncode == 0 and "比例" in r.stdout, "R6 sizes 子命令", r.stdout[-200:])
 
+        # ---- R7 flowchart 输入校验：锚点不存在必须报错 ----
+        r = subprocess.run([sys.executable, "gen.py", "flowchart", "--title", "R7", "--palette", PALETTES[0],
+                            "--main", "开始", "步骤A", "结束", "--branches", "不存在|是|X",
+                            "--out", str(Path(tmp) / "r7.svg")],
+                           capture_output=True, text=True, cwd=str(SCRIPTS))
+        ok(r.returncode != 0 and "不在 --main" in (r.stdout + r.stderr),
+           "R7 分支锚点校验", f"exit={r.returncode} out={(r.stdout + r.stderr)[:150]}")
+
+        # ---- R8 flowchart 输入校验：循环目标必须在源上方 ----
+        r = subprocess.run([sys.executable, "gen.py", "flowchart", "--title", "R8", "--palette", PALETTES[0],
+                            "--main", "开始", "步骤A", "步骤B", "结束", "--loops", "步骤A|重来|步骤B",
+                            "--out", str(Path(tmp) / "r8.svg")],
+                           capture_output=True, text=True, cwd=str(SCRIPTS))
+        ok(r.returncode != 0 and "上方" in (r.stdout + r.stderr),
+           "R8 循环方向校验", f"exit={r.returncode} out={(r.stdout + r.stderr)[:150]}")
+
+        # ---- R9 相对路径 --check 必须可用（check.py 以 scripts/ 为 cwd，曾找不到文件）----
+        r = subprocess.run([sys.executable, "gen.py", "quote", "--text", "相对路径回归",
+                            "--palette", PALETTES[0], "--out", "relpath-r9.svg", "--check"],
+                           capture_output=True, text=True, cwd=str(SCRIPTS))
+        ok(r.returncode == 0 and "校验通过" in r.stdout, "R9 相对路径校验",
+           f"exit={r.returncode} out={r.stdout[-200:]} {r.stderr[-150:]}")
+        Path(SCRIPTS / "relpath-r9.svg").unlink(missing_ok=True)
+
     print()
     if fails:
         print(f"❌ {len(fails)}/{total} 项断言未通过：")
@@ -174,7 +206,7 @@ def main():
             print("  -", f)
         sys.exit(1)
     print(f"✅ 全部 {total} 项断言通过"
-          f"（{len(CASES)} 版式用例 × {len(PALETTES)} 配色卡 + 6 个边界用例；"
+          f"（{len(CASES)} 版式用例 × {len(PALETTES)} 配色卡 + 9 个边界用例；"
           f"渲染验证{'已启用' if RSVG else '跳过（未装 rsvg-convert）'}）")
 
 

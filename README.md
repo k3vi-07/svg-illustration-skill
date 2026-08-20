@@ -23,7 +23,7 @@
 
 ## 特性
 
-- **11 种版式**：封面 / 信息图 / 金句卡 / 对比 / 步骤 / 数据卡 / 时间线 / 两栏图文 / 柱状图 / 环形图 / 流程图 / 杂志海报
+- **12 种版式**：封面 / 信息图 / 金句卡 / 对比 / 步骤 / 数据卡 / 时间线 / 两栏图文 / 柱状图 / 环形图 / 线性流程 / 完整流程图（判断+分支+循环）/ 杂志海报
 - **版式变体**：`--align left/center`、`--cols 1/2/N`、`--side left/right`、`--chart-type bar/donut`
 - **丰富排版层次**：`--kicker` 眉题 + `--footer` 页脚 + `--deco dots/circles/grid/diag` 背景底纹
 - **中文排版**：`east_asian_width` 驱动的宽度估算，中文按字断行、英文按词断行
@@ -31,11 +31,11 @@
 - **守卫机制**：最小画布 360×200 硬校验、图表数据条数守卫、长标签自动截断——不再产出「校验通过但视觉是废图」的结果
 - **程序化验证**：ASCII 预览 + 像素级包围盒 / 颜色定位 —— AI 无法直接看图时的「眼睛」
 - **专业配色卡**：54 套对比度校验过的配色卡 + 系列配色 + 配色卡图生成
-- **回归测试**：`tests/run_all.py`，12 版式用例 × 2 配色卡 + 6 边界用例共 142 项断言，改代码 15 秒验回归
+- **回归测试**：`tests/run_all.py`，13 版式用例 × 2 配色卡 + 9 边界用例共 163 项断言，改代码 15 秒验回归
 
 ## 效果演示
 
-以下 **23 张示例**均由本 skill 一键生成（选配色卡 → 自动排版 → 静态校验 → 渲染），覆盖 **11 种版式 × 54 配色卡 × 4 种比例**：
+以下 **24 张示例**均由本 skill 一键生成（选配色卡 → 自动排版 → 静态校验 → 渲染），覆盖 **12 种版式 × 54 配色卡 × 4 种比例**：
 
 ### 封面 cover（900×383，`--align` / `--kicker` / `--deco` 变体）
 
@@ -61,12 +61,13 @@
   <img src="examples/quote-literary.png" width="24%" alt="文学金句 · 绛紫霞（眉题+页脚+底纹）">
 </p>
 
-### 对比 / 步骤 / 流程 / 时间线
+### 对比 / 步骤 / 流程 / 完整流程图 / 时间线
 
 <p align="center">
   <img src="examples/compare-dev.png" width="48%" alt="对比图 · 墨玉青">
   <img src="examples/steps-flow.png" width="48%" alt="步骤图 · 松石蓝绿">
-  <img src="examples/flow-process.png" width="48%" alt="流程图 · 晨雾蓝灰">
+  <img src="examples/flowchart-refund.png" width="32%" alt="完整流程图 · 晨雾蓝灰（菱形判断+分支+循环回跳）">
+  <img src="examples/flow-process.png" width="48%" alt="线性流程 · 晨雾蓝灰">
   <img src="examples/timeline-project.png" width="48%" alt="时间线 · 墨玉青">
 </p>
 
@@ -100,7 +101,7 @@
   <img src="examples/palette-jade.png" width="44%" alt="配色卡 · 墨玉青">
 </p>
 
-## 11 种版式速查
+## 12 种版式速查
 
 | 版式 | 默认尺寸 | 必填 | 常用可选参数 |
 |---|---|---|---|
@@ -113,7 +114,8 @@
 | `timeline` | 900×560 | `--title --events` | 每项「时间\|标题\|说明」 |
 | `feature` | 900×480 | `--title --points` | `--subtitle --side left/right`，每项「标题:说明」 |
 | `chart` | 900×500 | `--title --data` | `--chart-type bar/donut`，每项「标签:数值」 |
-| `flow` | 900×400 | `--title --steps` | 每项「标题:说明」 |
+| `flow` | 900×400 | `--title --steps` | 每项「标题:说明」（线性） |
+| `flowchart` | 900×自适应 | `--title --main` | `--branches 「锚点\|标签\|节点;节点…」 --loops 「源\|标签\|目标」`；节点「名称?」=菱形判断 |
 | `poster` | 900×1200 | `--title` | `--kicker --number --points --footer --deco` |
 
 所有版式通用：`--palette`（配色卡）、`--size 宽x高` / `--aspect 宽:高 --width N`（任意比例）、`--font`、`--out`、`--check`（静态校验）、`--render`（导出 PNG）。
@@ -147,6 +149,9 @@ python3 scripts/gen.py chart --palette 静谧绿 --title "季度营收" --chart-
   --data "Q1:120" "Q2:185" "Q3:240" "Q4:326" --check --render
 python3 scripts/gen.py timeline --palette 墨玉青 --title "产品里程碑" \
   --events "2024|立项|方向确定" "2025|公测|注册 10 万" "2026|商业化|首次盈利" --check --render
+python3 scripts/gen.py flowchart --palette 晨雾蓝灰 --title "退款处理流程" \
+  --main "开始" "提交申请" "客服初审" "金额超限?" "财务打款" "结束" \
+  --branches "金额超限?|是|主管复核" --loops "客服初审|资料不全|提交申请" --check --render
 
 # 指定比例 / 尺寸
 python3 scripts/gen.py cover --palette 晨雾蓝灰 --title "活动预告" --aspect 16:9 --width 1200
@@ -172,7 +177,7 @@ python3 scripts/verify.py design.png --boxes --mode bright --svg-width 900
 
 ```bash
 python3 tests/run_all.py
-# ✅ 全部 142 项断言通过（12 版式用例 × 2 配色卡 + 6 个边界用例）
+# ✅ 全部 163 项断言通过（13 版式用例 × 2 配色卡 + 9 个边界用例）
 ```
 
 边界用例是历史真实 bug 的回归锁：柱状图长标签不压柱、小画布（<360×200）必须拒绝、图表数据超量必须截断并警告等。
@@ -188,7 +193,7 @@ svg-illustration-skill/
 │   ├── layout.py                   # 换行 / 居中 / 网格定位（wrap/center/grid）
 │   ├── check.py                    # SVG 静态检查（溢出/重叠/emoji/字体/对比度）
 │   ├── palette.py                  # 专业配色卡库 + 系列配色（list/show/check/card）
-│   ├── gen.py                      # 一键生成（11 种版式 + 变体 + 装饰，任意比例）
+│   ├── gen.py                      # 一键生成（12 种版式 + 变体 + 装饰，任意比例）
 │   ├── contrast.py                 # WCAG 对比度计算
 │   ├── preview.py                  # PNG → ASCII 可视化
 │   └── verify.py                   # 像素级范围/包围盒/颜色定位
@@ -208,7 +213,7 @@ svg-illustration-skill/
 | `check.py` | SVG 静态检查 | 写之前 |
 | `palette.py` | 配色卡库 + 系列配色 | 选色 |
 | `contrast.py` | WCAG 对比度 | 选色 |
-| `gen.py` | 一键生成（11 种版式） | 写之前 |
+| `gen.py` | 一键生成（12 种版式） | 写之前 |
 | `preview.py` | ASCII 预览 | 渲染后 |
 | `verify.py` | 像素级检测 | 渲染后 |
 | `tests/run_all.py` | 回归测试 | 改动 scripts 后必跑 |
